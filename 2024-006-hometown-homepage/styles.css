@@ -1,0 +1,100 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  text-align: center;
+}
+
+.hero{
+    background-image: url("images/hanoi.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+h1{
+    background-color: #457B9D;
+}
+
+h2{
+    background-color: #1D3557;
+}
+
+.activities{
+    background-color: #F1FAEE;
+    padding: 20px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.activity-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.activity{
+    flex: 1;
+    margin: 20px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.card{
+    width: 500px;
+    height: 300px;
+    background-color: #A8DADC;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border-bottom: 5px solid #457B9D;
+    margin: 100px auto;
+    transform: rotate(2deg);
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-img{
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
