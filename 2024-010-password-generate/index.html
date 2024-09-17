@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <div id="panel">
+      <label for="version">Theme version: </label>
+      <select name="version" id="version">
+           <option value="light">Light</option>
+           <option value="dark">Dark</option>
+      </select><br>
+      <label for="pwd-length">Password length:</label>
+      <input type="text" name="pwd-length" id="pwd-length"><br>
+      <label for="accept-number">Accept number: </label>
+      <input type="checkbox" name="accept-number" id="accept-number"><br>
+      <label for="accept-symbol">Accept symbol:</label>
+      <input type="checkbox" name="accept-symbol" id="accept-symbol">
+    </div>
+    <div class="container">
+        <div id="light-version" class="version">
+          <h1>Generate a <span class="highlight">random password</span></h1>
+          <p>Never use an insecure password again.</p>
+          <button type="button" id="light-btn" class="btn">
+            Generate password
+          </button>
+          <div class="horizontal-line"></div>
+          <div class="result">
+            <div>
+              <input type="text" id="light-pwd-one" class="pwd">
+              <button type="button" class="btn copy" id="light-pwd-one-copy">Copy 1</button>
+            </div>
+            <div>
+              <input type="text" id="light-pwd-two" class="pwd">
+              <button type="button" class="btn copy" id="light-pwd-two-copy">Copy 2</button>
+            </div>
+        </div>
+
+        </div>
+        <div id="dark-version" class="version">
+          <h1>Generate a <span class="highlight">random password</span></h1>
+          <p>Never use an insecure password again.</p>
+          <button type="button" id="dark-btn" class="btn">
+            Generate password
+          </button>
+          <div class="horizontal-line"></div>
+          <div class="result">
+            <div>
+              <input type="text" id="dark-pwd-one" class="pwd">
+              <button type="button" class="btn copy" id="dark-pwd-one-copy">Copy 1</button>
+            </div>
+            <div>
+              <input type="text" id="dark-pwd-two" class="pwd">
+              <button type="button" class="btn copy" id="dark-pwd-two-copy">Copy 2</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
