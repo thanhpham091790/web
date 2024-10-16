@@ -1,0 +1,84 @@
+
+
+
+body{
+    font-family: "Source Sans 3", sans-serif;
+    max-width: 375px;
+    background-color: #c6c6c6;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.logo{
+    width: 127px;
+    height: 33.02px;
+}
+
+.user-avatar, .avatar{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.user-avatar{
+    float: right;
+}
+
+section{
+    background-color: #fff;
+    margin-bottom: 25px;
+}
+
+.container{
+    padding: 15px;
+}
+
+.avatar{
+    vertical-align: top;
+}
+
+.author{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.name{
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.location{
+    margin: 0;
+    font-size: 12px;
+}
+
+.post{
+    max-width: 100%;
+}
+
+.share img{
+    width: 23px;
+    height: 23px;
+    margin-right: 15px;
+}
+
+.share img:hover,
+.share img:focus{
+    opacity: 0.5;
+}
+
+section p{
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.like, .username{
+    font-weight: bold;
+}
+
+
