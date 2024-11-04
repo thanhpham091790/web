@@ -1,0 +1,110 @@
+
+
+
+
+===== Modal box is centrally aligned both horizontally and vertically =====
+
+HTML:
+<div class="modal" id="modal">
+    <div class="modal-close-btn-container">
+        <button type="button" class="modal-close-btn" id="modal-close-btn">X</button>
+    </div>
+    <div class="modal-inner" id="modal-inner">
+        <h2 class="modal-title">We love your data</h2>
+        <p class="modal-text">We have a strict policy on tracking and spamming: we'll definitely track you, and we'll definitely spam you. To use this site, enter your name and email address and accept our ridiculous terms and conditions.</p>
+    </div>
+</div>
+
+CSS:
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    botton: 0;
+    left: 0;
+    margin: auto;
+
+    width: 350px;
+    height: 420px;
+    border-radius: 5px;
+    background-color: #212529;
+    color: whitesmoke;
+    box-shadow: 0 0 6px 2px #666;
+
+    display: none;
+}
+
+.modal-inner{
+    width: 290px;
+    margin: 0 auto;
+}
+
+JS:
+const modal = document.querySelector("#modal");
+setTimeout(()=>{
+    modal.style.display = "block";
+}, 2000);
+
+===== Buttons in form, preventDefault method, FormData object =====
+
+If button doesn't have type="button" inside a form. When click on button will submit form.
+
+Using preventDefault() method to prevent default form behevior when click submit button.
+
+Using FormData constructor to collect all form data.
+
+HTML:
+<form id="form">
+    <input type="text" name="name" placeholder="Enter your name" />
+    <input type="email" name="email" placeholder="Enter your email" />
+    <button type="submit" id="submit-btn">Accept</button>
+    <button type="button" id="decline-btn">Decline</button>
+</form>
+
+JS:
+const form = document.querySelector("#form");
+const submitBtn = document.querySelector("#submit-btn");
+
+submitBtn.addEventListener("click", (e)=>{
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    const name = formData.get("name");
+    console.log(`Hello ${name}!`);
+});
+
+===== Swap position using flex-direction attribute and classList.toggle() method =====
+
+HTML:
+<div class="container" id="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+<div id="sort">Sort</div>
+
+CSS:
+.container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.item-reverse{
+    flex-direction: row-reverse;
+}
+
+JS:
+const container = document.querySelector("#container");
+const sort = document.querySelector("#sort");
+
+sort.addEventListener("click", ()=>{
+    container.classList.toggle("item-reverse");
+});
+
+===== Form Accessibility =====
+
+If you don't want to use the label for an input field, add aria-label inside input field.
+<form>
+    <input type="text" name="fullName" placeholder="Enter your full name" aria-label="Full name" />
+</form>
