@@ -1,0 +1,133 @@
+
+
+===== for in =====
+The for/in loop iterates over an object and return a key. The key is used to access the value of the key
+Syntax:
+for(key in object){
+    // Access the value of the key
+    console.log(object[key]);
+}
+
+===== for of =====
+The for/of loop iterates through the values of an iterable object such as Arrays, Strings, Maps, NodeList
+Syntax:
+for(variable of iterable){
+
+}
+
+====== Import a data.js into index.js file =====
+JS:
+data.js
+    export const catsData = [
+        {cat1},
+        {cat2},
+        {...}
+    ]
+index.js
+    import {catsData} from "./data.js"
+
+index.html
+    <script type="module" src="index.js" defer></script>
+
+
+===== Check if an array has already had an item =====
+JS:
+    if(!array.includes(item))
+        array.push(item);
+
+
+===== e.target.id =====
+HTML:
+<div id="emotion-radios" class="emotion-radios">
+    <div class="radio">
+        <lable for="moody">moody</lable>
+        <input type="radio" name="cat-emotion" id="moody" value="moody">
+    </div>
+
+    <div class="radio">
+        <lable for="insomniac">insomniac</lable>
+        <input type="radio" name="cat-emotion" id="insomniac" value="insomniac">
+    </div>
+</div>
+        
+
+JS:
+    const emotionRadios = document.querySelector("#emotion-radios");
+
+    emotionRadios.addEventListener("change", highLightCheckedOption);
+
+    function highLightCheckedOption(e){
+        
+        const radios = document.querySelectorAll(".radio");
+        for(let radio of radios){
+            radio.classList.remove("highlight");
+        }
+
+        document.querySelector(`#${e.target.id}`).parentElement.classList.add("highlight");
+    }
+
+===== Radio =====
+HTML:
+<div id="emotion-radios" class="emotion-radios">
+    <div class="radio">
+        <lable for="moody">moody</lable>
+        <input type="radio" name="cat-emotion" id="moody" value="moody">
+    </div>
+
+    <div class="radio">
+        <lable for="insomniac">insomniac</lable>
+        <input type="radio" name="cat-emotion" id="insomniac" value="insomniac">
+    </div>
+</div>
+
+JS:
+    const checkedRadio = document.querySelector("input[name='cat-emotion']:checked");
+    
+    if(checkedRadio){
+        console.log(checkedRadio.value)
+    }else{
+        console.log("No radio button is checked.")
+    }
+
+===== Checkbox =====
+
+HTML:
+    <div class="gifs-check">
+        <label for="gifs-only-option" class="gifs-check-label">Animated GIFs only</label>
+        <input type="checkbox" id="gifs-only-option">
+    </div>
+    <button class="get-image-btn" id="get-image-btn">Get Image</button>
+
+JS:
+    const getImageBtn = document.querySelector("#get-image-btn");
+    const gifsOnlyOption = document.querySelector("#gifs-only-option");
+
+    getImageBtn.addEventListener("click", ()=>{
+        console.log(gifsOnlyOption.checked);
+    });
+
+===== Select =====
+HTML:
+    <form>
+        <label for="superpowers">Choose Your Superpower:</label>
+        <select id="superpowers">
+            <option value="flight">Flight</option>
+            <option value="invisibility">Invisibility</option>
+            <option value="superStrength">Super Strength</option>
+            <option value="telepathy">Telepathy</option>
+            <option value="timeTravel">Time Travel</option>
+            <option value="wisdom">Wisdom</option>
+        </select>
+
+        <button type="submit">Reveal My Superpower</button>
+    </form>
+
+===== filter() =====
+JS:
+const ages = [1, 5, 9, 23, 56, 10, 47, 70, 10, 19, 23, 18]
+
+const adults = ages.filter(function(age){
+    return age >= 18
+})
+
+console.log(adults)
