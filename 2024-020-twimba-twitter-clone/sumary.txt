@@ -1,0 +1,98 @@
+
+
+
+===== forEach() =====
+ The method of Array instances executes a provided function once for each array element.
+ JS:
+ const characters = [
+    {
+        title: 'Ninja',
+        emoji: '🥷',
+        powers: ['agility', 'stealth', 'aggression'],
+    },
+    {
+        title: 'Sorcerer',
+        emoji: '🧙',
+        powers: ['magic', 'invisibility', 'necromancy'],
+    },
+    { 
+        title: 'Ogre',
+        emoji: '👹',
+        powers: ['power', 'stamina', 'shapeshifting'],
+    },  
+    { 
+        title: 'Unicorn',
+        emoji: '🦄',
+        powers: [ 'flight', 'power', 'purity'],
+    }
+]
+
+characters.forEach((character, index)=>{
+    console.log(index, character.title);
+});
+
+===== cdnjs =====
+CDN stands for Content Delivery Network: https://cdnjs.com/
+
+===== Font Awesome =====
+HTML:
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+===== data-* =====
+Separate words with dashes in the HTML
+Use camelCase in the Javascript
+HTML:
+    <div class="img-container">
+        <img src="dino2.jpeg"
+            alt="Man in front of dinosaur"
+            id="image-1">
+        <div class="social-icons-container">
+            <i class="fa-solid fa-heart" data-heart="image-1"></i>
+            <i class="fa-solid fa-share" data-share-icon="image-1"></i>
+        </div>
+    </div>
+JS:
+    document.addEventListener("click", (e)=>{
+        if(e.target.dataset.heart){
+            console.log(e.target.dataset.heart)
+        }
+        if(e.target.dataset.shareIcon){
+            console.log(e.target.dataset.shareIcon)
+        }
+    });
+
+===== UUID =====
+Universally Unique Identifier: https://github.com/uuidjs/uuid#cdn-builds
+
+JS: 
+import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
+
+document.addEventListener("click", (e)=>{
+    if(e.target.id === "tweet-btn"){
+        handleTweetBtnClick();
+    }
+});
+
+function handleTweetBtnClick(){
+    const tweetInput = document.querySelector("#tweet-input");
+    if(tweetInput.value){
+        const newTweet = {
+            handle: `@ThanhPham`,
+            profilePic: `images/scrimbalogo.png`,
+            likes: 0,
+            retweets: 0,
+            tweetText: `${tweetInput.value}`,
+            replies: [],
+            isLiked: false,
+            isRetweeted: false,
+            uuid: uuidv4(),
+        };   
+        tweetsData.unshift(newTweet);
+        render();
+        tweetInput.value = '';
+    }
+}
