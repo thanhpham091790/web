@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+    <head>
+        <!-- CSS file -->
+        <link rel="stylesheet" href="index.css">
+
+        <!-- Smythe font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smythe&display=swap" rel="stylesheet">
+
+        <!-- Inter font -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smythe&display=swap" rel="stylesheet">
+
+        <!-- JS file -->
+        <script src="index.js" type="module" defer></script>
+
+    </head>
+    <body>
+        <header class="header" id="header">
+            <h1 class="header-title">Jimmy's Diner</h1>
+            <p class="header-text">The best burgers and pizzas in town.</p>
+        </header>
+        <main class="main" id="main">
+            <section class="menu" id="menu">
+            </section>
+           
+            <section class="cart" id="cart">
+            </section>
+
+            <section class="message" id="message">
+            </section>
+        </main>
+        <div class="modal" id="modal">
+            <div class="modal-inner" id="modal-inner">
+                <h3 class="modal-title">Enter card details</h3>
+                <form id="checkout">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    <input type="text" name="card-number" id="card-number" placeholder="Enter card number" required>
+                    <input type="text" name="cvv" id="cvv" placeholder="Enter CVV" required>
+                    <button class="submit-order-btn" type="submit" id="submit-order-btn">Pay</button>
+                </form>
+            </div>
+        </div>
+        <button type="button" id="toggle-theme" class="toggle-theme">Toggle theme</button>
+    </body>
+</html>
+

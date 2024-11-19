@@ -1,0 +1,270 @@
+
+.theme-light{
+    --color-header: #ffffff;
+    --color-body: #ffffff;
+    --color-text: #000000;
+    --color-description: #888888;
+    --color-border: #dedede;
+    --color-button: #16db99;
+    --color-message: #ecfdf5;
+}
+
+.theme-dark{
+    --color-header: #FFC600;
+    --color-body: #faf8f5;
+    --color-text: #520508;
+    --color-description: #362e2c;
+    --color-border: #FFB045;
+    --color-button: #AB192D;
+    --color-message: #fce9eb;
+}
+
+html{
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--color-body);
+} 
+
+/* Header */
+.header{
+    width: 600px;
+    height: 167px;
+    background-image: url("./images/bg-img.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-header);
+}
+
+.header-title{
+    font-size: 39px;
+    line-height: 24px;
+    margin: 0;
+    padding-top: 46px;
+    padding-left: 46px;
+}
+
+.header-text{
+    font-size: 22.42px;
+    line-height: 13.8px;
+    padding-left: 46px;
+}
+
+/* Main */
+
+.item{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    padding: 46px;
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.name{
+    font-size: 28px;
+    line-height: 16.8px;
+}
+
+.ingredients{
+    color: var(--color-description);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.price{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.add-item{
+    margin-left: auto;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 24px;
+    color: var(--color-4);
+}
+
+/* cart */
+
+.cart{
+    padding: 46px 46px 0 46px;
+    color: var(--color-text);
+}
+
+.cart-title{
+    font-size: 28px;
+    line-height: 16.8px;
+    text-align: center;
+    margin: 0;
+}
+
+.cart-items{
+    margin: 46px 0 0 0;
+    padding-left: 0;
+    list-style-type: none;
+    border-bottom: 2px solid var(--color-border);
+}
+
+li, .cart-total{
+    display: flex;
+    gap: 13px;
+}
+
+li{
+    padding-bottom: 22px;
+}
+
+.cart-total{
+    padding-top: 22px;
+}
+
+.item-name{
+    font-size: 28px;
+    line-height: 16.8px;
+}
+
+
+.item-remove{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--color-description);
+}
+
+.item-price, .total-price{
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: auto;
+}
+
+.total-price-text{
+    font-size: 28px;
+    line-height: 24px;
+}
+
+.complete-order-btn{
+    width: 508px;
+    height: 60px;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--color-button);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 5%);
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #fff;
+    margin: 46px 0;
+}
+
+.message{
+    padding: 0 46px 46px 46px;
+}
+
+/* Order complete */
+
+.notification{
+    width: 504px;
+    margin: 0;
+    padding: 52px 0;
+    background-color: var(--color-message);
+    text-align: center;
+    color: var(--color-button);
+    font-size: 32px;
+    line-height: 16px;
+}
+
+/* Modal */
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 30%);
+    display: none;
+    color: var(--color-text);
+}
+
+.modal-inner{
+    width: 524px;
+    height: 542px;
+    background-color: var(--color-body);
+    padding: 23px;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.modal-title{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 31.1px;
+    margin: 24px 0 35px 0;
+}
+
+input[type="text"]{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 31.1px;
+    padding: 20px;
+    border: 1.5px solid var(--color-border);
+    border-radius: 3.89px;
+    margin: 12px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.submit-order-btn{
+    width: 100%;
+    background-color: var(--color-button);
+    border: none;
+    border-radius: 3.89px;
+    padding: 20px;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 31.1px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 35px;
+}
+
+.toggle-theme{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--color-button);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
