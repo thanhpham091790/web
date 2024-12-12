@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 0.625rem;
+}
+
+.main {
+  background-color: #1c1c1c;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5.9rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-theme {
+  display: flex;
+  flex-direction: column;
+  width: 55rem;
+  height: 55rem;
+}
+
+.dark-theme {
+  display: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.4rem;
+  width: 55rem;
+  height: 9rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  background-color: #fff;
+}
+
+.dark-theme .header {
+  background-color: #1f2937;
+}
+
+.color {
+  width: 6.1rem;
+  height: 4.2rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.color::-moz-color-swatch {
+  border: 0.05rem solid #313131;
+}
+
+.custom-select {
+  width: 31.2rem;
+  height: 4.2rem;
+  background-image: url(assets/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 94.23% 50%;
+}
+
+.dark-theme .custom-select {
+  background-image: url(assets/dark-arrow.png);
+}
+
+.mode {
+  width: 31.2rem;
+  height: 4.2rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 0.9rem 1.3rem;
+  appearance: none;
+  background-color: transparent;
+  border: 0.1rem solid #d1d5db;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.05);
+  color: #111827;
+  cursor: pointer;
+}
+
+.dark-theme .mode {
+  border: 0.1rem solid #d5d4d8;
+  color: #d5d4d8;
+}
+
+.mode option {
+  background-color: #fff;
+  color: #111827;
+}
+
+.dark-theme .mode option {
+  background-color: #1f2937;
+  color: #fff;
+}
+
+.submit {
+  width: 12.3rem;
+  height: 4.2rem;
+  background: transparent;
+  border: 0.1rem solid #d1d5db;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.05);
+  font-family: inherit;
+  font-size: 1.2rem;
+  line-height: 1.33;
+  color: #374151;
+  cursor: pointer;
+}
+
+.dark-theme .submit {
+  background-color: #3d4b60;
+  color: #fff;
+}
+
+.body {
+  height: 41.4rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.footer {
+  width: 55rem;
+  height: 4.6rem;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+}
+
+.dark-theme .footer {
+  background-color: #111827;
+}
+
+.hex {
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #2b283a;
+  text-align: center;
+}
+
+.dark-theme .hex {
+  color: #d5d4d8;
+}
