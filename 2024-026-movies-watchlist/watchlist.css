@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 10px;
+}
+
+body {
+    background-color: #fff;
+    color: #6B7280;
+    font-size: 1.4rem;
+    line-height: calc(20/14);
+    max-width: 55rem;
+    margin: 0 auto;
+}
+
+header {
+    min-height: 20.8rem;
+    background-color: #0e0e0e;
+    background-image: url("assets/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 0 4.2rem;
+}
+
+.heading,
+.search-form {
+    flex-grow: 1;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.heading h1,
+.heading a {
+    transform: translate(0, 50%);
+}
+
+.heading h1 {
+    color: #fff;
+    font-size: 4.279rem;
+    font-weight: 800;
+    line-height: calc(23.8/42.79);
+    letter-spacing: -4.5%;
+}
+
+.heading a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: calc(20/14);
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.search-input,
+.search-btn {
+    padding: 0.95rem;
+    border: 0.1rem solid #D1D5DB;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transform: translate(0, 50%);
+}
+
+.search-input {
+    flex-grow: 3;
+    border-right: none;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+    background-image: url("assets/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: 1rem center;
+    padding-left: 3.5rem;
+
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-btn {
+    flex-grow: 1;
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+    color: #374151;
+    background-color: #F9FAFB;
+    cursor: pointer;
+}
+
+main {
+    padding: 4.2rem;
+    background-color: #F9FAFB;
+}
+
+.no-movie-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 57.1rem;
+    gap: 2rem;
+}
+
+.no-movie-container .no-movie-msg {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: calc(20/18);
+    color: #DFDDDD;
+}
+
+.no-movie-container .add-movie {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: calc(20/14);
+    color: #363636;
+    padding-left: 2rem;
+    background-image: url("assets/add-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.movies-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.movie {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.1rem;
+    padding: 2.1rem 0;
+    border-bottom: 0.15rem solid #E5E7EB;
+}
+
+.poster {
+    max-width: 9.9rem;
+    border-radius: 0.233rem;
+    object-fit: cover;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.title-ratings {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc(20/18);
+    color: #000000;
+}
+
+.ratings {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: calc(20/12);
+    color: #111827;
+    padding-left: 1.5rem;
+    background-image: url("assets/star-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+.runtime-genre-watchlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.9rem;
+}
+
+.runtime,
+.genre,
+.add-to-watchlist,
+.remove-from-watchlist {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: calc(20/12);
+    color: #111827;
+}
+
+.remove-from-watchlist {
+    background-image: url("assets/remove-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+.plot {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: calc(20/14);
+    color: #6B7280;
+}
+
+footer {
+    background-color: #0e0e0e;
+    color: #fff;
+    padding: 2.1rem 4.2rem;
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Watchlist</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="heading" class="heading">
+            <h1>Find your film</h1>
+            <a href="watchlist.html">My Watchlist</a>
+        </div>
+        <form id="search-form" class="search-form">
+            <input type="search" name="search-input" id="search-input" class="search-input"
+                placeholder="Search for a movie">
+            <button type="submit" id="search-btn" class="search-btn">Search</button>
+        </form>
+    </header>
+    <main>
+        <div id="no-movie-container" class="no-movie-container">
+            <img src="assets/no-movie-icon.png" alt="No movies" id="no-movie-img" class="no-movie-img">
+            <p id="no-movie-msg" class="no-movie-msg">Start exploring</p>
+        </div>
+        <div id="movies-container" class="movies-container">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Movie Watchlist. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
