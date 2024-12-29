@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.crypto-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.icon-temp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-temp img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.temp {
+    font-size: 3rem;
+}
+
+.city {
+    font-size: 1.5rem;
+}
+
+.image-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.time {
+    font-size: 5rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.author {
+    padding: 2rem;
+    font-size: 1.5rem;
+}
