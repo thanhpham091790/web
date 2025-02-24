@@ -1,0 +1,106 @@
+body {
+  text-align: center;
+  font-family: "Mate", serif;
+  background-color: #DDEAE1;
+  margin: 0;
+}
+
+#container {
+  margin: 60px auto;
+  max-width: 960px;
+  border-radius: 20px;
+  border: 8px solid white;
+}
+
+#hero {
+  background-image: url("images/vietnam.jpg");
+  min-height: 500px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+}
+
+#hero h1 {
+  color: white;
+  background-color: #457B9B;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+#hero p {
+  max-width: 50%;
+  color: white;
+  background-color: #1D3656;
+  padding: 4px 8px;
+  border-radius: 2px;
+  margin: 10px;
+}
+
+#main {
+  background-color: #F2FAEE;
+  min-height: 500px;
+}
+
+#main-title {
+  margin: 0;
+  padding: 40px 0px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.act {
+  max-width: 25%;
+}
+
+.act-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.act-name {
+  margin: 36px 0px;
+}
+
+#footer {
+  background-color: white;
+  padding: 60px 0;
+}
+
+#card {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #A8DADA;
+  padding: 20px;
+  border-bottom: 5px solid #447F9F;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-image {
+  max-width: 45%;
+  border-radius: 8px;
+}
+
+.card-info {
+  max-width: 45%;
+}
+
+.card-info h4 {
+  font-size: 24px;
+}
+
+.card-info p {
+  font-size: 18px;
+}
