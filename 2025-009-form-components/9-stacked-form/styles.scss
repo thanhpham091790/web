@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#stacked-form {
+    max-width: 960px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 15px 0px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+input::placeholder {
+    font-family: inherit;
+    font-size: 15px;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+}

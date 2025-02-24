@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+html,
+body {
+  font-family: Raleway;
+  font-size: 17px;
+  font-weight: 400;
+  background-color: #f1f1f1;
+}
+
+#multiple-step-form {
+  min-width: 300px;
+  width: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+}
+
+input.invalid {
+  background-color: pink;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+button {
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+#previous {
+  background-color: #bbb;
+}
+
+#indicates {
+  text-align: center;
+}
+
+.step {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #04AA6D;
+}
+
+.tab {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */

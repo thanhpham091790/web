@@ -1,0 +1,214 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#checkout-form {
+
+    h1,
+    h2 {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-weight: 400;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin: 0px 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .container-1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: start;
+
+        .item-1 {
+            margin: 20px;
+            background-color: #F2F2F2;
+            border: 1px solid lightgray;
+        }
+
+        #main {
+            flex: 3;
+        }
+
+        #sidebar {
+            flex: 1;
+        }
+    }
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+
+        .item-2 {
+            margin: 10px 20px;
+        }
+
+        #shipping {
+            width: 15px;
+            height: 15px;
+        }
+
+        #continue-to-checkout {
+            font-size: 17px;
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #555;
+            color: white;
+            margin-bottom: 10px;
+
+            &:hover {
+                background-color: #777;
+            }
+        }
+    }
+
+    .container-3 {
+        display: flex;
+        flex-direction: row;
+
+        .item-3 {
+            flex: 1;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0px;
+        }
+
+        #address {
+            margin-right: 20px;
+        }
+
+        #payment {
+            margin-left: 20px;
+        }
+    }
+
+    .container-4 {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+            &::placeholder {
+                font-size: 15px;
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding: 10px 0px;
+
+            li {
+                list-style-type: none;
+                display: inline-block;
+                margin-right: 10px;
+
+                .fa-brands {
+                    font-size: 24px;
+                }
+
+                .fa-cc-visa {
+                    color: navy;
+                }
+
+                .fa-cc-amex {
+                    color: blue;
+                }
+
+                .fa-cc-mastercard {
+                    color: red;
+                }
+
+                .fa-cc-discover {
+                    color: orange;
+                }
+
+            }
+        }
+    }
+
+    #sidebar {
+        padding: 5px;
+
+        h3,
+        h4 {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2196F3;
+
+            &:hover {
+                color: #059862;
+            }
+        }
+
+        .items {
+            border-bottom: 2px solid lightgray;
+        }
+
+        .item {
+            margin: 20px;
+        }
+
+        .price {
+            float: right;
+        }
+
+        .cart {
+            margin: 20px;
+
+            .fa-cart-shopping {
+                margin-right: 2px;
+            }
+
+            .count {
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+
+        .total {
+            margin: 20px;
+
+            .price {
+                font-weight: 600;
+                font-size: 16px;
+            }
+        }
+    }
+}

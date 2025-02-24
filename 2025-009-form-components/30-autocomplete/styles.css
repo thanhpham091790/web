@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+html,
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.autocomplete {
+  display: inline-block;
+  position: relative;
+}
+
+.autocomplete-items {
+  position: absolute;
+  width: 100%;
+}
+.autocomplete-items div {
+  padding: 10px 15px;
+  border: 1px solid #F1F1F1;
+  border-top: none;
+}
+.autocomplete-items .autocomplete-active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+input,
+button {
+  border: none;
+  background-color: #F1F1F1;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+button {
+  background-color: dodgerblue;
+  color: white;
+}/*# sourceMappingURL=styles.css.map */

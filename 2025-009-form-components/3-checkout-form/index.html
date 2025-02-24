@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e86c2ba286.js" crossorigin="anonymous"></script>
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <div id="checkout-form">
+        <h1>Responsive Checkout Form</h1>
+        <div class="container-1">
+            <div id="main" class="item-1 container-2">
+                <div id="address-payment" class="item-2 container-3">
+                    <div id="address" class="item-3 container-4">
+                        <h2 class="item-4">Billing Address</h2>
+                        <div class="item-4">
+                            <label for="full-name"><i class="fa-solid fa-user"></i> Full Name</label>
+                            <input type="text" name="full-name" id="full-name" placeholder="John M. Doe">
+                        </div>
+                        <div class="item-4">
+                            <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                            <input type="email" name="email" id="email" placeholder="john@example.com">
+                        </div>
+                        <div class="item-4">
+                            <label for="address"><i class="fa-solid fa-address-card"></i> Address</label>
+                            <input type="text" name="address" id="address" placeholder="542 W. 15th Street">
+                        </div>
+                        <div class="item-4">
+                            <label for="city"><i class="fa-solid fa-building-columns"></i> City</label>
+                            <input type="text" name="city" id="city" placeholder="New York">
+                        </div>
+                        <div class="item-4 container-5">
+                            <div class="item-5">
+                                <label for="state">State</label>
+                                <input type="text" name="state" id="state" placeholder="NY">
+                            </div>
+                            <div class="item-5">
+                                <label for="zip">Zip</label>
+                                <input type="text" name="zip" id="zip" placeholder="10001">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="payment" class="item-3 container-4">
+                        <h2 class="item-4">Payment</h2>
+                        <div class="item-4">
+                            <label for="accepted-cards">Accepted Cards</label>
+                            <ul>
+                                <li><i class="fa-brands fa-cc-visa"></i></li>
+                                <li><i class="fa-brands fa-cc-amex"></i></li>
+                                <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                                <li><i class="fa-brands fa-cc-discover"></i></li>
+                            </ul>
+                        </div>
+                        <div class="item-4">
+                            <label for="name-on-card">Name on Card</label>
+                            <input type="text" name="name-on-card" id="name-on-card" placeholder="John More Doe">
+                        </div>
+                        <div class="item-4">
+                            <label for="credit-card-number">Credit card number</label>
+                            <input type="text" name="credit-card-number" id="credit-card-number"
+                                placeholder="1111-2222-3333-4444">
+                        </div>
+                        <div class="item-4">
+                            <label for="exp-month">Exp Month</label>
+                            <input type="text" name="exp-month" id="exp-month" placeholder="September">
+                        </div>
+                        <div class="item-4 container-5">
+                            <div class="item-5">
+                                <label for="exp-year">Exp Year</label>
+                                <input type="text" name="exp-year" id="exp-year" placeholder="2018">
+                            </div>
+                            <div class="item-5">
+                                <label for="cvv">CVV</label>
+                                <input type="text" name="cvv" id="cvv" placeholder="352">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <input type="checkbox" name="shipping" id="shipping" checked>
+                    <label for="shipping">Shipping address same as billing</label>
+                </div>
+                <div class="item-2">
+                    <button id="continue-to-checkout">Continue to checkout</button>
+                </div>
+            </div>
+            <div id="sidebar" class="item-1">
+                <div class="cart">
+                    <h3>Cart</h3>
+                    <span class="price"><i class="fa-solid fa-cart-shopping"></i><span class="count">4</span></span>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <a href="#">Item 1</a>
+                        <span class="price">$15</span>
+                    </div>
+                    <div class="item">
+                        <a href="#">Item 2</a>
+                        <span class="price">$5</span>
+                    </div>
+                    <div class="item">
+                        <a href="#">Item 3</a>
+                        <span class="price">$8</span>
+                    </div>
+                    <div class="item">
+                        <a href="#">Item 4</a>
+                        <span class="price">$2</span>
+                    </div>
+                </div>
+                <div class="total">
+                    <h4>Total</h4>
+                    <span class="price">$30</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

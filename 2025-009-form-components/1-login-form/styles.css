@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.modal {
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 50px auto;
+    position: relative;
+    background-color: white;
+}
+
+#close-btn {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+#close-btn:hover {
+    color: #757575;
+    background-color: #ccc;
+}
+
+#close-btn::after {
+    content: "\00d7";
+    font-size: 36px;
+}
+
+#login-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    clear: right;
+}
+
+label[for="username"],
+label[for="password"] {
+    display: block;
+    font-weight: bold;
+}
+
+input,
+button {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: inherit;
+}
+
+button {
+    border: none;
+    color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    color: #959595;
+    border: 1px solid #959595;
+}
+
+.login-btn {
+    background-color: #4CAF50;
+    width: 100%;
+}
+
+.login-btn:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+
+input[type="checkbox"] {
+    margin: 0;
+}
+
+.main,
+.footer {
+    padding: 20px;
+}
+
+.footer {
+    background-color: #f1f1f1;
+}
+
+.cancel-btn,
+.forgot-pwd {
+    padding: 15px 20px;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.cancel-btn:hover {
+    background-color: #059862;
+}
+
+.forgot-pwd {
+    float: right;
+    display: block;
+}
+
+.forgot-pwd a {
+    color: black;
+}
+
+.forgot-pwd a:hover {
+    color: #059862;
+}
+
+#trigger-btn {
+    background-color: #0075ff;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#trigger-btn:hover {
+    background-color: #059862;
+}

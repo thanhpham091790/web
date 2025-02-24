@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.switch {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+}
+
+.slider {
+    width: 60px;
+    height: 35px;
+    display: block;
+    background-color: #ccc;
+    padding: 5px;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        transition: 0.5s;
+    }
+
+}
+
+input[type="checkbox"]:checked+.slider {
+    background-color: #2196F3;
+}
+
+input[type="checkbox"]:checked+.slider::after {
+    transform: translateX(25px);
+}
+
+.round {
+    border-radius: 17.5px;
+}
+
+.round::after {
+    border-radius: 50%;
+}

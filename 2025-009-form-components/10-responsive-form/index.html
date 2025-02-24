@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="responsive-form">
+        <div class="row">
+            <label class="col-1" for="fname">First Name</label>
+            <input class="col-2" type="text" name="fname" id="fname" placeholder="Your name..">
+        </div>
+        <div class="row">
+            <label class="col-1" for="lname">Last Name</label>
+            <input class="col-2" type="text" name="lname" id="lname" placeholder="Your last name..">
+        </div>
+        <div class="row">
+            <label class="col-1" for="country">Country</label>
+            <select class="col-2" name="country" id="country">
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+            </select>
+        </div>
+        <div class="row textareaRow">
+            <label class="col-1" for="subject">Subject</label>
+            <textarea name="subject" id="subject" class="col-2" placeholder="Write something.."></textarea>
+        </div>
+        <div class="row submitBtn"><button>Submit</button></div>
+    </div>
+</body>
+
+</html>

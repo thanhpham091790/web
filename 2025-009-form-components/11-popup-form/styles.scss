@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#main {
+    display: none;
+}
+
+#main,
+.btn-wrap {
+    border: 2px solid #F1F1F1;
+    width: 300px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+}
+
+.btn-wrap {
+    border-color: white;
+}
+
+h1 {
+    font-family: inherit;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    margin: 5px 0px;
+}
+
+input {
+    background-color: #F1F1F1;
+    margin-bottom: 10px;
+}
+
+.btn {
+    color: white;
+    opacity: 0.8;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+#loginBtn {
+    background-color: #36BB8A;
+}
+
+#closeBtn {
+    background-color: #FF3333;
+}
+
+#openBtn {
+    background-color: #777777;
+
+}

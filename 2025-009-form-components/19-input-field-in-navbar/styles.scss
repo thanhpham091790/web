@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#input-field-in-navbar {
+    background-color: #E9E9E9;
+    overflow: hidden;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 16px;
+
+    float: left;
+
+    &:hover {
+        background-color: #ddd;
+    }
+}
+
+.search-container {
+    float: right;
+}
+
+input,
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    border: none;
+    display: block;
+    width: auto;
+    float: left;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+button {
+    background-color: #ddd;
+    margin-right: 8px;
+
+    &:hover {
+        background-color: #ccc;
+    }
+}
+
+.active {
+    background-color: dodgerblue;
+    color: white
+}
+
+@media screen and (max-width: 600px) {
+    #input-field-in-navbar {
+        background-color: #E9E9E9;
+        overflow: hidden;
+    }
+
+    .nav-item {
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 16px;
+
+        float: none;
+
+        &:hover {
+            background-color: #ddd;
+        }
+    }
+
+    .search-container {
+        float: none;
+    }
+
+    input,
+    button {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 17px;
+        line-height: 1.5;
+        border: none;
+        display: block;
+
+        width: 100%;
+        float: none;
+        padding: 16px;
+        margin-top: 0;
+    }
+
+    input {
+        border-width: 0 1px 0 1px;
+        border-style: solid;
+        border-color: lightgray;
+    }
+
+    button {
+        background-color: #ddd;
+        margin-right: 0;
+
+        &:hover {
+            background-color: #ccc;
+        }
+    }
+
+    .active {
+        background-color: dodgerblue;
+        color: white
+    }
+}

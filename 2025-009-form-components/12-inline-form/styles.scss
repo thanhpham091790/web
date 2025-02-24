@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.col {
+    margin: 10px;
+}
+
+input,
+button {
+    border: 1px solid #f1f1f1;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+#checkbox-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+#remember {
+    margin-right: 10px;
+}
+
+button {
+    border-color: white;
+    background-color: dodgerblue;
+    color: white;
+
+    &:hover {
+        background-color: royalblue;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    .col {
+        margin: 10px 0px;
+    }
+
+    input,
+    button {
+        border: 1px solid #f1f1f1;
+        padding: 15px;
+        font-family: inherit;
+        font-size: 15px;
+    }
+
+    #checkbox-wrap {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    #remember {
+        margin-right: 10px;
+    }
+
+    button {
+        border-color: white;
+        background-color: dodgerblue;
+        color: white;
+
+        &:hover {
+            background-color: royalblue;
+        }
+    }
+}

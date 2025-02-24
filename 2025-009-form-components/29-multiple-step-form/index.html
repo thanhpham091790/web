@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Step Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <div id="multiple-step-form">
+        <form id="regForm">
+            <h1>Register:</h1>
+            <div id="name" class="tab">
+                <label for="fname">Name:</label>
+                <input type="text" name="fname" id="fname" placeholder="First name..">
+                <input type="text" name="lname" id="lname" placeholder="Last name..">
+            </div>
+            <div id="contact-info" class="tab">
+                <label for="email">Contact Info:</label>
+                <input type="email" name="email" id="email" placeholder="E-mail..">
+                <input type="tel" name="phone" id="phone" placeholder="Phone..">
+            </div>
+            <div id="birthday" class="tab">
+                <label for="day">Birthday:</label>
+                <input type="text" name="day" id="day" placeholder="dd">
+                <input type="text" name="month" id="month" placeholder="mm">
+                <input type="text" name="year" id="year" placeholder="yyyy">
+            </div>
+            <div id="login-info" class="tab">
+                <label for="username">Login Info:</label>
+                <input type="text" name="username" id="username" placeholder="Username..">
+                <input type="password" name="password" id="password" placeholder="Password..">
+            </div>
+            <div id="buttons">
+                <button type="button" id="previous">Previous</button>
+                <button type="button" id="next">Next</button>
+            </div>
+            <div id="indicates">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

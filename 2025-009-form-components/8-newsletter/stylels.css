@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+#newsletter {
+  max-width: 780px;
+  background-color: #F1F1F1;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+#header,
+#main,
+#footer {
+  padding: 20px;
+}
+
+#header h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+#main {
+  background-color: white;
+}
+#main input[type=text],
+#main input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0px;
+  border: 1px solid #ccc;
+}
+
+#footer button {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+}
+#footer button:hover {
+  opacity: 0.8;
+}/*# sourceMappingURL=stylels.css.map */

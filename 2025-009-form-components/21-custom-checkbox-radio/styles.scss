@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#custom-checkbox {
+    .c-container {
+        display: block;
+        user-select: none;
+        margin: 10px;
+
+        &:hover .c-checkmark {
+            background-color: #ccc;
+        }
+    }
+
+
+    input[type="checkbox"] {
+        opacity: 0;
+        width: 0;
+        height: 0;
+
+        &:checked~.c-checkmark {
+            background-color: #2196F3;
+        }
+
+        &:checked~.c-checkmark::after {
+            display: block;
+        }
+    }
+
+    .c-checkmark {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: #eee;
+        position: relative;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
+    .c-checkmark::after {
+        content: "";
+        border-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: none;
+
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: 8px;
+        height: 15px;
+        border-width: 0 3px 3px 0;
+        border-style: solid;
+    }
+}
+
+#custom-radio {
+    .r-container {
+        display: block;
+        user-select: none;
+        margin: 10px;
+
+        &:hover .r-checkmark {
+            background-color: #ccc;
+        }
+    }
+
+
+    input[type="radio"] {
+        opacity: 0;
+        width: 0;
+        height: 0;
+
+        &:checked~.r-checkmark {
+            background-color: #2196F3;
+        }
+
+        &:checked~.r-checkmark::after {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .r-checkmark {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: #eee;
+        position: relative;
+        vertical-align: middle;
+        margin-right: 5px;
+
+        border-radius: 50%;
+    }
+
+    .r-checkmark::after {
+        content: "";
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+    }
+}

@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.5;
+  font-weight: 400;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 200px;
+}/*# sourceMappingURL=styles.css.map */

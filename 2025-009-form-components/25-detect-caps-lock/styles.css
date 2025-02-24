@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.notification {
+  color: red;
+  display: none;
+}/*# sourceMappingURL=styles.css.map */

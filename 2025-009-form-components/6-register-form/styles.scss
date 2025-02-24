@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+#register-form {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.1rem solid lightgray;
+}
+
+#header,
+#main,
+#footer {
+    width: 100%;
+}
+
+#header,
+#main {
+    padding: 20px;
+}
+
+#header {
+    border-bottom: 0.1rem solid lightgray;
+}
+
+h1 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    margin: 1rem 0;
+    font-size: 4.2rem;
+}
+
+label {
+    display: block;
+    font-size: 1.7rem;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 2rem;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+input {
+    background-color: #F1F1F1;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        font-family: inherit;
+        font-size: 1.7rem;
+    }
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    opacity: 0.8;
+    font-size: 1.7rem;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.item {
+    margin: 1.5rem 0;
+}
+
+#footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 1rem;
+}
+
+a {
+    color: dodgerblue;
+}
