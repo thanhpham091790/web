@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Calistoga&family=Montserrat:wght@400;700&family=Nunito:wght@400;600&family=Poppins:wght@600&display=swap");
+*,
+html {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#group6 .card-container .card button, #group1 .text button, #group4 .text button, #group3 .text button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 40px;
+  border: none;
+  padding: 15px 60px;
+}
+
+#group4, #group3 {
+  min-height: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#group4 .text, #group3 .text {
+  max-width: 40%;
+}
+#group4 .text h2, #group3 .text h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 75px;
+  margin-bottom: 0;
+}
+#group4 .text p, #group3 .text p {
+  font-family: "Nunito", sans-serif;
+  font-size: 29.72px;
+  font-weight: 400;
+  margin-bottom: 29.72px;
+}
+#group4 .text button, #group3 .text button {
+  color: #f64b3c;
+  background-color: white;
+}
+
+#group1 {
+  min-height: 797px;
+  background-color: black;
+  background-image: url(../assets/group1/hero.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+#group1 .toolbar {
+  display: flex;
+  background: linear-gradient(to bottom, black, 80%, transparent);
+  justify-content: space-between;
+}
+#group1 .toolbar .logo,
+#group1 .toolbar nav {
+  margin: 35px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#group1 .toolbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: center;
+}
+#group1 .toolbar ul li {
+  display: inline-block;
+}
+#group1 .toolbar ul li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  color: white;
+  padding: 30px;
+}
+#group1 .text {
+  position: absolute;
+  bottom: 75px;
+  left: 75px;
+  max-width: 45%;
+}
+#group1 .text h1 {
+  font-family: "Archivo", sans-serif;
+  font-size: 91.04px;
+  color: white;
+}
+#group1 .text p {
+  font-family: "Nunito", sans-serif;
+  font-size: 32.16px;
+  color: white;
+  font-weight: 400;
+}
+#group1 .text button {
+  color: white;
+  background-color: #f64b3c;
+}
+
+#group2 {
+  min-height: 797px;
+  background-image: url(../assets/group2/background.png);
+  background-position: 0 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #f6eedf;
+  color: #f64b3c;
+  padding: 35px 0px;
+}
+#group2 .text {
+  max-width: 65%;
+  margin: 0 auto;
+}
+#group2 .text h2,
+#group2 .text p {
+  text-align: center;
+}
+#group2 .text h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 63.66px;
+}
+#group2 .text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25.23px;
+  font-weight: 400;
+}
+#group2 .card-container {
+  display: flex;
+  max-width: 75%;
+  margin: 80px auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#group2 .card-container .card {
+  text-align: center;
+}
+#group2 .card-container .card h3 {
+  font-family: "Archivo", sans-serif;
+  font-size: 33.33px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+#group2 .card-container .card p {
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+}
+
+#group3 {
+  color: #ffffff;
+  background-color: #f64b3c;
+}
+
+#group4 {
+  min-height: 800px;
+  color: #f64b3c;
+  background-color: #f6eedf;
+  background-image: url(../assets/group4/background.png);
+  background-size: cover;
+}
+#group4 .text button {
+  background-color: #f64b3c;
+  color: white;
+}
+
+#group5 {
+  min-height: 797px;
+  background-color: #f64b3c;
+  color: #ffffff;
+}
+#group5 .text {
+  max-width: 55%;
+  text-align: center;
+  padding: 20px 0px;
+  margin: 0 auto;
+}
+#group5 .text h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 62.26px;
+  margin-bottom: 0;
+}
+#group5 .text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24.68px;
+  font-weight: 400;
+}
+#group5 .card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+#group5 .card-container .card {
+  border: 5px solid white;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 33.33px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#group5 .card-container .card strong {
+  display: block;
+  font-family: "Archivo", sans-serif;
+  font-size: 101.61px;
+}
+
+#group6 {
+  min-height: 800px;
+  background-image: url(../assets/group6/background.png);
+  background-size: auto;
+  color: #f64b3c;
+  background-color: #f6eedf;
+  text-align: center;
+}
+#group6 h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 75px;
+  padding: 20px;
+}
+#group6 .card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+#group6 .card-container .card {
+  width: 335px;
+  height: 443px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+#group6 .card-container .card h3,
+#group6 .card-container .card .price {
+  font-family: "Archivo", sans-serif;
+  font-size: 33.35px;
+}
+#group6 .card-container .card img {
+  margin: 10px;
+}
+#group6 .card-container .card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20.01px;
+  font-weight: 400;
+}
+#group6 .card-container .card button {
+  color: #ffffff;
+  background-color: #f64b3c;
+}
+
+#group7 {
+  min-height: 797px;
+  background-image: url(../assets/group7/background.png);
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#group7 .text {
+  width: 50%;
+}
+#group7 .text p {
+  font-family: "Archivo", sans-serif;
+  font-size: 36.47px;
+}
+#group7 .text h4 {
+  font-family: "Calistoga", cursive;
+  font-size: 44.9px;
+  font-weight: 400;
+}
+
+#group8 {
+  min-height: 797px;
+  background-color: #f6eedf;
+  display: flex;
+}
+#group8 .content {
+  width: 100%;
+  background-image: url(../assets/group8/background.png);
+  background-position: center;
+  background-size: cover;
+  resize: both;
+  transform: scale(0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#group8 .content h2,
+#group8 .content p {
+  color: #f64b3c;
+}
+#group8 .content h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 75px;
+  margin: 0;
+}
+#group8 .content p {
+  font-family: "Nunito", sans-serif;
+  font-size: 29.72px;
+  font-weight: 400;
+  max-width: 50%;
+}
+#group8 .content .form {
+  width: 50%;
+}
+#group8 .content .form input {
+  width: 60%;
+  background-color: white;
+  padding: 20px;
+  border: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+#group8 .content .form button {
+  width: 30%;
+  background-color: #f64b3c;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#group9 {
+  min-height: 797px;
+  border: 1px solid white;
+  color: white;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#group9 .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+#group9 .content #col1 {
+  max-width: 35%;
+}
+#group9 .content .social a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+}
+#group9 .content .social a .fa-brands {
+  font-size: 30px;
+  color: #222222;
+}
+#group9 .content h4 {
+  font-family: "Archivo", sans-serif;
+  font-size: 31.47px;
+  margin: 0;
+}
+#group9 .content p {
+  font-family: "Nunito", sans-serif;
+  font-size: 23.6px;
+  font-weight: 400;
+}
+#group9 .content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#group9 .content ul li {
+  padding: 5px;
+}
+#group9 .content ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 23.6px;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */

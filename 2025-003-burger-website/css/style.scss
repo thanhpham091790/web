@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Calistoga&family=Montserrat:wght@400;700&family=Nunito:wght@400;600&family=Poppins:wght@600&display=swap');
+
+// font-family: 'Archivo', sans-serif;
+// font-family: 'Calistoga', cursive;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+*,
+html {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+%button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border: none;
+    padding: 15px 60px;
+}
+
+%group3 {
+    min-height: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .text {
+        max-width: 40%;
+
+        h2 {
+            font-family: 'Archivo', sans-serif;
+            font-size: 75px;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-family: 'Nunito', sans-serif;
+            font-size: 29.72px;
+            font-weight: 400;
+            margin-bottom: 29.72px
+        }
+
+        button {
+            @extend %button;
+            color: #f64b3c;
+            background-color: white;
+        }
+    }
+}
+
+#group1 {
+    min-height: 797px;
+    background-color: black;
+    background-image: url(../assets/group1/hero.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+    .toolbar {
+        display: flex;
+        background: linear-gradient(to bottom, black, 80%, transparent);
+        justify-content: space-between;
+
+        .logo,
+        nav {
+            margin: 35px 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            vertical-align: center;
+
+            li {
+                display: inline-block;
+
+                a {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 25px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    display: block;
+                    color: white;
+                    padding: 30px;
+                }
+            }
+        }
+
+    }
+
+    .text {
+        position: absolute;
+        bottom: 75px;
+        left: 75px;
+        max-width: 45%;
+
+        h1 {
+            font-family: 'Archivo', sans-serif;
+            font-size: 91.04px;
+            color: white;
+        }
+
+        p {
+            font-family: 'Nunito', sans-serif;
+            font-size: 32.16px;
+            color: white;
+            font-weight: 400;
+        }
+
+        button {
+            @extend %button;
+            color: white;
+            background-color: #f64b3c;
+        }
+    }
+}
+
+#group2 {
+    min-height: 797px;
+    background-image: url(../assets/group2/background.png);
+    background-position: 0 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #f6eedf;
+    color: #f64b3c;
+    padding: 35px 0px;
+
+    .text {
+        max-width: 65%;
+        margin: 0 auto;
+
+        h2,
+        p {
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Archivo', sans-serif;
+            font-size: 63.66px;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25.23px;
+            font-weight: 400;
+        }
+    }
+
+    .card-container {
+        display: flex;
+        max-width: 75%;
+        margin: 80px auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .card {
+            text-align: center;
+
+            h3 {
+                font-family: 'Archivo', sans-serif;
+                font-size: 33.33px;
+                text-transform: uppercase;
+                margin-bottom: 0px;
+            }
+
+            p {
+                font-family: 'Nunito', sans-serif;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+#group3 {
+    @extend %group3;
+    color: #ffffff;
+    background-color: #f64b3c;
+}
+
+#group4 {
+    @extend %group3;
+    min-height: 800px;
+    color: #f64b3c;
+    background-color: #f6eedf;
+    background-image: url(../assets/group4/background.png);
+    background-size: cover;
+
+    .text button {
+        background-color: #f64b3c;
+        color: white;
+    }
+}
+
+#group5 {
+    min-height: 797px;
+    background-color: #f64b3c;
+    color: #ffffff;
+
+    .text {
+        max-width: 55%;
+        text-align: center;
+        padding: 20px 0px;
+        margin: 0 auto;
+
+        h2 {
+            font-family: 'Archivo', sans-serif;
+            font-size: 62.26px;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24.68px;
+            font-weight: 400;
+        }
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        margin-top: 80px;
+
+        .card {
+            border: 5px solid white;
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 33.33px;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            strong {
+                display: block;
+                font-family: 'Archivo', sans-serif;
+                font-size: 101.61px;
+            }
+        }
+    }
+}
+
+#group6 {
+    min-height: 800px;
+    background-image: url(../assets/group6/background.png);
+    background-size: auto;
+    color: #f64b3c;
+    background-color: #f6eedf;
+    text-align: center;
+
+    h2 {
+        font-family: 'Archivo', sans-serif;
+        font-size: 75px;
+        padding: 20px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        padding: 20px;
+
+        .card {
+            width: 335px;
+            height: 443px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            padding: 10px;
+
+            h3,
+            .price {
+                font-family: 'Archivo', sans-serif;
+                font-size: 33.35px;
+            }
+
+            img {
+                margin: 10px;
+            }
+
+            p {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20.01px;
+                font-weight: 400;
+            }
+
+            button {
+                @extend %button;
+                color: #ffffff;
+                background-color: #f64b3c;
+            }
+        }
+    }
+}
+
+#group7 {
+    min-height: 797px;
+    background-image: url(../assets/group7/background.png);
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+        width: 50%;
+
+        p {
+            font-family: 'Archivo', sans-serif;
+            font-size: 36.47px;
+        }
+
+        h4 {
+            font-family: 'Calistoga', cursive;
+            font-size: 44.9px;
+            font-weight: 400;
+        }
+    }
+}
+
+#group8 {
+    min-height: 797px;
+    background-color: #f6eedf;
+    display: flex;
+
+    .content {
+        width: 100%;
+        background-image: url(../assets/group8/background.png);
+        background-position: center;
+        background-size: cover;
+        resize: both;
+        transform: scale(0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h2,
+        p {
+            color: #f64b3c;
+        }
+
+        h2 {
+            font-family: 'Archivo', sans-serif;
+            font-size: 75px;
+            margin: 0;
+        }
+
+        p {
+            font-family: 'Nunito', sans-serif;
+            font-size: 29.72px;
+            font-weight: 400;
+            max-width: 50%;
+        }
+
+        .form {
+            width: 50%;
+
+            input {
+                width: 60%;
+                background-color: white;
+                padding: 20px;
+                border: none;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                font-family: 'Nunito', sans-serif;
+                font-size: 25px;
+                font-weight: 400;
+
+            }
+
+            button {
+                width: 30%;
+                background-color: #f64b3c;
+                color: white;
+                border: none;
+                padding: 20px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+                text-transform: uppercase;
+                font-family: 'Nunito', sans-serif;
+                font-size: 25px;
+                font-weight: 400;
+            }
+        }
+
+
+    }
+}
+
+#group9 {
+    min-height: 797px;
+    border: 1px solid white;
+    color: white;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+        #col1 {
+            max-width: 35%;
+        }
+
+        .social {
+            a {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                background-color: white;
+                border-radius: 50%;
+                padding: 10px;
+                margin: 10px;
+
+                .fa-brands {
+                    font-size: 30px;
+                    color: #222222;
+                }
+            }
+        }
+
+        h4 {
+            font-family: 'Archivo', sans-serif;
+            font-size: 31.47px;
+            margin: 0;
+        }
+
+        p {
+            font-family: 'Nunito', sans-serif;
+            font-size: 23.6px;
+            font-weight: 400;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                padding: 5px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 23.6px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
