@@ -1,0 +1,193 @@
+@font-face {
+    font-family: Allura-Regular;
+    src: url("../fonts/allura/Allura-Regular.ttf");
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url("../fonts/barlow/Barlow-Regular.otf");
+}
+
+@font-face {
+    font-family: BarlowCondensed-ExtraBold;
+    src: url("../fonts/barlow/BarlowCondensed-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: BarlowSemiCondensed-SemiBold;
+    src: url("../fonts/barlow/BarlowSemiCondensed-SemiBold.otf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-section .navbar a {
+    font-family: BarlowSemiCondensed-SemiBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 22px;
+    margin: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+.navbar-section .navbar-brand img {
+    max-height: 15vh;
+}
+
+.home-section .carousel-item {
+    max-height: 85vh;
+}
+
+.note-section {
+    font-family: BarlowSemiCondensed-SemiBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: .625px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.note-section .hours {
+    font-size: 18px;
+}
+
+.about-section h2 {
+    font-family: Allura-Regular;
+    line-height: 100%;
+    font-size: 54px;
+    text-transform: capitalize;
+}
+
+.about-section p {
+    font-family: Barlow, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.contact-section .jumbotron {
+    font-family: BarlowSemiCondensed-SemiBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: .625px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.contact-section i {
+    font-size: 48px;
+}
+
+.menu-section .nav-tabs a {
+    font-family: BarlowSemiCondensed-SemiBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+.menu-section .nav-tabs a span, .about-section a span {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+.nav-tabs .nav-item .dropdown-menu.show, .nav-tabs .nav-item .dropdown-menu {
+    width: 100%;
+    text-align: center;
+    border: none;
+    position: initial !important;
+    transform: none !important;
+}
+
+.nav-tabs .nav-item .nav-link.active, .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-item .dropdown-item.active, .nav-tabs .nav-item .dropdown-item:hover {
+    color: #28A745 !important;
+    background-color: #ffffff !important;
+    border-color: #fff #fff #dee2e6 #fff !important;
+}
+
+.nav-tabs .nav-link {
+    border-bottom: 1px solid transparent;
+}
+
+.menu-section h2 {
+    font-family: Allura-Regular;
+    line-height: 100%;
+    font-size: 54px;
+    text-transform: capitalize;
+}
+
+.menu-section h3 {
+    font-family: Allura-Regular;
+    line-height: 100%;
+    font-size: 48px;
+    text-transform: capitalize;
+}
+
+.menu-section .p-name, .menu-section .p-desc, .menu-section .p-price {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.menu-section .p-desc, .menu-section .c-desc {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contact-section h2 {
+    font-family: Allura-Regular;
+    line-height: 100%;
+    font-size: 54px;
+    text-transform: capitalize;
+}
+
+#googleMap {
+    height: 100%;
+}
+
+.footer-section {
+    font-family: BarlowSemiCondensed-SemiBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: .625px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.footer-section img {
+    max-height: 15vh;
+}

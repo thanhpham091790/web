@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pho Le Restaurant</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="container-fluid navbar-section">
+
+        <nav class="navbar navbar-expand-md p-0 navbar-light bg-light">
+            <div class="container">
+                <!-- Brand/logo -->
+                <a class="navbar-brand p-0" href="#">
+                    <img src="media/logos/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Carousel Section -->
+    <div id="home" class="container-fluid home-section">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./media/carousels/carousel1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./media/carousels/carousel2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./media/carousels/carousel3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- Jumbotron section -->
+    <div id="note" class="container-fluid note-section">
+        <div class="jumbotron m-0 py-3">
+            <div class="container text-center text-dark">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="notes" id="note-info"></div>
+                    </div>
+                    <div class="col-12">
+                        <div class="hours" id="note-hours"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About section -->
+    <div id="about" class="container-fluid about-section">
+        <div class="row">
+            <div class="col-md-6 py-3 align-self-center">
+                <img class="img-fluid" src="./media/about/about.jpg" alt="About Us">
+            </div>
+            <div class="col-md-6 py-3 align-self-center">
+                <h2 class="text-center text-success">Welcome to <span class="d-inline-block">Pho Le</span></h2>
+                <div id="about-info"></div>
+                <div id="download-button" class="d-flex justify-content-center" >
+                    <a class="btn btn-success" href="./Pho_Le_Menu.pdf" role="button">
+                        <span>Download Menu</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu section -->
+    <div id="menu" class="container-fluid menu-section">
+        <div class="row">
+            <div class="col-md-4 py-3 sticky-top">
+                <!-- Nav tabs -->
+                <ul class="nav flex-column nav-tabs text-center bg-light">
+                    <li class="nav-item">
+                        <a data-toggle="tab" href="#kidmeals" class="nav-link text-dark m-0 py-3 border-bottom"
+                            href="#">
+                            <h2 class="text-success">Our Menu</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark m-0 py-3 border-bottom dropdown-toggle d-md-none"
+                            data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                            aria-expanded="false" id="menu-active"></a>
+                        <div class="dropdown-menu d-md-block" id="menu-nav"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8 py-3">
+                <!-- Tab panes -->
+                <div class="tab-content" id="menu-items"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact section -->
+    <div id="contact" class="container-fluid contact-section">
+        <div class="row">
+            <div class="col-md-12 py-3">
+                <h2 class="text-center text-success">Contact Us</h2>
+            </div>
+            <div class="col-md-8 py-3">
+                <div id="googleMap" style="min-height: 50vh;"></div>
+            </div>
+            <div class="col-md-4 py-3">
+                <div class="jumbotron m-0">
+                    <div class="container-fluid text-center text-dark">
+                        <div class="row">
+                            <div class="col-12">
+                                <p><i class="fas fa-map-marker-alt text-success"></i></p>
+                                <p>Pho Le Aurora</p>
+                                <p id="address-info"></p>
+                            </div>
+                            <div class="col-12">
+                                <p><i class="fas fa-phone-volume text-success"></i></p>
+                                <p>Call Us</p>
+                                <p id="phone-info"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer section -->
+    <div id="footer" class="container-fluid footer-section">
+        <div class="row d-flex align-items-end text-center bg-light">
+            <div class="col-md-4">
+                <a class="navbar-brand p-0" href="#">
+                    <img src="media/logos/logo.png" alt="logo">
+                </a>
+                <p>Copyright @ 2019 Pho Le Aurora. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    <span class="d-inline-block mx-3">
+                        <a class="text-dark text-decoration-none" href="#"><i class="fab fa-facebook-f"></i></a>
+                    </span>
+                    <span class="d-inline-block mx-3">
+                        <a class="text-dark text-decoration-none" href="#"><i class="fab fab fa-google"></i></a>
+                    </span>
+                    <span class="d-inline-block mx-3">
+                        <a class="text-dark text-decoration-none" href="#"><i class="fab fa-yelp"></i></a>
+                    </span>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p>Created by <a class="text-dark text-decoration-none" href="#">Thanh Pham</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgh8Swb4JlAw6jeVFiYJNo8Im1ETUrjqo&callback=myMap"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
