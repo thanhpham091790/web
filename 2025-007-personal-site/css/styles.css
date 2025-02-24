@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom right, #50a3a2, #0088E1);
+}
+
+.flexbox-container {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    -webkit-display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.flexbox-container .navbar {
+    flex: 0 0 10%;
+    max-width: 10%;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+.flexbox-container .profile-content{
+    flex: 0 0 90%;
+    max-width: 90%;
+
+    display: flex;
+    -webkit-display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.profile-content .profile {
+    flex: 0 0 45%;
+    max-width: 45%;
+    background-color: white;
+    text-align: center;
+}
+.profile-content .content {
+    flex: 0 0 55%;
+    max-width: 55%;
+    background-color: white;
+}
+
+.nav-item {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-item.active a, .nav-item.active, .nav-item:hover a, .nav-item:hover i {
+    color: #0088E1;
+}
+
+.nav-item a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #323232;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+}
+.nav-item .fa{
+    padding: 8px 0px;
+}
+
+.flexbox-container .profile img {
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    padding: 24px;
+}
+
+.image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: white;
+    transform: rotate(12deg);
+    left: -25%;
+    bottom: -60%;
+    width: 100%;
+    height: 70%;
+}
+
+.image::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: white;
+    transform: rotate(-12deg);
+    right: -25%;
+    bottom: -60%;
+    width: 100%;
+    height: 70%;
+}
+
+.profile .title {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #323232;
+}
+
+.subtitle {
+    color: #0088E1;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.subtitle span {
+    display: inline-block;
+    animation-name: typing;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.socials i {
+    padding: 16px 8px;
+    color: #323232;
+}
+
+.buttons {
+    display: block;
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.buttons a {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 24px;
+    color: #323232;
+    float: left;
+    width: 50%;
+}
+
+.buttons a:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+.buttons a:hover {
+    color: #0088E1;
+}
+.projects a {
+    color: #323232;
+    text-decoration: none;
+}
+.projects a:hover{
+    color: #0088E1;
+}
+.tabcontent {
+    float: left;
+    width: 100%;
+    max-height: 75vh;
+    overflow: auto;
+}
+
+.tabcontent .tab-title {
+    border-bottom: 1px solid #ddd;
+    padding: 24px;
+    color: #0088E1;
+    text-align: center;
+}
+
+.tabcontent .tab-title h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#about .introduction {
+    padding: 24px;
+    font-size: 16px;
+    line-height: 32px;
+    word-break: keep-all;
+}
+
+#about .introduction p {
+    margin: 0px 0px 16px 0px;
+    text-indent: 5%;
+}
+
+#experiences .companies, #education .degrees, #skills .languages, #portfolios .projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+}
+#experiences .group, #education .group, #skills .group, #portfolios .group {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+    color: #323232;
+}
+.group{ padding: 24px;}
+.group:not(:last-child){
+    border-right: 1px solid #ddd;
+}
+#experiences .group img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #0088E1;
+}
+#education .group img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #E03749;
+}
+#portfolios .group img{
+    width: 100%;
+    height: auto;
+}
+#portfolios .group img:hover{
+    border: 1px solid #0088E1;
+    border-radius: 4px;
+}
+#experiences .title, #education .title {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#skills .container{
+    width: 100%;
+    background-color: #ddd;
+}
+#skills .container .lang{
+    text-align: right;
+    color: white;
+}
+.html{width: 90%;background-color: #0088E1;}
+.css{width: 70%;background-color: #0088E1;}
+.js{width: 80%;background-color: #0088E1;}
+.php{width: 80%;background-color: #0088E1;}
+.sql{width: 70%;background-color: #0088E1;}
+.react{width: 75%;background-color: #0088E1;}
+
+#contact .fa{
+    padding: 4px;
+}
+
+@media screen and (max-width: 1199.98px){
+    .flexbox-container {
+        flex-direction: column;
+    }
+    .flexbox-container .navbar {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .nav-item {
+        float: left;
+        border-right: 1px solid #ddd;
+        border-bottom: none;
+    }
+    .flexbox-container .profile-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .profile-content .profile {
+        order: 2;
+    }
+    .profile-content .content {
+        order: 1;
+    }
+}
+@media screen and (max-width: 767.98px){
+    .flexbox-container{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 100%;
+    }
+    .flexbox-container .profile-content {
+        flex-direction: column;
+    }
+    .profile-content .profile {
+        order: 2;
+    }
+    .profile-content .content {
+        order: 1;
+    }
+    .profile-content .profile {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .profile-content .content {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 575.98px){
+    
+    .nav-item {
+        float: none;
+        display: inline-block;
+    }
+    .navbar-container {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    #experiences .group, #education .group, #portfolios .group {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="flexbox-container">
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="nav-item tablinks active" onclick="openTab(event, 'about')" id="aboutTab">
+                    <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                    <a href="javascript:void(0);">About</a>
+                </div>
+                <div class="nav-item tablinks" onclick="openTab(event, 'experiences')" id="experiencesTab">
+                    <i class="fa fa-file-text fa-lg" aria-hidden="true"></i>
+                    <a href="javascript:void(0);">Experience</a>
+                </div>
+                <div class="nav-item tablinks" onclick="openTab(event, 'education')" id="educationTab">
+                    <i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i>
+                    <a href="javascript:void(0);">Education</a>
+                </div>
+                <div class="nav-item tablinks" onclick="openTab(event, 'skills')" id="skillsTab">
+                    <i class="fa fa-align-right fa-lg" aria-hidden="true"></i>
+                    <a href="javascript:void(0);">Skills</a>
+                </div>
+                <div class="nav-item tablinks" onclick="openTab(event, 'portfolios')" id="portfoliosTab">
+                    <i class="fa fa-trophy fa-lg" aria-hidden="true"></i>
+                    <a href="javascript:void(0);">Portfolios</a>
+                </div>
+                <div class="nav-item tablinks" onclick="openTab(event, 'contact')" id="contactTab">
+                    <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+                    <a href="javascript:void(0);">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-container">
+                    <div class="image">
+                        <img src="./media/images/profiles/thanhhpham.jpg" alt="Thanh H Pham">
+                    </div>
+                    <div class="title">
+                        <span>Thanh Pham</span>
+                    </div>
+                    <div class="subtitle">
+                        <span>Web Developer</span>
+                    </div>
+                    <div class="socials">
+                        <a href="http://www.thanhhpham.com" target="_blank"><i class="fa fa-globe fa-lg" aria-hidden="true"></i></a>
+                        <a href="https://github.com/thanhpham091790" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/thanhpham091790/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="buttons">
+                        <a href="./resume/ThanhPham_Cover_Letter_Resume.pdf">Download Resume</a>
+                        <a href="javascript:void(0);" onclick="contactMe()">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content-container">
+                    <div id="about" class="tabcontent">
+                        <div class="tab-title">
+                            <h2>About</h2>
+                        </div>
+                        <div class="introduction">
+                            <p> My name is Thanh Pham. I have a Master degree in Computer Science from Colorado
+                                Technical University. I also have three years experiences as a web developer, 
+                                team leader at Netbase JSC. They are one of the top outsourcing
+                                companies who focus on a total e-commerce solutions. During my time with the company
+                                I built e-commerce websites on Magento platform for our clients. 
+                                I also developed core featured extensions for the Netbase’s market place.
+                            </p>
+                            <p>
+                                Besides working with professional companies, I also work as a freelancer. 
+                                I had some projects to build websites for local business in Colorado. 
+                                The projects don’t only give me an opportunity to practice these up-to-date technologies 
+                                but also more understanding of the US market.
+                            </p>
+
+                            <p>
+                                You can also visit my portfolios for additional information. 
+                                Feel free to contact me at 720-397-2824 or thanhpham091790@gmail.com.
+                                Thank you for your time and consideration. 
+                            </p>
+
+                            <p>Sincerely</p>
+                                
+                            <p class="signature">Thanh Pham</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="experiences" class="tabcontent">
+                        <div class="tab-title">
+                            <h2>Experiences</h2>
+                        </div>
+                        <div class="companies">
+                            <div class="group">
+                                <div class="logo"><img src="./media/images/companies/freelancer.png" alt="freelancer">
+                                </div>
+                                <div class="title"><span>Web Developer</span></div>
+                                <div class="name"><span>Freelancer</span></div>
+                                <div class="date"><span>April 2018 - Now</span></div>
+                                <div class="desc">
+                                    <p>
+                                        Developed and installed websites for local business in Colorado. Familiar with
+                                        trending technologies such as Bootstrap 4, React JS.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="logo"><img src="./media/images/companies/netbase.png" alt="netbase"></div>
+                                <div class="title"><span>Web Developer</span></div>
+                                <div class="name"><span>Netbase JSC</span></div>
+                                <div class="date"><span>Sep 2013 - Mar 2015</span></div>
+                                <div class="desc">
+                                    <p>
+                                        Responded as a web developer and team leader at Netbase JSC. 
+                                        Familiar with the LAMP stack, MVC framework, OOP principles, and GIT.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="education" class="tabcontent">
+                        <div class="tab-title">
+                            <h2>Education</h2>
+                        </div>
+                        <div class="degrees">
+                            <div class="group">
+                                <div class="logo"><img src="./media/images/universities/ctu.png"
+                                        alt="Colorado Technical University">
+                                </div>
+                                <div class="title"><span>Colorado Technical University</span></div>
+                                <div class="name"><span>Master Degree, Computer Science</span></div>
+                                <div class="date"><span>June 2018 - June 2020</span></div>
+                                <div class="desc">
+                                    <p>
+                                        Computer Science program provides me with an opportunity to advance my knowledge
+                                        of core computer skills.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="logo"><img src="./media/images/universities/hust.png"
+                                        alt="Hanoi University of Science and Technology"></div>
+                                <div class="title"><span>Hanoi University of Science and Technology</span></div>
+                                <div class="name"><span>Barchelor Degree, Information Technology</span></div>
+                                <div class="date"><span>Sep 2008 - Jun 2013</span></div>
+                                <div class="desc">
+                                    <p>
+                                        Information Technology provides me with a strong foundation in
+                                        programming, security, architecture, databases and ethics.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills" class="tabcontent">
+                        <div class="tab-title">
+                            <h2>Skills</h2>
+                        </div>
+                        <div class="languages">
+                            <div class="group">
+                                <p>HTML5</p>
+                                <div class="container">
+                                    <div class="lang html">90%</div>
+                                </div>
+
+                                <p>CSS3</p>
+                                <div class="container">
+                                    <div class="lang css">70%</div>
+                                </div>
+
+                                <p>JavaScript - ES6</p>
+                                <div class="container">
+                                    <div class="lang js">80%</div>
+                                </div>
+
+                            </div>
+                            <div class="group">
+                                <p>PHP</p>
+                                <div class="container">
+                                    <div class="lang php">80%</div>
+                                </div>
+
+                                <p>MySQL</p>
+                                <div class="container">
+                                    <div class="lang sql">70%</div>
+                                </div>
+
+                                <p>React</p>
+                                <div class="container">
+                                    <div class="lang react">75%</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="portfolios" class="tabcontent">
+                        <div class="tab-title">
+                            <h2>Portfolios</h2>
+                        </div>
+                        <div class="projects">
+                            <div class="group">
+                                <div class="logo">
+                                    <a href="https://demo1.thanhhpham.com/" target="_blank">
+                                        <img src="./media/images/portfolios/company.jpg" alt="Company Webiste">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="https://demo1.thanhhpham.com/" target="_blank">
+                                        <span>Company Website</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="logo">
+                                    <a href="https://pholeaurora.com/" target="_blank">
+                                        <img src="./media/images/portfolios/restaurant.jpg" alt="Restaurant Webiste">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="https://pholeaurora.com/" target="_blank">
+                                        <span>Restaurant Website</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="logo">
+                                    <a href="http://www.upscalenaildenver.com" target="_blank">
+                                        <img src="./media/images/portfolios/salon.jpg" alt="Salon Website">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="http://www.upscalenaildenver.com" target="_blank">
+                                        <span>Salon Website</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="logo">
+                                    <a href="https://cmsmart.net/magento-extensions/magento-faq-extension" target="_blank">
+                                        <img src="./media/images/portfolios/faq.jpg" alt="FAQ">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="https://cmsmart.net/magento-extensions/magento-faq-extension" target="_blank">
+                                        <span>FAQ - Magento Extensions</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="logo">
+                                    <a href="https://cmsmart.net/magento-extensions/magento-frequently-bought-together-extension" target="_blank">
+                                        <img src="./media/images/portfolios/frequently.jpg" alt="Frequently Bought Together">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="https://cmsmart.net/magento-extensions/magento-frequently-bought-together-extension" target="_blank">
+                                        <span>Frequently Bought Together - Magento Extension</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="logo">
+                                    <a href="https://cmsmart.net/magento-extensions/magento-price-matrix-extension" target="_blank">
+                                        <img src="./media/images/portfolios/price_matrix.jpg" alt="Price Matrix">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="https://cmsmart.net/magento-extensions/magento-price-matrix-extension" target="_blank">
+                                        <span>Price Matrix - Magento Extension</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="logo">
+                                    <a href="https://cmsmart.net/magento-extensions/magento-shipping-cost-calculator-extension" target="_blank">
+                                        <img src="./media/images/portfolios/shipping_cost.jpg" alt="Shipping Cost Calculator">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="https://cmsmart.net/magento-extensions/magento-shipping-cost-calculator-extension" target="_blank">
+                                        <span>Shipping Cost Calculator - Magento Extension</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contact" class="tabcontent">
+                        <div class="tab-title">
+                            <h2>Contact</h2>
+                        </div>
+                        <div class="get-in-touch">
+                            <div class="group">
+                                <p>
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <span>THANH PHAM</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                    <span>7179 S Lincoln Way, Centennial, CO 80122</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>(720) 397 2824</span></p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span>thanhpham091790@gmail.com</span>
+                                </p>
+                            </div>
+                            <div class="group">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.761665709591!2d-104.9898830845755!3d39.58752151357369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c819d3b1c3d4d%3A0x5d1b1a91a10b0a6f!2s7179%20S%20Lincoln%20Way%2C%20Centennial%2C%20CO%2080122!5e0!3m2!1sen!2sus!4v1618002351717!5m2!1sen!2sus" style="width: 100%; height: 400px; border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
