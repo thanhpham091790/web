@@ -7,9 +7,13 @@
 // font-family: 'Poppins', sans-serif;
 
 *,
-html {
+*::before,
+*::after {
     box-sizing: border-box;
-    font-size: 1px;
+}
+
+html {
+    font-size: 0.8px;
 }
 
 body {
@@ -112,7 +116,7 @@ body {
         position: absolute;
         bottom: 75rem;
         left: 75rem;
-        max-width: 45%;
+        max-width: 50%;
 
         h1 {
             font-family: 'Archivo', sans-serif;
@@ -491,11 +495,15 @@ body {
     }
 }
 
-$breakpoint-tablet: 768rem;
+$breakpoint-tablet: 992px;
 
-@media (max-width: $breakpoint-tablet) {
+@media screen and (max-width: $breakpoint-tablet) {
     html {
         font-size: 0.751px;
+    }
+
+    img {
+        max-width: 100%;
     }
 
     #group1 .text,
@@ -522,6 +530,8 @@ $breakpoint-tablet: 768rem;
     }
 
     #group1 {
+        overflow: hidden;
+
         .toolbar {
 
             .close,
@@ -578,7 +588,7 @@ $breakpoint-tablet: 768rem;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            margin: 0 auto;
+            margin: 60rem auto;
             text-align: center;
         }
     }

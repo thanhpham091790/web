@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Calistoga&family=Montserrat:wght@400;700&family=Nunito:wght@400;600&family=Poppins:wght@600&display=swap");
 *,
-html {
+*::before,
+*::after {
   box-sizing: border-box;
-  font-size: 1px;
+}
+
+html {
+  font-size: 0.8px;
 }
 
 body {
@@ -93,7 +97,7 @@ body {
   position: absolute;
   bottom: 75rem;
   left: 75rem;
-  max-width: 45%;
+  max-width: 50%;
 }
 #group1 .text h1 {
   font-family: "Archivo", sans-serif;
@@ -417,9 +421,12 @@ body {
   font-weight: 400;
 }
 
-@media (max-width: 768rem) {
+@media screen and (max-width: 992px) {
   html {
     font-size: 0.751px;
+  }
+  img {
+    max-width: 100%;
   }
   #group1 .text,
   #group2 .text,
@@ -441,6 +448,9 @@ body {
     align-items: center;
     gap: 60rem;
     margin: 60rem auto;
+  }
+  #group1 {
+    overflow: hidden;
   }
   #group1 .toolbar .close,
   #group1 .toolbar .open {
@@ -488,7 +498,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 auto;
+    margin: 60rem auto;
     text-align: center;
   }
   #group2 {
