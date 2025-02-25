@@ -499,6 +499,7 @@ body {
     align-items: center;
     margin: 60rem auto;
     text-align: center;
+    max-width: 80%;
   }
   #group2 {
     background-position: center;
