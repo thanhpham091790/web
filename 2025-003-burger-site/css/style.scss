@@ -491,7 +491,9 @@ body {
     }
 }
 
-@media only screen and (max-width: 768rem) {
+$breakpoint-tablet: 768rem;
+
+@media (max-width: $breakpoint-tablet) {
     html {
         font-size: 0.751px;
     }
