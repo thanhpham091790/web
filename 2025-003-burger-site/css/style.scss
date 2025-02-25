@@ -9,25 +9,25 @@
 *,
 html {
     box-sizing: border-box;
+    font-size: 1px;
 }
 
 body {
-    max-width: 1440px;
     margin: 0 auto;
 }
 
 %button {
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-size: 25rem;
     font-weight: 700;
     text-transform: uppercase;
-    border-radius: 40px;
+    border-radius: 40rem;
     border: none;
-    padding: 15px 60px;
+    padding: 15rem 60rem;
 }
 
 %group3 {
-    min-height: 800px;
+    min-height: 800rem;
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
@@ -39,15 +39,15 @@ body {
 
         h2 {
             font-family: 'Archivo', sans-serif;
-            font-size: 75px;
+            font-size: 75rem;
             margin-bottom: 0;
         }
 
         p {
             font-family: 'Nunito', sans-serif;
-            font-size: 29.72px;
+            font-size: 29.72rem;
             font-weight: 400;
-            margin-bottom: 29.72px
+            margin-bottom: 29.72rem
         }
 
         button {
@@ -59,12 +59,12 @@ body {
 }
 
 #group1 {
-    min-height: 797px;
+    min-height: 797rem;
     background-color: black;
     background-image: url(../assets/group1/hero.png);
-    background-position: 0 0;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
 
     .toolbar {
@@ -72,9 +72,14 @@ body {
         background: linear-gradient(to bottom, black, 80%, transparent);
         justify-content: space-between;
 
+        .close,
+        .open {
+            display: none;
+        }
+
         .logo,
         nav {
-            margin: 35px 70px;
+            margin: 35rem 70rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -91,12 +96,12 @@ body {
 
                 a {
                     font-family: 'Poppins', sans-serif;
-                    font-size: 25px;
+                    font-size: 25rem;
                     text-decoration: none;
                     text-transform: uppercase;
                     display: block;
                     color: white;
-                    padding: 30px;
+                    padding: 30rem;
                 }
             }
         }
@@ -105,19 +110,19 @@ body {
 
     .text {
         position: absolute;
-        bottom: 75px;
-        left: 75px;
+        bottom: 75rem;
+        left: 75rem;
         max-width: 45%;
 
         h1 {
             font-family: 'Archivo', sans-serif;
-            font-size: 91.04px;
+            font-size: 91.04rem;
             color: white;
         }
 
         p {
             font-family: 'Nunito', sans-serif;
-            font-size: 32.16px;
+            font-size: 32.16rem;
             color: white;
             font-weight: 400;
         }
@@ -131,14 +136,14 @@ body {
 }
 
 #group2 {
-    min-height: 797px;
+    min-height: 797rem;
     background-image: url(../assets/group2/background.png);
-    background-position: 0 150px;
+    background-position: 0 150rem;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-color: #f6eedf;
     color: #f64b3c;
-    padding: 35px 0px;
+    padding: 35rem 0rem;
 
     .text {
         max-width: 65%;
@@ -151,12 +156,12 @@ body {
 
         h2 {
             font-family: 'Archivo', sans-serif;
-            font-size: 63.66px;
+            font-size: 63.66rem;
         }
 
         p {
             font-family: 'Montserrat', sans-serif;
-            font-size: 25.23px;
+            font-size: 25.23rem;
             font-weight: 400;
         }
     }
@@ -164,7 +169,7 @@ body {
     .card-container {
         display: flex;
         max-width: 75%;
-        margin: 80px auto;
+        margin: 80rem auto;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -174,14 +179,14 @@ body {
 
             h3 {
                 font-family: 'Archivo', sans-serif;
-                font-size: 33.33px;
+                font-size: 33.33rem;
                 text-transform: uppercase;
-                margin-bottom: 0px;
+                margin-bottom: 0rem;
             }
 
             p {
                 font-family: 'Nunito', sans-serif;
-                font-size: 25px;
+                font-size: 25rem;
             }
         }
     }
@@ -195,10 +200,11 @@ body {
 
 #group4 {
     @extend %group3;
-    min-height: 800px;
+    min-height: 800rem;
     color: #f64b3c;
     background-color: #f6eedf;
     background-image: url(../assets/group4/background.png);
+    background-repeat: no-repeat;
     background-size: cover;
 
     .text button {
@@ -208,25 +214,25 @@ body {
 }
 
 #group5 {
-    min-height: 797px;
+    min-height: 797rem;
     background-color: #f64b3c;
     color: #ffffff;
 
     .text {
         max-width: 55%;
         text-align: center;
-        padding: 20px 0px;
+        padding: 20rem 0rem;
         margin: 0 auto;
 
         h2 {
             font-family: 'Archivo', sans-serif;
-            font-size: 62.26px;
+            font-size: 62.26rem;
             margin-bottom: 0;
         }
 
         p {
             font-family: 'Montserrat', sans-serif;
-            font-size: 24.68px;
+            font-size: 24.68rem;
             font-weight: 400;
         }
     }
@@ -236,13 +242,13 @@ body {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        margin-top: 80px;
+        margin-top: 80rem;
 
         .card {
-            border: 5px solid white;
-            width: 300px;
-            height: 300px;
-            border-radius: 300px;
+            border: 5rem solid white;
+            width: 300rem;
+            height: 300rem;
+            border-radius: 300rem;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -251,31 +257,33 @@ body {
 
             text-align: center;
             font-family: 'Montserrat', sans-serif;
-            font-size: 33.33px;
+            font-size: 33.33rem;
             font-weight: 700;
             text-transform: uppercase;
 
             strong {
                 display: block;
                 font-family: 'Archivo', sans-serif;
-                font-size: 101.61px;
+                font-size: 101.61rem;
             }
         }
     }
 }
 
 #group6 {
-    min-height: 800px;
+    min-height: 800rem;
     background-image: url(../assets/group6/background.png);
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #f64b3c;
     background-color: #f6eedf;
     text-align: center;
+    overflow: hidden;
 
     h2 {
         font-family: 'Archivo', sans-serif;
-        font-size: 75px;
-        padding: 20px;
+        font-size: 75rem;
+        padding: 20rem;
     }
 
     .card-container {
@@ -283,28 +291,28 @@ body {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        padding: 20px;
+        padding: 20rem;
 
         .card {
-            width: 335px;
-            height: 443px;
-            border-radius: 10px;
+            width: 335rem;
+            height: 443rem;
+            border-radius: 10rem;
             background-color: #ffffff;
-            padding: 10px;
+            padding: 10rem;
 
             h3,
             .price {
                 font-family: 'Archivo', sans-serif;
-                font-size: 33.35px;
+                font-size: 33.35rem;
             }
 
             img {
-                margin: 10px;
+                margin: 10rem;
             }
 
             p {
                 font-family: 'Montserrat', sans-serif;
-                font-size: 20.01px;
+                font-size: 20.01rem;
                 font-weight: 400;
             }
 
@@ -318,8 +326,10 @@ body {
 }
 
 #group7 {
-    min-height: 797px;
+    min-height: 797rem;
     background-image: url(../assets/group7/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     color: #ffffff;
     display: flex;
@@ -331,19 +341,19 @@ body {
 
         p {
             font-family: 'Archivo', sans-serif;
-            font-size: 36.47px;
+            font-size: 36.47rem;
         }
 
         h4 {
             font-family: 'Calistoga', cursive;
-            font-size: 44.9px;
+            font-size: 44.9rem;
             font-weight: 400;
         }
     }
 }
 
 #group8 {
-    min-height: 797px;
+    min-height: 797rem;
     background-color: #f6eedf;
     display: flex;
 
@@ -367,13 +377,13 @@ body {
 
         h2 {
             font-family: 'Archivo', sans-serif;
-            font-size: 75px;
+            font-size: 75rem;
             margin: 0;
         }
 
         p {
             font-family: 'Nunito', sans-serif;
-            font-size: 29.72px;
+            font-size: 29.72rem;
             font-weight: 400;
             max-width: 50%;
         }
@@ -384,12 +394,12 @@ body {
             input {
                 width: 60%;
                 background-color: white;
-                padding: 20px;
+                padding: 20rem;
                 border: none;
-                border-top-left-radius: 30px;
-                border-bottom-left-radius: 30px;
+                border-top-left-radius: 30rem;
+                border-bottom-left-radius: 30rem;
                 font-family: 'Nunito', sans-serif;
-                font-size: 25px;
+                font-size: 25rem;
                 font-weight: 400;
 
             }
@@ -399,12 +409,12 @@ body {
                 background-color: #f64b3c;
                 color: white;
                 border: none;
-                padding: 20px;
-                border-top-right-radius: 30px;
-                border-bottom-right-radius: 30px;
+                padding: 20rem;
+                border-top-right-radius: 30rem;
+                border-bottom-right-radius: 30rem;
                 text-transform: uppercase;
                 font-family: 'Nunito', sans-serif;
-                font-size: 25px;
+                font-size: 25rem;
                 font-weight: 400;
             }
         }
@@ -414,8 +424,8 @@ body {
 }
 
 #group9 {
-    min-height: 797px;
-    border: 1px solid white;
+    min-height: 797rem;
+    border: 1rem solid white;
     color: white;
     background-color: #222222;
     display: flex;
@@ -435,15 +445,15 @@ body {
         .social {
             a {
                 display: inline-block;
-                width: 50px;
-                height: 50px;
+                width: 50rem;
+                height: 50rem;
                 background-color: white;
                 border-radius: 50%;
-                padding: 10px;
-                margin: 10px;
+                padding: 10rem;
+                margin: 10rem;
 
                 .fa-brands {
-                    font-size: 30px;
+                    font-size: 30rem;
                     color: #222222;
                 }
             }
@@ -451,13 +461,13 @@ body {
 
         h4 {
             font-family: 'Archivo', sans-serif;
-            font-size: 31.47px;
+            font-size: 31.47rem;
             margin: 0;
         }
 
         p {
             font-family: 'Nunito', sans-serif;
-            font-size: 23.6px;
+            font-size: 23.6rem;
             font-weight: 400;
         }
 
@@ -467,16 +477,166 @@ body {
             padding: 0;
 
             li {
-                padding: 5px;
+                padding: 5rem;
 
                 a {
                     text-decoration: none;
                     color: white;
                     font-family: 'Nunito', sans-serif;
-                    font-size: 23.6px;
+                    font-size: 23.6rem;
                     font-weight: 400;
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 768rem) {
+    html {
+        font-size: 0.751px;
+    }
+
+    #group1 .text,
+    #group2 .text,
+    #group3 .text,
+    #group4 .text,
+    #group5 .text,
+    #group6 .text,
+    #group7 .text,
+    #group8 .content,
+    #group9 .content {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    #group2 .card-container,
+    #group5 .card-container,
+    #group6 .card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60rem;
+        margin: 60rem auto;
+    }
+
+    #group1 {
+        .toolbar {
+
+            .close,
+            .open {
+                display: flex;
+                color: white;
+                align-items: center;
+                justify-content: center;
+                margin: 35rem 70rem;
+                margin-left: auto;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                i {
+                    line-height: 80rem;
+                    font-size: 25rem;
+                }
+
+
+            }
+
+
+
+            nav {
+                margin: 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 100vh;
+                background: linear-gradient(to bottom, black, 80%, transparent);
+                z-index: 1;
+                transform: translateX(100%);
+                transition: transform 0.5s;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center
+            }
+        }
+
+        .text {
+            all: unset;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    #group2 {
+        background-position: center;
+    }
+
+    #group3,
+    #group4 {
+        flex-direction: column;
+
+        .image,
+        .text {
+            margin: 63.66rem 0;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+    #group5 {
+        overflow: hidden;
+    }
+
+    #group6 {
+        .card-container {
+            .card {
+                width: 80%;
+                height: 500rem;
+            }
+        }
+    }
+
+    #group8 {
+        .content {
+            p {
+                max-width: 100%;
+            }
+
+            .form {
+                width: 100%;
+            }
+        }
+    }
+
+    #group9 {
+        .content {
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .col {
+                flex-basis: 50%;
+                margin-top: 60rem;
+            }
+        }
+
     }
 }

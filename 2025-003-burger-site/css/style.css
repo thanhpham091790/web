@@ -2,25 +2,25 @@
 *,
 html {
   box-sizing: border-box;
+  font-size: 1px;
 }
 
 body {
-  max-width: 1440px;
   margin: 0 auto;
 }
 
 #group6 .card-container .card button, #group1 .text button, #group4 .text button, #group3 .text button {
   font-family: "Montserrat", sans-serif;
-  font-size: 25px;
+  font-size: 25rem;
   font-weight: 700;
   text-transform: uppercase;
-  border-radius: 40px;
+  border-radius: 40rem;
   border: none;
-  padding: 15px 60px;
+  padding: 15rem 60rem;
 }
 
 #group4, #group3 {
-  min-height: 800px;
+  min-height: 800rem;
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
@@ -32,14 +32,14 @@ body {
 }
 #group4 .text h2, #group3 .text h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 75px;
+  font-size: 75rem;
   margin-bottom: 0;
 }
 #group4 .text p, #group3 .text p {
   font-family: "Nunito", sans-serif;
-  font-size: 29.72px;
+  font-size: 29.72rem;
   font-weight: 400;
-  margin-bottom: 29.72px;
+  margin-bottom: 29.72rem;
 }
 #group4 .text button, #group3 .text button {
   color: #f64b3c;
@@ -47,12 +47,12 @@ body {
 }
 
 #group1 {
-  min-height: 797px;
+  min-height: 797rem;
   background-color: black;
   background-image: url(../assets/group1/hero.png);
-  background-position: 0 0;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 #group1 .toolbar {
@@ -60,9 +60,13 @@ body {
   background: linear-gradient(to bottom, black, 80%, transparent);
   justify-content: space-between;
 }
+#group1 .toolbar .close,
+#group1 .toolbar .open {
+  display: none;
+}
 #group1 .toolbar .logo,
 #group1 .toolbar nav {
-  margin: 35px 70px;
+  margin: 35rem 70rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,27 +82,27 @@ body {
 }
 #group1 .toolbar ul li a {
   font-family: "Poppins", sans-serif;
-  font-size: 25px;
+  font-size: 25rem;
   text-decoration: none;
   text-transform: uppercase;
   display: block;
   color: white;
-  padding: 30px;
+  padding: 30rem;
 }
 #group1 .text {
   position: absolute;
-  bottom: 75px;
-  left: 75px;
+  bottom: 75rem;
+  left: 75rem;
   max-width: 45%;
 }
 #group1 .text h1 {
   font-family: "Archivo", sans-serif;
-  font-size: 91.04px;
+  font-size: 91.04rem;
   color: white;
 }
 #group1 .text p {
   font-family: "Nunito", sans-serif;
-  font-size: 32.16px;
+  font-size: 32.16rem;
   color: white;
   font-weight: 400;
 }
@@ -108,14 +112,14 @@ body {
 }
 
 #group2 {
-  min-height: 797px;
+  min-height: 797rem;
   background-image: url(../assets/group2/background.png);
-  background-position: 0 150px;
+  background-position: 0 150rem;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-color: #f6eedf;
   color: #f64b3c;
-  padding: 35px 0px;
+  padding: 35rem 0rem;
 }
 #group2 .text {
   max-width: 65%;
@@ -127,17 +131,17 @@ body {
 }
 #group2 .text h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 63.66px;
+  font-size: 63.66rem;
 }
 #group2 .text p {
   font-family: "Montserrat", sans-serif;
-  font-size: 25.23px;
+  font-size: 25.23rem;
   font-weight: 400;
 }
 #group2 .card-container {
   display: flex;
   max-width: 75%;
-  margin: 80px auto;
+  margin: 80rem auto;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -147,13 +151,13 @@ body {
 }
 #group2 .card-container .card h3 {
   font-family: "Archivo", sans-serif;
-  font-size: 33.33px;
+  font-size: 33.33rem;
   text-transform: uppercase;
-  margin-bottom: 0px;
+  margin-bottom: 0rem;
 }
 #group2 .card-container .card p {
   font-family: "Nunito", sans-serif;
-  font-size: 25px;
+  font-size: 25rem;
 }
 
 #group3 {
@@ -162,10 +166,11 @@ body {
 }
 
 #group4 {
-  min-height: 800px;
+  min-height: 800rem;
   color: #f64b3c;
   background-color: #f6eedf;
   background-image: url(../assets/group4/background.png);
+  background-repeat: no-repeat;
   background-size: cover;
 }
 #group4 .text button {
@@ -174,24 +179,24 @@ body {
 }
 
 #group5 {
-  min-height: 797px;
+  min-height: 797rem;
   background-color: #f64b3c;
   color: #ffffff;
 }
 #group5 .text {
   max-width: 55%;
   text-align: center;
-  padding: 20px 0px;
+  padding: 20rem 0rem;
   margin: 0 auto;
 }
 #group5 .text h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 62.26px;
+  font-size: 62.26rem;
   margin-bottom: 0;
 }
 #group5 .text p {
   font-family: "Montserrat", sans-serif;
-  font-size: 24.68px;
+  font-size: 24.68rem;
   font-weight: 400;
 }
 #group5 .card-container {
@@ -199,13 +204,13 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  margin-top: 80px;
+  margin-top: 80rem;
 }
 #group5 .card-container .card {
-  border: 5px solid white;
-  width: 300px;
-  height: 300px;
-  border-radius: 300px;
+  border: 5rem solid white;
+  width: 300rem;
+  height: 300rem;
+  border-radius: 300rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -213,54 +218,56 @@ body {
   align-items: center;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 33.33px;
+  font-size: 33.33rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 #group5 .card-container .card strong {
   display: block;
   font-family: "Archivo", sans-serif;
-  font-size: 101.61px;
+  font-size: 101.61rem;
 }
 
 #group6 {
-  min-height: 800px;
+  min-height: 800rem;
   background-image: url(../assets/group6/background.png);
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #f64b3c;
   background-color: #f6eedf;
   text-align: center;
+  overflow: hidden;
 }
 #group6 h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 75px;
-  padding: 20px;
+  font-size: 75rem;
+  padding: 20rem;
 }
 #group6 .card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  padding: 20px;
+  padding: 20rem;
 }
 #group6 .card-container .card {
-  width: 335px;
-  height: 443px;
-  border-radius: 10px;
+  width: 335rem;
+  height: 443rem;
+  border-radius: 10rem;
   background-color: #ffffff;
-  padding: 10px;
+  padding: 10rem;
 }
 #group6 .card-container .card h3,
 #group6 .card-container .card .price {
   font-family: "Archivo", sans-serif;
-  font-size: 33.35px;
+  font-size: 33.35rem;
 }
 #group6 .card-container .card img {
-  margin: 10px;
+  margin: 10rem;
 }
 #group6 .card-container .card p {
   font-family: "Montserrat", sans-serif;
-  font-size: 20.01px;
+  font-size: 20.01rem;
   font-weight: 400;
 }
 #group6 .card-container .card button {
@@ -269,8 +276,10 @@ body {
 }
 
 #group7 {
-  min-height: 797px;
+  min-height: 797rem;
   background-image: url(../assets/group7/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   color: #ffffff;
   display: flex;
@@ -282,16 +291,16 @@ body {
 }
 #group7 .text p {
   font-family: "Archivo", sans-serif;
-  font-size: 36.47px;
+  font-size: 36.47rem;
 }
 #group7 .text h4 {
   font-family: "Calistoga", cursive;
-  font-size: 44.9px;
+  font-size: 44.9rem;
   font-weight: 400;
 }
 
 #group8 {
-  min-height: 797px;
+  min-height: 797rem;
   background-color: #f6eedf;
   display: flex;
 }
@@ -314,12 +323,12 @@ body {
 }
 #group8 .content h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 75px;
+  font-size: 75rem;
   margin: 0;
 }
 #group8 .content p {
   font-family: "Nunito", sans-serif;
-  font-size: 29.72px;
+  font-size: 29.72rem;
   font-weight: 400;
   max-width: 50%;
 }
@@ -329,12 +338,12 @@ body {
 #group8 .content .form input {
   width: 60%;
   background-color: white;
-  padding: 20px;
+  padding: 20rem;
   border: none;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30rem;
+  border-bottom-left-radius: 30rem;
   font-family: "Nunito", sans-serif;
-  font-size: 25px;
+  font-size: 25rem;
   font-weight: 400;
 }
 #group8 .content .form button {
@@ -342,18 +351,18 @@ body {
   background-color: #f64b3c;
   color: white;
   border: none;
-  padding: 20px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+  padding: 20rem;
+  border-top-right-radius: 30rem;
+  border-bottom-right-radius: 30rem;
   text-transform: uppercase;
   font-family: "Nunito", sans-serif;
-  font-size: 25px;
+  font-size: 25rem;
   font-weight: 400;
 }
 
 #group9 {
-  min-height: 797px;
-  border: 1px solid white;
+  min-height: 797rem;
+  border: 1rem solid white;
   color: white;
   background-color: #222222;
   display: flex;
@@ -371,25 +380,25 @@ body {
 }
 #group9 .content .social a {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 50rem;
+  height: 50rem;
   background-color: white;
   border-radius: 50%;
-  padding: 10px;
-  margin: 10px;
+  padding: 10rem;
+  margin: 10rem;
 }
 #group9 .content .social a .fa-brands {
-  font-size: 30px;
+  font-size: 30rem;
   color: #222222;
 }
 #group9 .content h4 {
   font-family: "Archivo", sans-serif;
-  font-size: 31.47px;
+  font-size: 31.47rem;
   margin: 0;
 }
 #group9 .content p {
   font-family: "Nunito", sans-serif;
-  font-size: 23.6px;
+  font-size: 23.6rem;
   font-weight: 400;
 }
 #group9 .content ul {
@@ -398,12 +407,129 @@ body {
   padding: 0;
 }
 #group9 .content ul li {
-  padding: 5px;
+  padding: 5rem;
 }
 #group9 .content ul li a {
   text-decoration: none;
   color: white;
   font-family: "Nunito", sans-serif;
-  font-size: 23.6px;
+  font-size: 23.6rem;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 768rem) {
+  html {
+    font-size: 0.751px;
+  }
+  #group1 .text,
+  #group2 .text,
+  #group3 .text,
+  #group4 .text,
+  #group5 .text,
+  #group6 .text,
+  #group7 .text,
+  #group8 .content,
+  #group9 .content {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  #group2 .card-container,
+  #group5 .card-container,
+  #group6 .card-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60rem;
+    margin: 60rem auto;
+  }
+  #group1 .toolbar .close,
+  #group1 .toolbar .open {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 35rem 70rem;
+    margin-left: auto;
+  }
+  #group1 .toolbar .close:hover,
+  #group1 .toolbar .open:hover {
+    cursor: pointer;
+  }
+  #group1 .toolbar .close i,
+  #group1 .toolbar .open i {
+    line-height: 80rem;
+    font-size: 25rem;
+  }
+  #group1 .toolbar nav {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background: linear-gradient(to bottom, black, 80%, transparent);
+    z-index: 1;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+  }
+  #group1 .toolbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #group1 .text {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #group2 {
+    background-position: center;
+  }
+  #group3,
+  #group4 {
+    flex-direction: column;
+  }
+  #group3 .image,
+  #group3 .text,
+  #group4 .image,
+  #group4 .text {
+    margin: 63.66rem 0;
+  }
+  #group3 .text,
+  #group4 .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #group5 {
+    overflow: hidden;
+  }
+  #group6 .card-container .card {
+    width: 80%;
+    height: 500rem;
+  }
+  #group8 .content p {
+    max-width: 100%;
+  }
+  #group8 .content .form {
+    width: 100%;
+  }
+  #group9 .content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #group9 .content .col {
+    flex-basis: 50%;
+    margin-top: 60rem;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -19,8 +19,7 @@ a {
   background-size: cover;
   background-position-x: 20%;
   background-position-y: 20%;
-  -webkit-animation: introLoad 2s forwards;
-          animation: introLoad 2s forwards;
+  animation: introLoad 2s forwards;
 }
 
 .logo {
@@ -37,30 +36,22 @@ nav {
   width: 50%;
   z-index: 999;
   text-transform: uppercase;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
+  transform: translateX(100%);
   transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
-
 nav ul {
   list-style-type: none;
   padding: 0;
   margin-top: 8em;
 }
-
 nav ul a {
   color: black;
   padding: 0.75em 2em;
   display: block;
 }
-
 nav ul a:hover {
-  background: #ece7e7;
+  background: rgb(236, 231, 231);
 }
-
 nav .close {
   float: right;
   margin: 2em;
@@ -68,19 +59,13 @@ nav .close {
 }
 
 nav.open-app {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 header svg {
   width: 3em;
   margin-top: -0.6em;
@@ -100,10 +85,8 @@ h1 {
 section.hero {
   color: white;
   height: 90vh;
-  -webkit-animation: moveDown 1s ease-in-out forwards;
-          animation: moveDown 1s ease-in-out forwards;
+  animation: moveDown 1s ease-in-out forwards;
 }
-
 section.hero svg.down-arrow {
   stroke: white;
   position: absolute;
@@ -111,7 +94,6 @@ section.hero svg.down-arrow {
   width: 1em;
   animation: moveArrow 2s alternate-reverse infinite;
 }
-
 section.hero svg.down-arrow path {
   fill: white;
 }
@@ -122,12 +104,10 @@ section.hero svg.down-arrow path {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .more-info .title {
   font-weight: bold;
   font-size: 1.25rem;
 }
-
 .more-info .desc {
   line-height: 1.5rem;
 }
@@ -138,7 +118,6 @@ section.hero svg.down-arrow path {
     font-family: "Poppins", sans-serif;
   }
 }
-
 @media only screen and (min-width: 920px) {
   .menu {
     display: none;
@@ -147,8 +126,7 @@ section.hero svg.down-arrow path {
     margin-top: 16em;
   }
   nav {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     position: unset;
     display: block;
     width: auto;
@@ -159,8 +137,6 @@ section.hero svg.down-arrow path {
     display: none;
   }
   nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: 0;
   }
@@ -199,10 +175,8 @@ section.hero svg.down-arrow path {
     fill: black;
   }
   .feature {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[2];
-        grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
     gap: 3em;
     margin-bottom: 8em;
   }
@@ -214,39 +188,23 @@ section.hero svg.down-arrow path {
     width: 25em;
   }
   .feature.left {
-        grid-template-areas: "left right";
+    grid-template-areas: "left right";
   }
   .feature.left img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: left;
   }
   .feature.left .content {
     text-align: left;
     width: 25em;
-    -ms-grid-column-align: left;
-        justify-self: left;
+    justify-self: left;
   }
 }
-
 @media only screen and (min-width: 1200px) {
   .wrapper {
     width: 1200px;
     margin: 0 auto;
   }
 }
-
-@-webkit-keyframes introLoad {
-  from {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  to {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-}
-
 @keyframes introLoad {
   from {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -257,48 +215,19 @@ section.hero svg.down-arrow path {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
-
-@-webkit-keyframes moveArrow {
-  from {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
 @keyframes moveArrow {
   from {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
+    transform: translateY(-30px);
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
-
-@-webkit-keyframes moveDown {
-  from {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
 @keyframes moveDown {
   from {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    transform: translateY(-100px);
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
