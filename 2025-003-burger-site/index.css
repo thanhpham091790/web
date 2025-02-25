@@ -256,7 +256,7 @@ body {
 }
 #group6 .card-container .card {
   width: 335rem;
-  height: 443rem;
+  height: 500rem;
   border-radius: 10rem;
   background-color: #ffffff;
   padding: 10rem;
@@ -435,6 +435,7 @@ body {
   #group7 .text,
   #group8 .content,
   #group9 .content {
+    width: 80%;
     max-width: 80%;
     margin: 0 auto;
   }
@@ -524,13 +525,15 @@ body {
   }
   #group6 .card-container .card {
     width: 80%;
-    height: 500rem;
   }
   #group8 .content p {
     max-width: 100%;
   }
   #group8 .content .form {
     width: 100%;
+  }
+  #group8 .content .form button {
+    font-size: 20rem;
   }
   #group9 .content {
     flex-wrap: wrap;

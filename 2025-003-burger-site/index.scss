@@ -299,7 +299,7 @@ body {
 
         .card {
             width: 335rem;
-            height: 443rem;
+            height: 500rem;
             border-radius: 10rem;
             background-color: #ffffff;
             padding: 10rem;
@@ -513,6 +513,7 @@ $breakpoint-tablet: 992px;
     #group7 .text,
     #group8 .content,
     #group9 .content {
+        width: 80%;
         max-width: 80%;
         margin: 0 auto;
     }
@@ -620,7 +621,6 @@ $breakpoint-tablet: 992px;
         .card-container {
             .card {
                 width: 80%;
-                height: 500rem;
             }
         }
     }
@@ -633,6 +633,10 @@ $breakpoint-tablet: 992px;
 
             .form {
                 width: 100%;
+
+                button {
+                    font-size: 20rem;
+                }
             }
         }
     }
