@@ -53,7 +53,7 @@ body {
 #group1 {
   min-height: 797rem;
   background-color: black;
-  background-image: url(../assets/group1/hero.png);
+  background-image: url(./assets/group1/hero.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,7 +117,7 @@ body {
 
 #group2 {
   min-height: 797rem;
-  background-image: url(../assets/group2/background.png);
+  background-image: url(./assets/group2/background.png);
   background-position: 0 150rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,7 +173,7 @@ body {
   min-height: 800rem;
   color: #f64b3c;
   background-color: #f6eedf;
-  background-image: url(../assets/group4/background.png);
+  background-image: url(./assets/group4/background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -234,7 +234,7 @@ body {
 
 #group6 {
   min-height: 800rem;
-  background-image: url(../assets/group6/background.png);
+  background-image: url(./assets/group6/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: #f64b3c;
@@ -281,7 +281,7 @@ body {
 
 #group7 {
   min-height: 797rem;
-  background-image: url(../assets/group7/background.png);
+  background-image: url(./assets/group7/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -310,11 +310,9 @@ body {
 }
 #group8 .content {
   width: 100%;
-  background-image: url(../assets/group8/background.png);
+  background-image: url(./assets/group8/background.png);
   background-position: center;
   background-size: cover;
-  resize: both;
-  transform: scale(0.9);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -542,4 +540,4 @@ body {
     flex-basis: 50%;
     margin-top: 60rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=index.css.map */
