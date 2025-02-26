@@ -6,52 +6,50 @@
 }
 
 html {
-  font-size: 0.8px;
+  font-size: 1px;
 }
 
 body {
   margin: 0 auto;
 }
 
-#group6 .card-container .card button, #group1 .text button, #group4 .text button, #group3 .text button {
+.site-2025009 #group6 .card-container .card button, .site-2025009 #group1 .text button, .site-2025009 #group4 .text button, .site-2025009 #group3 .text button {
   font-family: "Montserrat", sans-serif;
-  font-size: 25rem;
+  font-size: 20rem;
   font-weight: 700;
   text-transform: uppercase;
-  border-radius: 40rem;
+  border-radius: 32rem;
   border: none;
-  padding: 15rem 60rem;
+  padding: 12rem 48rem;
 }
-
-#group4, #group3 {
-  min-height: 800rem;
+.site-2025009 #group4, .site-2025009 #group3 {
+  min-height: 640rem;
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
   justify-content: space-evenly;
   align-items: center;
 }
-#group4 .text, #group3 .text {
+.site-2025009 #group4 .text, .site-2025009 #group3 .text {
   max-width: 40%;
 }
-#group4 .text h2, #group3 .text h2 {
+.site-2025009 #group4 .text h2, .site-2025009 #group3 .text h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 75rem;
+  font-size: 60rem;
   margin-bottom: 0;
 }
-#group4 .text p, #group3 .text p {
+.site-2025009 #group4 .text p, .site-2025009 #group3 .text p {
   font-family: "Nunito", sans-serif;
-  font-size: 29.72rem;
+  font-size: 23.776rem;
   font-weight: 400;
-  margin-bottom: 29.72rem;
+  margin-bottom: 23.776rem;
 }
-#group4 .text button, #group3 .text button {
+.site-2025009 #group4 .text button, .site-2025009 #group3 .text button {
   color: #f64b3c;
   background-color: white;
 }
-
-#group1 {
-  min-height: 797rem;
+.site-2025009 #group1 {
+  min-height: 637.6rem;
   background-color: black;
   background-image: url(./assets/group1/hero.png);
   background-position: center;
@@ -59,166 +57,161 @@ body {
   background-size: cover;
   position: relative;
 }
-#group1 .toolbar {
+.site-2025009 #group1 .toolbar {
   display: flex;
   background: linear-gradient(to bottom, black, 80%, transparent);
   justify-content: space-between;
 }
-#group1 .toolbar .close,
-#group1 .toolbar .open {
+.site-2025009 #group1 .toolbar .close,
+.site-2025009 #group1 .toolbar .open {
   display: none;
 }
-#group1 .toolbar .logo,
-#group1 .toolbar nav {
-  margin: 35rem 70rem;
+.site-2025009 #group1 .toolbar .logo,
+.site-2025009 #group1 .toolbar nav {
+  margin: 28rem 56rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#group1 .toolbar ul {
+.site-2025009 #group1 .toolbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   vertical-align: center;
 }
-#group1 .toolbar ul li {
+.site-2025009 #group1 .toolbar ul li {
   display: inline-block;
 }
-#group1 .toolbar ul li a {
+.site-2025009 #group1 .toolbar ul li a {
   font-family: "Poppins", sans-serif;
-  font-size: 25rem;
+  font-size: 20rem;
   text-decoration: none;
   text-transform: uppercase;
   display: block;
   color: white;
-  padding: 30rem;
+  padding: 24rem;
 }
-#group1 .text {
+.site-2025009 #group1 .text {
   position: absolute;
-  bottom: 75rem;
-  left: 75rem;
+  bottom: 60rem;
+  left: 60rem;
   max-width: 50%;
 }
-#group1 .text h1 {
+.site-2025009 #group1 .text h1 {
   font-family: "Archivo", sans-serif;
-  font-size: 91.04rem;
+  font-size: 72.832rem;
   color: white;
 }
-#group1 .text p {
+.site-2025009 #group1 .text p {
   font-family: "Nunito", sans-serif;
-  font-size: 32.16rem;
+  font-size: 25.728rem;
   color: white;
   font-weight: 400;
 }
-#group1 .text button {
+.site-2025009 #group1 .text button {
   color: white;
   background-color: #f64b3c;
 }
-
-#group2 {
-  min-height: 797rem;
+.site-2025009 #group2 {
+  min-height: 637.6rem;
   background-image: url(./assets/group2/background.png);
-  background-position: 0 150rem;
+  background-position: 0 120rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f6eedf;
   color: #f64b3c;
-  padding: 35rem 0rem;
+  padding: 28rem 0rem;
 }
-#group2 .text {
+.site-2025009 #group2 .text {
   max-width: 65%;
   margin: 0 auto;
 }
-#group2 .text h2,
-#group2 .text p {
+.site-2025009 #group2 .text h2,
+.site-2025009 #group2 .text p {
   text-align: center;
 }
-#group2 .text h2 {
+.site-2025009 #group2 .text h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 63.66rem;
+  font-size: 50.928rem;
 }
-#group2 .text p {
+.site-2025009 #group2 .text p {
   font-family: "Montserrat", sans-serif;
-  font-size: 25.23rem;
+  font-size: 20.184rem;
   font-weight: 400;
 }
-#group2 .card-container {
+.site-2025009 #group2 .card-container {
   display: flex;
   max-width: 75%;
-  margin: 80rem auto;
+  margin: 64rem auto;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-#group2 .card-container .card {
+.site-2025009 #group2 .card-container .card {
   text-align: center;
 }
-#group2 .card-container .card h3 {
+.site-2025009 #group2 .card-container .card h3 {
   font-family: "Archivo", sans-serif;
-  font-size: 33.33rem;
+  font-size: 26.664rem;
   text-transform: uppercase;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
-#group2 .card-container .card p {
+.site-2025009 #group2 .card-container .card p {
   font-family: "Nunito", sans-serif;
-  font-size: 25rem;
+  font-size: 20rem;
 }
-
-#group3 {
+.site-2025009 #group3 {
   color: #ffffff;
   background-color: #f64b3c;
 }
-
-#group4 {
-  min-height: 800rem;
+.site-2025009 #group4 {
+  min-height: 640rem;
   color: #f64b3c;
   background-color: #f6eedf;
   background-image: url(./assets/group4/background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-#group4 .text button {
+.site-2025009 #group4 .text button {
   background-color: #f64b3c;
   color: white;
 }
-
-.row-reverse {
+.site-2025009 .row-reverse {
   flex-direction: row-reverse !important;
 }
-
-#group5 {
-  min-height: 797rem;
+.site-2025009 #group5 {
+  min-height: 637.6rem;
   background-color: #f64b3c;
   color: #ffffff;
 }
-#group5 .text {
+.site-2025009 #group5 .text {
   max-width: 55%;
   text-align: center;
-  padding: 20rem 0rem;
+  padding: 16rem 0;
   margin: 0 auto;
 }
-#group5 .text h2 {
+.site-2025009 #group5 .text h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 62.26rem;
+  font-size: 49.808rem;
   margin-bottom: 0;
 }
-#group5 .text p {
+.site-2025009 #group5 .text p {
   font-family: "Montserrat", sans-serif;
-  font-size: 24.68rem;
+  font-size: 19.744rem;
   font-weight: 400;
 }
-#group5 .card-container {
+.site-2025009 #group5 .card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  margin-top: 80rem;
+  margin-top: 64rem;
 }
-#group5 .card-container .card {
-  border: 5rem solid white;
-  width: 300rem;
-  height: 300rem;
-  border-radius: 300rem;
+.site-2025009 #group5 .card-container .card {
+  border: 4rem solid white;
+  width: 240rem;
+  height: 240rem;
+  border-radius: 240rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -226,18 +219,17 @@ body {
   align-items: center;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 33.33rem;
+  font-size: 26.664rem;
   font-weight: 700;
   text-transform: uppercase;
 }
-#group5 .card-container .card strong {
+.site-2025009 #group5 .card-container .card strong {
   display: block;
   font-family: "Archivo", sans-serif;
-  font-size: 101.61rem;
+  font-size: 81.288rem;
 }
-
-#group6 {
-  min-height: 800rem;
+.site-2025009 #group6 {
+  min-height: 640rem;
   background-image: url(./assets/group6/background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -246,45 +238,44 @@ body {
   text-align: center;
   overflow: hidden;
 }
-#group6 h2 {
+.site-2025009 #group6 h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 75rem;
-  padding: 20rem;
+  font-size: 60rem;
+  padding: 16rem;
 }
-#group6 .card-container {
+.site-2025009 #group6 .card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  padding: 20rem;
+  padding: 16rem;
 }
-#group6 .card-container .card {
-  width: 335rem;
-  height: 500rem;
-  border-radius: 10rem;
+.site-2025009 #group6 .card-container .card {
+  width: 268rem;
+  height: 400rem;
+  border-radius: 8rem;
   background-color: #ffffff;
-  padding: 10rem;
+  padding: 8rem;
 }
-#group6 .card-container .card h3,
-#group6 .card-container .card .price {
+.site-2025009 #group6 .card-container .card h3,
+.site-2025009 #group6 .card-container .card .price {
   font-family: "Archivo", sans-serif;
-  font-size: 33.35rem;
+  font-size: 26.68rem;
 }
-#group6 .card-container .card img {
-  margin: 10rem;
+.site-2025009 #group6 .card-container .card img {
+  margin: 8rem;
 }
-#group6 .card-container .card p {
+.site-2025009 #group6 .card-container .card p {
   font-family: "Montserrat", sans-serif;
-  font-size: 20.01rem;
+  font-size: 16.008rem;
   font-weight: 400;
 }
-#group6 .card-container .card button {
+.site-2025009 #group6 .card-container .card button {
   color: #ffffff;
   background-color: #f64b3c;
 }
-
-#group7 {
-  min-height: 797rem;
+.site-2025009 #group7 {
+  min-height: 623.2rem;
   background-image: url(./assets/group7/background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -294,25 +285,24 @@ body {
   justify-content: center;
   align-items: center;
 }
-#group7 .text {
+.site-2025009 #group7 .text {
   width: 50%;
 }
-#group7 .text p {
+.site-2025009 #group7 .text p {
   font-family: "Archivo", sans-serif;
-  font-size: 36.47rem;
+  font-size: 29.176rem;
 }
-#group7 .text h4 {
+.site-2025009 #group7 .text h4 {
   font-family: "Calistoga", cursive;
-  font-size: 44.9rem;
+  font-size: 35.92rem;
   font-weight: 400;
 }
-
-#group8 {
-  min-height: 797rem;
+.site-2025009 #group8 {
+  min-height: 637.6rem;
   background-color: #f6eedf;
   display: flex;
 }
-#group8 .content {
+.site-2025009 #group8 .content {
   width: 100%;
   background-image: url(./assets/group8/background.png);
   background-position: center;
@@ -323,140 +313,139 @@ body {
   align-items: center;
   text-align: center;
 }
-#group8 .content h2,
-#group8 .content p {
+.site-2025009 #group8 .content h2,
+.site-2025009 #group8 .content p {
   color: #f64b3c;
 }
-#group8 .content h2 {
+.site-2025009 #group8 .content h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 75rem;
+  font-size: 60rem;
   margin: 0;
 }
-#group8 .content p {
+.site-2025009 #group8 .content p {
   font-family: "Nunito", sans-serif;
-  font-size: 29.72rem;
+  font-size: 23.776rem;
   font-weight: 400;
   max-width: 50%;
 }
-#group8 .content .form {
+.site-2025009 #group8 .content .form {
   width: 50%;
 }
-#group8 .content .form input {
+.site-2025009 #group8 .content .form input {
   width: 60%;
   background-color: white;
-  padding: 20rem;
+  padding: 16rem;
   border: none;
-  border-top-left-radius: 30rem;
-  border-bottom-left-radius: 30rem;
+  border-top-left-radius: 24rem;
+  border-bottom-left-radius: 24rem;
   font-family: "Nunito", sans-serif;
-  font-size: 25rem;
+  font-size: 20rem;
   font-weight: 400;
 }
-#group8 .content .form button {
+.site-2025009 #group8 .content .form button {
   width: 35%;
   background-color: #f64b3c;
   color: white;
   border: none;
-  padding: 20rem;
-  border-top-right-radius: 30rem;
-  border-bottom-right-radius: 30rem;
+  padding: 16rem;
+  border-top-right-radius: 24rem;
+  border-bottom-right-radius: 24rem;
   text-transform: uppercase;
   font-family: "Nunito", sans-serif;
-  font-size: 25rem;
+  font-size: 20rem;
   font-weight: 400;
 }
-
-#group9 {
-  min-height: 797rem;
-  border: 1rem solid white;
+.site-2025009 #group9 {
+  min-height: 637.6rem;
+  border: 0.8rem solid white;
   color: white;
   background-color: #222222;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#group9 .content {
+.site-2025009 #group9 .content {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
 }
-#group9 .content #col1 {
+.site-2025009 #group9 .content #col1 {
   max-width: 35%;
 }
-#group9 .content .social a {
+.site-2025009 #group9 .content .social a {
   display: inline-block;
-  width: 50rem;
-  height: 50rem;
+  width: 40rem;
+  height: 40rem;
   background-color: white;
   border-radius: 50%;
-  padding: 10rem;
-  margin: 10rem;
+  padding: 8rem;
+  margin: 8rem;
 }
-#group9 .content .social a .fa-brands {
-  font-size: 30rem;
+.site-2025009 #group9 .content .social a .fa-brands {
+  font-size: 24rem;
   color: #222222;
 }
-#group9 .content h4 {
+.site-2025009 #group9 .content h4 {
   font-family: "Archivo", sans-serif;
-  font-size: 31.47rem;
+  font-size: 25.176rem;
   margin: 0;
 }
-#group9 .content p {
+.site-2025009 #group9 .content p {
   font-family: "Nunito", sans-serif;
-  font-size: 23.6rem;
+  font-size: 18.88rem;
   font-weight: 400;
 }
-#group9 .content ul {
+.site-2025009 #group9 .content ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-#group9 .content ul li {
-  padding: 5rem;
+.site-2025009 #group9 .content ul li {
+  padding: 4rem;
 }
-#group9 .content ul li a {
+.site-2025009 #group9 .content ul li a {
   text-decoration: none;
   color: white;
   font-family: "Nunito", sans-serif;
-  font-size: 23.6rem;
+  font-size: 18.88rem;
   font-weight: 400;
 }
 
 @media screen and (max-width: 992px) {
   html {
-    font-size: 0.751px;
+    font-size: 0.75px;
   }
-  img {
+  .site-2025009 img {
     max-width: 100%;
   }
-  #group1 .text,
-  #group2 .text,
-  #group3 .text,
-  #group4 .text,
-  #group5 .text,
-  #group6 .text,
-  #group7 .text,
-  #group8 .content,
-  #group9 .content {
+  .site-2025009 #group1 .text,
+  .site-2025009 #group2 .text,
+  .site-2025009 #group3 .text,
+  .site-2025009 #group4 .text,
+  .site-2025009 #group5 .text,
+  .site-2025009 #group6 .text,
+  .site-2025009 #group7 .text,
+  .site-2025009 #group8 .content,
+  .site-2025009 #group9 .content {
     width: 80%;
     max-width: 80%;
     margin: 0 auto;
   }
-  #group2 .card-container,
-  #group5 .card-container,
-  #group6 .card-container {
+  .site-2025009 #group2 .card-container,
+  .site-2025009 #group5 .card-container,
+  .site-2025009 #group6 .card-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 60rem;
     margin: 60rem auto;
   }
-  #group1 {
+  .site-2025009 #group1 {
     overflow: hidden;
   }
-  #group1 .toolbar .close,
-  #group1 .toolbar .open {
+  .site-2025009 #group1 .toolbar .close,
+  .site-2025009 #group1 .toolbar .open {
     display: flex;
     color: white;
     align-items: center;
@@ -464,16 +453,16 @@ body {
     margin: 35rem 70rem;
     margin-left: auto;
   }
-  #group1 .toolbar .close:hover,
-  #group1 .toolbar .open:hover {
+  .site-2025009 #group1 .toolbar .close:hover,
+  .site-2025009 #group1 .toolbar .open:hover {
     cursor: pointer;
   }
-  #group1 .toolbar .close i,
-  #group1 .toolbar .open i {
+  .site-2025009 #group1 .toolbar .close i,
+  .site-2025009 #group1 .toolbar .open i {
     line-height: 80rem;
     font-size: 25rem;
   }
-  #group1 .toolbar nav {
+  .site-2025009 #group1 .toolbar nav {
     margin: 0;
     display: flex;
     justify-content: flex-start;
@@ -489,13 +478,13 @@ body {
     transform: translateX(100%);
     transition: transform 0.5s;
   }
-  #group1 .toolbar ul {
+  .site-2025009 #group1 .toolbar ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
-  #group1 .text {
+  .site-2025009 #group1 .text {
     all: unset;
     display: flex;
     flex-direction: column;
@@ -505,49 +494,49 @@ body {
     text-align: center;
     max-width: 80%;
   }
-  #group2 {
+  .site-2025009 #group2 {
     background-position: center;
   }
-  #group3,
-  #group4 {
+  .site-2025009 #group3,
+  .site-2025009 #group4 {
     flex-direction: column;
   }
-  #group3 .image,
-  #group3 .text,
-  #group4 .image,
-  #group4 .text {
+  .site-2025009 #group3 .image,
+  .site-2025009 #group3 .text,
+  .site-2025009 #group4 .image,
+  .site-2025009 #group4 .text {
     margin: 63.66rem 0;
   }
-  #group3 .text,
-  #group4 .text {
+  .site-2025009 #group3 .text,
+  .site-2025009 #group4 .text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
-  .row-reverse {
+  .site-2025009 .row-reverse {
     flex-direction: column !important;
   }
-  #group5 {
+  .site-2025009 #group5 {
     overflow: hidden;
   }
-  #group6 .card-container .card {
+  .site-2025009 #group6 .card-container .card {
     width: 80%;
   }
-  #group8 .content p {
+  .site-2025009 #group8 .content p {
     max-width: 100%;
   }
-  #group8 .content .form {
+  .site-2025009 #group8 .content .form {
     width: 100%;
   }
-  #group8 .content .form button {
+  .site-2025009 #group8 .content .form button {
     font-size: 20rem;
   }
-  #group9 .content {
+  .site-2025009 #group9 .content {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #group9 .content .col {
+  .site-2025009 #group9 .content .col {
     flex-basis: 50%;
     margin-top: 60rem;
   }
