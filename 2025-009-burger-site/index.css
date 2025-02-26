@@ -182,6 +182,10 @@ body {
   color: white;
 }
 
+.row-reverse {
+  flex-direction: row-reverse !important;
+}
+
 #group5 {
   min-height: 797rem;
   background-color: #f64b3c;
@@ -520,6 +524,9 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+  }
+  .row-reverse {
+    flex-direction: column !important;
   }
   #group5 {
     overflow: hidden;

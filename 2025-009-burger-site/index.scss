@@ -217,6 +217,10 @@ body {
     }
 }
 
+.row-reverse {
+    flex-direction: row-reverse !important;
+}
+
 #group5 {
     min-height: 797rem;
     background-color: #f64b3c;
@@ -612,6 +616,10 @@ $breakpoint-tablet: 992px;
             justify-content: flex-start;
             align-items: center;
         }
+    }
+
+    .row-reverse {
+        flex-direction: column !important;
     }
 
     #group5 {
