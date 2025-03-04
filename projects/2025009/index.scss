@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Calistoga&family=Montserrat:wght@400;700&family=Nunito:wght@400;600&family=Poppins:wght@600&display=swap');
-
-// font-family: 'Archivo', sans-serif;
-// font-family: 'Calistoga', cursive;
-// font-family: 'Montserrat', sans-serif;
-// font-family: 'Nunito', sans-serif;
-// font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Jockey+One&display=swap');
 
 *,
 *::before,
@@ -12,659 +6,482 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 1px;
-}
-
+html,
 body {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
-.site-2025009 {
-    %button {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 20rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        border-radius: 32rem;
-        border: none;
-        padding: 12rem 48rem;
-    }
+.project-2025009 {
+    $black-color: #000000;
+    $white-color: #ffffff;
+    $red-color: #D00000;
+    $yellow-color: #FFC74D;
 
-    %group3 {
-        min-height: 640rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: no-wrap;
-        justify-content: space-evenly;
-        align-items: center;
+    .header {
+        font-size: 16px;
+        min-height: 51.5625em;
+        background-image: url("./assets/header/header-bg.png");
 
-        .text {
-            max-width: 40%;
-
-            h2 {
-                font-family: 'Archivo', sans-serif;
-                font-size: 60rem;
-                margin-bottom: 0;
-            }
-
-            p {
-                font-family: 'Nunito', sans-serif;
-                font-size: 23.776rem;
-                font-weight: 400;
-                margin-bottom: 23.776rem
-            }
-
-            button {
-                @extend %button;
-                color: #f64b3c;
-                background-color: white;
-            }
-        }
-    }
-
-    #group1 {
-        min-height: 637.6rem;
-        background-color: black;
-        background-image: url(./assets/group1/hero.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-
-        .toolbar {
+        .container {
             display: flex;
-            background: linear-gradient(to bottom, black, 80%, transparent);
-            justify-content: space-between;
-
-            .close,
-            .open {
-                display: none;
-            }
-
-            .logo,
-            nav {
-                margin: 28rem 56rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                vertical-align: center;
-
-                li {
-                    display: inline-block;
-
-                    a {
-                        font-family: 'Poppins', sans-serif;
-                        font-size: 20rem;
-                        text-decoration: none;
-                        text-transform: uppercase;
-                        display: block;
-                        color: white;
-                        padding: 24rem;
-                    }
-                }
-            }
-
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.75em;
+            // padding: 1.8125em 5.9375em;
         }
 
-        .text {
-            position: absolute;
-            bottom: 60rem;
-            left: 60rem;
-            max-width: 50%;
-
-            h1 {
-                font-family: 'Archivo', sans-serif;
-                font-size: 72.832rem;
-                color: white;
-            }
-
-            p {
-                font-family: 'Nunito', sans-serif;
-                font-size: 25.728rem;
-                color: white;
-                font-weight: 400;
-            }
-
-            button {
-                @extend %button;
-                color: white;
-                background-color: #f64b3c;
-            }
-        }
-    }
-
-    #group2 {
-        min-height: 637.6rem;
-        background-image: url(./assets/group2/background.png);
-        background-position: 0 120rem;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #f6eedf;
-        color: #f64b3c;
-        padding: 28rem 0rem;
-
-        .text {
-            max-width: 65%;
-            margin: 0 auto;
-
-            h2,
-            p {
-                text-align: center;
-            }
-
-            h2 {
-                font-family: 'Archivo', sans-serif;
-                font-size: 50.928rem;
-            }
-
-            p {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 20.184rem;
-                font-weight: 400;
-            }
-        }
-
-        .card-container {
-            display: flex;
-            max-width: 75%;
-            margin: 64rem auto;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-            .card {
-                text-align: center;
-
-                h3 {
-                    font-family: 'Archivo', sans-serif;
-                    font-size: 26.664rem;
-                    text-transform: uppercase;
-                    margin-bottom: 0;
-                }
-
-                p {
-                    font-family: 'Nunito', sans-serif;
-                    font-size: 20rem;
-                }
-            }
-        }
-    }
-
-    #group3 {
-        @extend %group3;
-        color: #ffffff;
-        background-color: #f64b3c;
-    }
-
-    #group4 {
-        @extend %group3;
-        min-height: 640rem;
-        color: #f64b3c;
-        background-color: #f6eedf;
-        background-image: url(./assets/group4/background.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        .text button {
-            background-color: #f64b3c;
-            color: white;
-        }
-    }
-
-    .row-reverse {
-        flex-direction: row-reverse !important;
-    }
-
-    #group5 {
-        min-height: 637.6rem;
-        background-color: #f64b3c;
-        color: #ffffff;
-
-        .text {
-            max-width: 55%;
-            text-align: center;
-            padding: 16rem 0;
-            margin: 0 auto;
-
-            h2 {
-                font-family: 'Archivo', sans-serif;
-                font-size: 49.808rem;
-                margin-bottom: 0;
-            }
-
-            p {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 19.744rem;
-                font-weight: 400;
-            }
-        }
-
-        .card-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-evenly;
-            margin-top: 64rem;
-
-            .card {
-                border: 4rem solid white;
-                width: 240rem;
-                height: 240rem;
-                border-radius: 240rem;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: center;
-                align-items: center;
-
-                text-align: center;
-                font-family: 'Montserrat', sans-serif;
-                font-size: 26.664rem;
+        .menu-bar {
+            @mixin nav {
+                font-family: "Inter", sans-serif;
                 font-weight: 700;
+                font-size: 1.25em;
+                color: $black-color;
                 text-transform: uppercase;
-
-                strong {
-                    display: block;
-                    font-family: 'Archivo', sans-serif;
-                    font-size: 81.288rem;
-                }
-            }
-        }
-    }
-
-    #group6 {
-        min-height: 640rem;
-        background-image: url(./assets/group6/background.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: #f64b3c;
-        background-color: #f6eedf;
-        text-align: center;
-        overflow: hidden;
-
-        h2 {
-            font-family: 'Archivo', sans-serif;
-            font-size: 60rem;
-            padding: 16rem;
-        }
-
-        .card-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-evenly;
-            padding: 16rem;
-
-            .card {
-                width: 268rem;
-                height: 400rem;
-                border-radius: 8rem;
-                background-color: #ffffff;
-                padding: 8rem;
-
-                h3,
-                .price {
-                    font-family: 'Archivo', sans-serif;
-                    font-size: 26.68rem;
-                }
-
-                img {
-                    margin: 8rem;
-                }
-
-                p {
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 16.008rem;
-                    font-weight: 400;
-                }
-
-                button {
-                    @extend %button;
-                    color: #ffffff;
-                    background-color: #f64b3c;
-                }
-            }
-        }
-    }
-
-    #group7 {
-        min-height: 623.2rem;
-        background-image: url(./assets/group7/background.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-align: center;
-        color: #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .text {
-            width: 50%;
-
-            p {
-                font-family: 'Archivo', sans-serif;
-                font-size: 29.176rem;
             }
 
-            h4 {
-                font-family: 'Calistoga', cursive;
-                font-size: 35.92rem;
-                font-weight: 400;
+            %menu-icon {
+                font-size: 2em;
+                line-height: 3.625rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
-        }
-    }
 
-    #group8 {
-        min-height: 637.6rem;
-        background-color: #f6eedf;
-        display: flex;
-
-        .content {
             width: 100%;
-            background-image: url(./assets/group8/background.png);
-            background-position: center;
-            background-size: cover;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            text-align: center;
 
-            h2,
-            p {
-                color: #f64b3c;
-            }
+            .header-logo {
+                flex-basis: 50%;
 
-            h2 {
-                font-family: 'Archivo', sans-serif;
-                font-size: 60rem;
-                margin: 0;
-            }
-
-            p {
-                font-family: 'Nunito', sans-serif;
-                font-size: 23.776rem;
-                font-weight: 400;
-                max-width: 50%;
-            }
-
-            .form {
-                width: 50%;
-
-                input {
-                    width: 60%;
-                    background-color: white;
-                    padding: 16rem;
-                    border: none;
-                    border-top-left-radius: 24rem;
-                    border-bottom-left-radius: 24rem;
-                    font-family: 'Nunito', sans-serif;
-                    font-size: 20rem;
-                    font-weight: 400;
-
-                }
-
-                button {
-                    width: 35%;
-                    background-color: #f64b3c;
-                    color: white;
-                    border: none;
-                    padding: 16rem;
-                    border-top-right-radius: 24rem;
-                    border-bottom-right-radius: 24rem;
-                    text-transform: uppercase;
-                    font-family: 'Nunito', sans-serif;
-                    font-size: 20rem;
-                    font-weight: 400;
-                }
-            }
-
-
-        }
-    }
-
-    #group9 {
-        min-height: 637.6rem;
-        border: 0.8rem solid white;
-        color: white;
-        background-color: #222222;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .content {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-
-            #col1 {
-                max-width: 35%;
-            }
-
-            .social {
-                a {
-                    display: inline-block;
-                    width: 40rem;
-                    height: 40rem;
-                    background-color: white;
-                    border-radius: 50%;
-                    padding: 8rem;
-                    margin: 8rem;
-
-                    .fa-brands {
-                        font-size: 24rem;
-                        color: #222222;
-                    }
-                }
-            }
-
-            h4 {
-                font-family: 'Archivo', sans-serif;
-                font-size: 25.176rem;
-                margin: 0;
-            }
-
-            p {
-                font-family: 'Nunito', sans-serif;
-                font-size: 18.88rem;
-                font-weight: 400;
-            }
-
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-
-                li {
-                    padding: 4rem;
-
-                    a {
-                        text-decoration: none;
-                        color: white;
-                        font-family: 'Nunito', sans-serif;
-                        font-size: 18.88rem;
-                        font-weight: 400;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
-@media screen and (max-width: 992px) {
-    html {
-        font-size: 0.75px;
-    }
-
-    .site-2025009 {
-        img {
-            max-width: 100%;
-        }
-
-        #group1 .text,
-        #group2 .text,
-        #group3 .text,
-        #group4 .text,
-        #group5 .text,
-        #group6 .text,
-        #group7 .text,
-        #group8 .content,
-        #group9 .content {
-            width: 80%;
-            max-width: 80%;
-            margin: 0 auto;
-        }
-
-        #group2 .card-container,
-        #group5 .card-container,
-        #group6 .card-container {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 60rem;
-            margin: 60rem auto;
-        }
-
-        #group1 {
-            overflow: hidden;
-
-            .toolbar {
-
-                .close,
-                .open {
-                    display: flex;
-                    color: white;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 35rem 70rem;
-                    margin-left: auto;
-
-                    &:hover {
-                        cursor: pointer;
-                    }
-
-                    i {
-                        line-height: 80rem;
-                        font-size: 25rem;
-                    }
-
-
-                }
-
-
-
-                nav {
-                    margin: 0;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    flex-direction: column;
-                    position: fixed;
-                    top: 0;
-                    right: 0;
-                    width: 50%;
-                    height: 100vh;
-                    background: linear-gradient(to bottom, black, 80%, transparent);
-                    z-index: 1;
-                    transform: translateX(100%);
-                    transition: transform 0.5s;
-                }
-
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    align-items: center
-                }
-            }
-
-            .text {
-                all: unset;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-                margin: 60rem auto;
-                text-align: center;
-                max-width: 80%;
-            }
-        }
-
-        #group2 {
-            background-position: center;
-        }
-
-        #group3,
-        #group4 {
-            flex-direction: column;
-
-            .image,
-            .text {
-                margin: 63.66rem 0;
-            }
-
-            .text {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-            }
-        }
-
-        .row-reverse {
-            flex-direction: column !important;
-        }
-
-        #group5 {
-            overflow: hidden;
-        }
-
-        #group6 {
-            .card-container {
-                .card {
-                    width: 80%;
-                }
-            }
-        }
-
-        #group8 {
-            .content {
-                p {
+                .img {
                     max-width: 100%;
                 }
+            }
 
-                .form {
+            .open-menu {
+                @extend %menu-icon;
+            }
+
+            .menu {
+                position: fixed;
+                right: 0;
+                top: 0;
+                width: 50%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                gap: 5em;
+                justify-content: flex-start;
+                align-items: flex-end;
+                background-color: rgba($color: $white-color, $alpha: 0.9);
+                z-index: 1;
+                transform: translateX(100%);
+                transition: all 2s ease;
+                padding: 1.8125em 5.9375em;
+
+                .close-menu {
+                    @extend %menu-icon;
+                }
+
+                .nav {
                     width: 100%;
 
-                    button {
-                        font-size: 20rem;
+                    .navlink {
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    .link {
+                        @include nav;
+                        display: block;
+                        text-align: center;
+                        padding: 1.2em;
+                        text-decoration: none;
                     }
                 }
             }
         }
 
-        #group9 {
-            .content {
-                flex-wrap: wrap;
-                justify-content: space-between;
-
-                .col {
-                    flex-basis: 50%;
-                    margin-top: 60rem;
-                }
+        .hero-content {
+            @mixin p {
+                font-family: "Inter", sans-serif;
+                font-weight: 400;
+                font-size: 1.25em;
+                text-transform: uppercase;
+                margin: 0;
             }
 
+            @mixin h1 {
+                font-family: "Jockey One", sans-serif;
+                font-weight: 400;
+                font-size: 8em;
+                margin: 0;
+            }
+
+            width: 100%;
+            margin-top: 6em;
+
+            .hero-text {
+                text-align: center;
+            }
+
+            .text {
+                @include p;
+            }
+
+            .heading {
+                @include h1;
+            }
+
+            .hero-img {
+                text-align: center;
+
+                .img {
+                    max-width: 100%;
+                }
+            }
         }
     }
 
+    .try-out-today {
+
+        font-size: 16px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.75em;
+            gap: 1.75em;
+
+            .right-side {
+                display: flex;
+                flex-direction: column;
+                gap: 1.75em;
+            }
+
+            @mixin p {
+                font-family: "Inter", sans-serif;
+                font-size: 2em;
+                color: $white-color;
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+
+            @mixin heading {
+                font-family: "Inter", sans-serif;
+                font-size: 2em;
+                color: $white-color;
+                text-transform: uppercase;
+                margin: 0;
+                font-weight: 700;
+            }
+
+            %try-out-today {
+                position: relative;
+
+                h2 {
+                    @include heading;
+                }
+
+                p {
+                    @include p;
+                }
+            }
+
+            .most-popular-burger {
+                @extend %try-out-today;
+
+                .text {
+                    position: absolute;
+                    top: 10%;
+                    left: 5%;
+                }
+            }
+
+            .most-fun-more-taste,
+            .fresh-chili {
+                @extend %try-out-today;
+
+                .text {
+                    position: absolute;
+                    top: 50%;
+                    left: 5%;
+                    transform: translateY(-50%);
+                    max-width: 40%;
+                }
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+
+    }
+
+    .choose-enjoy {
+        font-size: 16px;
+
+        .container {
+            padding: 1.75em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75em;
+
+            .slogan {
+                font-family: "Inter", sans-serif;
+                font-weight: 700;
+                font-size: 2em;
+                text-transform: uppercase;
+                background-color: $yellow-color;
+                color: $black-color;
+                padding: 1.0625em 4.078125em;
+                margin: 0;
+            }
+
+            .heading {
+                font-family: "Jockey One", sans-serif;
+                font-weight: 400;
+                font-size: 8em;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            .para {
+                font-family: "Inter", sans-serif;
+                font-size: 1.25em;
+                font-weight: 400;
+                text-align: center;
+                margin: 0;
+                padding: 1em;
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1.75rem;
+            }
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                gap: 1.75em;
+                box-shadow: 0.25em 0.5em 2em 0 rgb(0 0 0 / 18%);
+                border-radius: 1.25em;
+                margin-top: 5em;
+
+                .img {
+                    transform: translateY(-15%);
+                }
+
+                .name {
+                    font-family: "Inter", sans-serif;
+                    font-weight: 700;
+                    font-size: 1.5em;
+                    text-transform: capitalize;
+                    margin: 0;
+                }
+
+                .btn {
+                    color: $white-color;
+                    background-color: $red-color;
+                    font-family: "Inter", sans-serif;
+                    font-weight: 400;
+                    font-size: 1.5em;
+                    text-transform: uppercase;
+                    padding: 1em 2em;
+                    border: none;
+                    margin-bottom: 1.75em;
+                }
+            }
+        }
+    }
+
+    .upcoming-events {
+        font-size: 16px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75em;
+            padding: 1.75em;
+
+            .heading {
+                font-family: "Jockey One", sans-serif;
+                font-weight: 400;
+                font-size: 4em;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            .first-word {
+                font-family: "Inter", sans-serif;
+                font-weight: 700;
+                font-size: 0.5em;
+                text-transform: capitalize;
+                display: block;
+            }
+
+            .para {
+                font-family: "Inter", sans-serif;
+                font-weight: 400;
+                font-size: 1.25em;
+            }
+        }
+
+        .img {
+            max-width: 100%;
+        }
+    }
+
+    .reservation {
+        font-size: 16px;
+        padding: 1.75em;
+        background-image: url("./assets/reservation/bg-1.png"), url("./assets/reservation/bg-2.png");
+        background-position: 0% 0%, 100% 100%;
+        background-repeat: no-repeat, no-repeat;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75em;
+        }
+
+        .heading {
+            font-family: "Jockey One", sans-serif;
+            font-size: 8em;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0;
+        }
+
+        .first-word {
+            font-family: "Inter", sans-serif;
+            font-size: 0.25em;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        .form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75em;
+
+            @mixin optional-at-root($sel) {
+                @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+                    @content;
+                }
+            }
+
+            @mixin placeholder {
+                @include optional-at-root('::-webkit-input-placeholder') {
+                    @content;
+                }
+
+                @include optional-at-root(':-moz-placeholder') {
+                    @content;
+                }
+
+                @include optional-at-root('::-moz-placeholder') {
+                    @content;
+                }
+
+                @include optional-at-root(':-ms-input-placeholder') {
+                    @content;
+                }
+            }
+
+            .item {
+                width: 100%;
+                padding: 0.79em;
+                font-family: "Inter", sans-serif;
+                font-weight: 400;
+                font-size: 1.25em;
+                text-transform: uppercase;
+                color: $black-color;
+
+                @include placeholder {
+                    color: $black-color;
+                }
+            }
+
+            .btn {
+                background-color: $red-color;
+                color: $white-color;
+                border: none;
+            }
+        }
+
+    }
+
+    .footer {
+        font-size: 16px;
+        padding: 1.75em;
+        background-image: url("./assets/footer/footer-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $white-color;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75em;
+        }
+
+        .para {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 1.25em;
+        }
+
+        .footer-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75em;
+        }
+
+        .contact {
+            width: 100%;
+
+            .social {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1.75em;
+            }
+
+            .social-link {
+                color: $white-color;
+            }
+        }
+    }
 }
