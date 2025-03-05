@@ -194,7 +194,7 @@ body {
                 top: 50%;
                 left: 5%;
                 transform: translateY(-50%);
-                max-width: 40%;
+                max-width: 50%;
             }
         }
 
@@ -235,8 +235,7 @@ body {
             text-transform: uppercase;
             background-color: $yellow-color;
             color: $black-color;
-            padding: 1.0625em 1.75em;
-            // padding: 1.0625em 4.078125em;
+            padding: 5%;
             margin: 0;
         }
 
