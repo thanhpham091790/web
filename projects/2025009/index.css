@@ -396,7 +396,7 @@ body {
     font-size: 16px;
   }
   .project-2025009 .header .container {
-    padding: 7.375em;
+    padding: 1.8125em 7.375em;
   }
   .project-2025009 .header .header-logo {
     flex-basis: 25%;
@@ -423,6 +423,7 @@ body {
   .project-2025009 .header .hero-content {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 0;
   }
   .project-2025009 .header .hero-text {

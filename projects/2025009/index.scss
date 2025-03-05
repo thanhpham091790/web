@@ -491,7 +491,7 @@ body {
 
         .header {
             .container {
-                padding: 7.375em;
+                padding: 1.8125em 7.375em;
             }
 
             .header-logo {
@@ -525,6 +525,7 @@ body {
             .hero-content {
                 flex-direction: row;
                 justify-content: space-between;
+                align-items: flex-start;
                 gap: 0;
             }
 
