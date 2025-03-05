@@ -11,9 +11,19 @@ body {
   padding: 0;
 }
 
-.project-2025009 .header {
+.project-2025009 .header,
+.project-2025009 .try-out-today,
+.project-2025009 .choose-enjoy,
+.project-2025009 .upcoming-events,
+.project-2025009 .reservation,
+.project-2025009 .footer {
   font-size: 16px;
-  min-height: 51.5625em;
+}
+.project-2025009 img {
+  max-width: 100%;
+}
+.project-2025009 .header {
+  min-height: 100vh;
   background-image: url("./assets/header/header-bg.png");
 }
 .project-2025009 .header .container {
@@ -29,20 +39,17 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.project-2025009 .header .menu-bar .menu .close-menu, .project-2025009 .header .menu-bar .open-menu {
+.project-2025009 .header .header-logo {
+  flex-basis: 50%;
+}
+.project-2025009 .header .open-menu {
   font-size: 2em;
   line-height: 3.625rem;
 }
-.project-2025009 .header .menu-bar .menu .close-menu:hover, .project-2025009 .header .menu-bar .open-menu:hover {
+.project-2025009 .header .open-menu:hover {
   cursor: pointer;
 }
-.project-2025009 .header .menu-bar .header-logo {
-  flex-basis: 50%;
-}
-.project-2025009 .header .menu-bar .header-logo .img {
-  max-width: 100%;
-}
-.project-2025009 .header .menu-bar .menu {
+.project-2025009 .header .menu {
   position: fixed;
   right: 0;
   top: 0;
@@ -57,17 +64,24 @@ body {
   z-index: 1;
   transform: translateX(100%);
   transition: all 2s ease;
-  padding: 1.8125em 5.9375em;
+  padding: 1.75em;
 }
-.project-2025009 .header .menu-bar .menu .nav {
+.project-2025009 .header .close-menu {
+  font-size: 2em;
+  line-height: 3.625rem;
+}
+.project-2025009 .header .close-menu:hover {
+  cursor: pointer;
+}
+.project-2025009 .header .nav {
   width: 100%;
 }
-.project-2025009 .header .menu-bar .menu .nav .navlink {
+.project-2025009 .header .navlink {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.project-2025009 .header .menu-bar .menu .nav .link {
+.project-2025009 .header .link {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 1.25em;
@@ -82,30 +96,24 @@ body {
   width: 100%;
   margin-top: 6em;
 }
-.project-2025009 .header .hero-content .hero-text {
+.project-2025009 .header .hero-text {
   text-align: center;
 }
-.project-2025009 .header .hero-content .text {
+.project-2025009 .header .text {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.25em;
   text-transform: uppercase;
   margin: 0;
 }
-.project-2025009 .header .hero-content .heading {
+.project-2025009 .header .heading {
   font-family: "Jockey One", sans-serif;
   font-weight: 400;
   font-size: 8em;
   margin: 0;
 }
-.project-2025009 .header .hero-content .hero-img {
+.project-2025009 .header .hero-img {
   text-align: center;
-}
-.project-2025009 .header .hero-content .hero-img .img {
-  max-width: 100%;
-}
-.project-2025009 .try-out-today {
-  font-size: 16px;
 }
 .project-2025009 .try-out-today .container {
   display: flex;
@@ -115,17 +123,36 @@ body {
   padding: 1.75em;
   gap: 1.75em;
 }
-.project-2025009 .try-out-today .container .right-side {
+.project-2025009 .try-out-today .left-side {
+  max-width: 80%;
+}
+.project-2025009 .try-out-today .right-side {
   display: flex;
   flex-direction: column;
   gap: 1.75em;
+  max-width: 80%;
 }
-.project-2025009 .try-out-today .container .most-fun-more-taste,
-.project-2025009 .try-out-today .container .fresh-chili, .project-2025009 .try-out-today .container .most-popular-burger {
+.project-2025009 .try-out-today .most-popular-burger {
   position: relative;
 }
-.project-2025009 .try-out-today .container .most-fun-more-taste h2,
-.project-2025009 .try-out-today .container .fresh-chili h2, .project-2025009 .try-out-today .container .most-popular-burger h2 {
+.project-2025009 .try-out-today .most-popular-burger .text {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.project-2025009 .try-out-today .most-fun-more-taste,
+.project-2025009 .try-out-today .fresh-chili {
+  position: relative;
+}
+.project-2025009 .try-out-today .most-fun-more-taste .text,
+.project-2025009 .try-out-today .fresh-chili .text {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  max-width: 40%;
+}
+.project-2025009 .try-out-today .heading {
   font-family: "Inter", sans-serif;
   font-size: 2em;
   color: #ffffff;
@@ -133,33 +160,13 @@ body {
   margin: 0;
   font-weight: 700;
 }
-.project-2025009 .try-out-today .container .most-fun-more-taste p,
-.project-2025009 .try-out-today .container .fresh-chili p, .project-2025009 .try-out-today .container .most-popular-burger p {
+.project-2025009 .try-out-today .para {
   font-family: "Inter", sans-serif;
   font-size: 2em;
   color: #ffffff;
   margin: 0;
   text-transform: uppercase;
   font-weight: 500;
-}
-.project-2025009 .try-out-today .container .most-popular-burger .text {
-  position: absolute;
-  top: 10%;
-  left: 5%;
-}
-.project-2025009 .try-out-today .container .most-fun-more-taste .text,
-.project-2025009 .try-out-today .container .fresh-chili .text {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
-  max-width: 40%;
-}
-.project-2025009 .try-out-today .container img {
-  max-width: 100%;
-}
-.project-2025009 .choose-enjoy {
-  font-size: 16px;
 }
 .project-2025009 .choose-enjoy .container {
   padding: 1.75em;
@@ -169,7 +176,7 @@ body {
   align-items: center;
   gap: 1.75em;
 }
-.project-2025009 .choose-enjoy .container .slogan {
+.project-2025009 .choose-enjoy .slogan {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 2em;
@@ -179,14 +186,15 @@ body {
   padding: 1.0625em 4.078125em;
   margin: 0;
 }
-.project-2025009 .choose-enjoy .container .heading {
+.project-2025009 .choose-enjoy .heading {
   font-family: "Jockey One", sans-serif;
   font-weight: 400;
   font-size: 8em;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
 }
-.project-2025009 .choose-enjoy .container .para {
+.project-2025009 .choose-enjoy .para {
   font-family: "Inter", sans-serif;
   font-size: 1.25em;
   font-weight: 400;
@@ -194,14 +202,14 @@ body {
   margin: 0;
   padding: 1em;
 }
-.project-2025009 .choose-enjoy .container .cards {
+.project-2025009 .choose-enjoy .cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.75rem;
 }
-.project-2025009 .choose-enjoy .container .card {
+.project-2025009 .choose-enjoy .card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -211,17 +219,14 @@ body {
   border-radius: 1.25em;
   margin-top: 5em;
 }
-.project-2025009 .choose-enjoy .container .card .img {
-  transform: translateY(-15%);
-}
-.project-2025009 .choose-enjoy .container .card .name {
+.project-2025009 .choose-enjoy .card .name {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 1.5em;
   text-transform: capitalize;
   margin: 0;
 }
-.project-2025009 .choose-enjoy .container .card .btn {
+.project-2025009 .choose-enjoy .card .btn {
   color: #ffffff;
   background-color: #D00000;
   font-family: "Inter", sans-serif;
@@ -232,39 +237,33 @@ body {
   border: none;
   margin-bottom: 1.75em;
 }
-.project-2025009 .upcoming-events {
-  font-size: 16px;
-}
 .project-2025009 .upcoming-events .container {
   display: flex;
   flex-direction: column;
   gap: 1.75em;
   padding: 1.75em;
 }
-.project-2025009 .upcoming-events .container .heading {
+.project-2025009 .upcoming-events .heading {
   font-family: "Jockey One", sans-serif;
   font-weight: 400;
   font-size: 4em;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
 }
-.project-2025009 .upcoming-events .container .first-word {
+.project-2025009 .upcoming-events .first-word {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 0.5em;
   text-transform: capitalize;
   display: block;
 }
-.project-2025009 .upcoming-events .container .para {
+.project-2025009 .upcoming-events .para {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.25em;
 }
-.project-2025009 .upcoming-events .img {
-  max-width: 100%;
-}
 .project-2025009 .reservation {
-  font-size: 16px;
   padding: 1.75em;
   background-image: url("./assets/reservation/bg-1.png"), url("./assets/reservation/bg-2.png");
   background-position: 0% 0%, 100% 100%;
@@ -331,7 +330,6 @@ body {
   border: none;
 }
 .project-2025009 .footer {
-  font-size: 16px;
   padding: 1.75em;
   background-image: url("./assets/footer/footer-bg.png");
   background-repeat: no-repeat;
@@ -345,6 +343,9 @@ body {
   align-items: center;
   gap: 1.75em;
 }
+.project-2025009 .footer .footer-logo {
+  flex-basis: 50%;
+}
 .project-2025009 .footer .para {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -356,19 +357,21 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1.75em;
+  text-align: center;
 }
 .project-2025009 .footer .contact {
   width: 100%;
 }
-.project-2025009 .footer .contact .social {
+.project-2025009 .footer .social {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 1.75em;
 }
-.project-2025009 .footer .contact .social-link {
+.project-2025009 .footer i {
   color: #ffffff;
+  font-size: 1.25em;
 }/*# sourceMappingURL=index.css.map */

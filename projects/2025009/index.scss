@@ -18,9 +18,21 @@ body {
     $red-color: #D00000;
     $yellow-color: #FFC74D;
 
-    .header {
+    .header,
+    .try-out-today,
+    .choose-enjoy,
+    .upcoming-events,
+    .reservation,
+    .footer {
         font-size: 16px;
-        min-height: 51.5625em;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .header {
+        min-height: 100vh;
         background-image: url("./assets/header/header-bg.png");
 
         .container {
@@ -29,130 +41,111 @@ body {
             justify-content: center;
             align-items: center;
             padding: 1.75em;
-            // padding: 1.8125em 5.9375em;
         }
 
         .menu-bar {
-            @mixin nav {
-                font-family: "Inter", sans-serif;
-                font-weight: 700;
-                font-size: 1.25em;
-                color: $black-color;
-                text-transform: uppercase;
-            }
-
-            %menu-icon {
-                font-size: 2em;
-                line-height: 3.625rem;
-
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
 
-            .header-logo {
-                flex-basis: 50%;
+        .header-logo {
+            flex-basis: 50%;
+        }
 
-                .img {
-                    max-width: 100%;
-                }
-            }
+        .open-menu {
+            font-size: 2em;
+            line-height: 3.625rem;
 
-            .open-menu {
-                @extend %menu-icon;
-            }
-
-            .menu {
-                position: fixed;
-                right: 0;
-                top: 0;
-                width: 50%;
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                gap: 5em;
-                justify-content: flex-start;
-                align-items: flex-end;
-                background-color: rgba($color: $white-color, $alpha: 0.9);
-                z-index: 1;
-                transform: translateX(100%);
-                transition: all 2s ease;
-                padding: 1.8125em 5.9375em;
-
-                .close-menu {
-                    @extend %menu-icon;
-                }
-
-                .nav {
-                    width: 100%;
-
-                    .navlink {
-                        list-style-type: none;
-                        padding: 0;
-                        margin: 0;
-                    }
-
-                    .link {
-                        @include nav;
-                        display: block;
-                        text-align: center;
-                        padding: 1.2em;
-                        text-decoration: none;
-                    }
-                }
+            &:hover {
+                cursor: pointer;
             }
         }
+
+        .menu {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 5em;
+            justify-content: flex-start;
+            align-items: flex-end;
+            background-color: rgba($color: $white-color, $alpha: 0.9);
+            z-index: 1;
+            transform: translateX(100%);
+            transition: all 2s ease;
+            padding: 1.75em;
+        }
+
+        .close-menu {
+            font-size: 2em;
+            line-height: 3.625rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .nav {
+            width: 100%;
+        }
+
+        .navlink {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .link {
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 1.25em;
+            color: $black-color;
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+            padding: 1.2em;
+            text-decoration: none;
+        }
+
+
 
         .hero-content {
-            @mixin p {
-                font-family: "Inter", sans-serif;
-                font-weight: 400;
-                font-size: 1.25em;
-                text-transform: uppercase;
-                margin: 0;
-            }
-
-            @mixin h1 {
-                font-family: "Jockey One", sans-serif;
-                font-weight: 400;
-                font-size: 8em;
-                margin: 0;
-            }
-
             width: 100%;
             margin-top: 6em;
-
-            .hero-text {
-                text-align: center;
-            }
-
-            .text {
-                @include p;
-            }
-
-            .heading {
-                @include h1;
-            }
-
-            .hero-img {
-                text-align: center;
-
-                .img {
-                    max-width: 100%;
-                }
-            }
         }
+
+        .hero-text {
+            text-align: center;
+        }
+
+        .text {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 1.25em;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .heading {
+            font-family: "Jockey One", sans-serif;
+            font-weight: 400;
+            font-size: 8em;
+            margin: 0;
+        }
+
+        .hero-img {
+            text-align: center;
+        }
+
     }
 
     .try-out-today {
 
-        font-size: 16px;
-
         .container {
             display: flex;
             flex-direction: column;
@@ -160,77 +153,63 @@ body {
             align-items: center;
             padding: 1.75em;
             gap: 1.75em;
+        }
 
-            .right-side {
-                display: flex;
-                flex-direction: column;
-                gap: 1.75em;
-            }
+        .left-side {
+            max-width: 80%;
+        }
 
-            @mixin p {
-                font-family: "Inter", sans-serif;
-                font-size: 2em;
-                color: $white-color;
-                margin: 0;
-                text-transform: uppercase;
-                font-weight: 500;
-            }
+        .right-side {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75em;
+            max-width: 80%;
+        }
 
-            @mixin heading {
-                font-family: "Inter", sans-serif;
-                font-size: 2em;
-                color: $white-color;
-                text-transform: uppercase;
-                margin: 0;
-                font-weight: 700;
-            }
+        .most-popular-burger {
+            position: relative;
 
-            %try-out-today {
-                position: relative;
-
-                h2 {
-                    @include heading;
-                }
-
-                p {
-                    @include p;
-                }
-            }
-
-            .most-popular-burger {
-                @extend %try-out-today;
-
-                .text {
-                    position: absolute;
-                    top: 10%;
-                    left: 5%;
-                }
-            }
-
-            .most-fun-more-taste,
-            .fresh-chili {
-                @extend %try-out-today;
-
-                .text {
-                    position: absolute;
-                    top: 50%;
-                    left: 5%;
-                    transform: translateY(-50%);
-                    max-width: 40%;
-                }
-            }
-
-            img {
-                max-width: 100%;
+            .text {
+                position: absolute;
+                top: 10%;
+                left: 5%;
             }
         }
 
+        .most-fun-more-taste,
+        .fresh-chili {
+            position: relative;
+
+            .text {
+                position: absolute;
+                top: 50%;
+                left: 5%;
+                transform: translateY(-50%);
+                max-width: 40%;
+            }
+        }
+
+        .heading {
+            font-family: "Inter", sans-serif;
+            font-size: 2em;
+            color: $white-color;
+            text-transform: uppercase;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .para {
+            font-family: "Inter", sans-serif;
+            font-size: 2em;
+            color: $white-color;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
 
     }
 
     .choose-enjoy {
-        font-size: 16px;
-
         .container {
             padding: 1.75em;
             display: flex;
@@ -238,119 +217,112 @@ body {
             justify-content: center;
             align-items: center;
             gap: 1.75em;
+        }
 
-            .slogan {
+        .slogan {
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 2em;
+            text-transform: uppercase;
+            background-color: $yellow-color;
+            color: $black-color;
+            padding: 1.0625em 4.078125em;
+            margin: 0;
+        }
+
+        .heading {
+            font-family: "Jockey One", sans-serif;
+            font-weight: 400;
+            font-size: 8em;
+            text-transform: uppercase;
+            margin: 0;
+            text-align: center;
+        }
+
+        .para {
+            font-family: "Inter", sans-serif;
+            font-size: 1.25em;
+            font-weight: 400;
+            text-align: center;
+            margin: 0;
+            padding: 1em;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75rem;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 1.75em;
+            box-shadow: 0.25em 0.5em 2em 0 rgb(0 0 0 / 18%);
+            border-radius: 1.25em;
+            margin-top: 5em;
+
+            .name {
                 font-family: "Inter", sans-serif;
                 font-weight: 700;
-                font-size: 2em;
-                text-transform: uppercase;
-                background-color: $yellow-color;
-                color: $black-color;
-                padding: 1.0625em 4.078125em;
+                font-size: 1.5em;
+                text-transform: capitalize;
                 margin: 0;
             }
 
-            .heading {
-                font-family: "Jockey One", sans-serif;
-                font-weight: 400;
-                font-size: 8em;
-                text-transform: uppercase;
-                margin: 0;
-            }
-
-            .para {
+            .btn {
+                color: $white-color;
+                background-color: $red-color;
                 font-family: "Inter", sans-serif;
-                font-size: 1.25em;
                 font-weight: 400;
-                text-align: center;
-                margin: 0;
-                padding: 1em;
-            }
-
-            .cards {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 1.75rem;
-            }
-
-            .card {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                gap: 1.75em;
-                box-shadow: 0.25em 0.5em 2em 0 rgb(0 0 0 / 18%);
-                border-radius: 1.25em;
-                margin-top: 5em;
-
-                .img {
-                    transform: translateY(-15%);
-                }
-
-                .name {
-                    font-family: "Inter", sans-serif;
-                    font-weight: 700;
-                    font-size: 1.5em;
-                    text-transform: capitalize;
-                    margin: 0;
-                }
-
-                .btn {
-                    color: $white-color;
-                    background-color: $red-color;
-                    font-family: "Inter", sans-serif;
-                    font-weight: 400;
-                    font-size: 1.5em;
-                    text-transform: uppercase;
-                    padding: 1em 2em;
-                    border: none;
-                    margin-bottom: 1.75em;
-                }
+                font-size: 1.5em;
+                text-transform: uppercase;
+                padding: 1em 2em;
+                border: none;
+                margin-bottom: 1.75em;
             }
         }
+
     }
 
     .upcoming-events {
-        font-size: 16px;
-
         .container {
             display: flex;
             flex-direction: column;
             gap: 1.75em;
             padding: 1.75em;
-
-            .heading {
-                font-family: "Jockey One", sans-serif;
-                font-weight: 400;
-                font-size: 4em;
-                text-transform: uppercase;
-                margin: 0;
-            }
-
-            .first-word {
-                font-family: "Inter", sans-serif;
-                font-weight: 700;
-                font-size: 0.5em;
-                text-transform: capitalize;
-                display: block;
-            }
-
-            .para {
-                font-family: "Inter", sans-serif;
-                font-weight: 400;
-                font-size: 1.25em;
-            }
         }
 
-        .img {
-            max-width: 100%;
+        .heading {
+            font-family: "Jockey One", sans-serif;
+            font-weight: 400;
+            font-size: 4em;
+            text-transform: uppercase;
+            margin: 0;
+            text-align: center;
         }
+
+        .first-word {
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 0.5em;
+            text-transform: capitalize;
+            display: block;
+        }
+
+        .para {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 1.25em;
+        }
+
     }
 
     .reservation {
-        font-size: 16px;
         padding: 1.75em;
         background-image: url("./assets/reservation/bg-1.png"), url("./assets/reservation/bg-2.png");
         background-position: 0% 0%, 100% 100%;
@@ -437,7 +409,6 @@ body {
     }
 
     .footer {
-        font-size: 16px;
         padding: 1.75em;
         background-image: url("./assets/footer/footer-bg.png");
         background-repeat: no-repeat;
@@ -452,6 +423,10 @@ body {
             gap: 1.75em;
         }
 
+        .footer-logo {
+            flex-basis: 50%;
+        }
+
         .para {
             font-family: "Inter", sans-serif;
             font-weight: 400;
@@ -464,24 +439,27 @@ body {
             justify-content: center;
             align-items: center;
             gap: 1.75em;
+            text-align: center;
         }
 
         .contact {
             width: 100%;
-
-            .social {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                gap: 1.75em;
-            }
-
-            .social-link {
-                color: $white-color;
-            }
         }
+
+        .social {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75em;
+        }
+
+        i {
+            color: $white-color;
+            font-size: 1.25em;
+        }
+
     }
 }
