@@ -240,6 +240,9 @@ body {
   border: none;
   margin-bottom: 1.75em;
 }
+.project-2025009 .choose-enjoy img {
+  transform: translateY(-15%);
+}
 .project-2025009 .upcoming-events .container {
   display: flex;
   flex-direction: column;
