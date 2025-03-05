@@ -41,6 +41,7 @@ body {
             justify-content: center;
             align-items: center;
             padding: 1.75em;
+            gap: 6em;
         }
 
         .menu-bar {
@@ -116,7 +117,11 @@ body {
 
         .hero-content {
             width: 100%;
-            margin-top: 6em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6em;
         }
 
         .hero-text {
