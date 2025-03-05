@@ -23,7 +23,7 @@ body {
   max-width: 100%;
 }
 .project-2025009 .header {
-  min-height: 100vh;
+  min-height: 51.5625em;
   background-image: url("./assets/header/header-bg.png");
 }
 .project-2025009 .header .container {
@@ -341,13 +341,13 @@ body {
   border: none;
 }
 .project-2025009 .footer {
-  padding: 1.75em;
   background-image: url("./assets/footer/footer-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
 }
 .project-2025009 .footer .container {
+  padding: 1.75em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -385,4 +385,117 @@ body {
 .project-2025009 .footer i {
   color: #ffffff;
   font-size: 1.25em;
+}
+@media screen and (min-width: 992px) {
+  .project-2025009 .header,
+  .project-2025009 .try-out-today,
+  .project-2025009 .choose-enjoy,
+  .project-2025009 .upcoming-events,
+  .project-2025009 .reservation,
+  .project-2025009 .footer {
+    font-size: 16px;
+  }
+  .project-2025009 .header .container {
+    padding: 7.375em;
+  }
+  .project-2025009 .header .header-logo {
+    flex-basis: 25%;
+  }
+  .project-2025009 .header .open-menu {
+    display: none;
+  }
+  .project-2025009 .header .menu {
+    all: unset;
+    flex-basis: 65%;
+  }
+  .project-2025009 .header .close-menu {
+    display: none;
+  }
+  .project-2025009 .header .navlink {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2.6875em;
+  }
+  .project-2025009 .header .link {
+    padding: 0;
+  }
+  .project-2025009 .header .hero-content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .project-2025009 .header .hero-text {
+    text-align: left;
+    flex-basis: 45%;
+  }
+  .project-2025009 .header .hero-img {
+    text-align: right;
+    flex-basis: 45%;
+  }
+  .project-2025009 .try-out-today .container {
+    flex-direction: row;
+    padding: 7.375em;
+    align-items: stretch;
+  }
+  .project-2025009 .try-out-today .right-side {
+    justify-content: space-between;
+  }
+  .project-2025009 .try-out-today .most-fun-more-taste .text {
+    left: 1.4375em;
+    max-width: 45%;
+  }
+  .project-2025009 .choose-enjoy .container {
+    padding: 5.8125em;
+  }
+  .project-2025009 .choose-enjoy .slogan {
+    padding: 1em 4.07812em;
+  }
+  .project-2025009 .choose-enjoy .cards {
+    flex-direction: row;
+  }
+  .project-2025009 .upcoming-events .container {
+    padding: 5.8125em;
+    flex-direction: row;
+  }
+  .project-2025009 .upcoming-events .heading {
+    text-align: left;
+  }
+  .project-2025009 .reservation {
+    background-position: 0% 25%, 100% 80%;
+  }
+  .project-2025009 .reservation .container {
+    padding: 5.8125em;
+  }
+  .project-2025009 .reservation .form {
+    width: 75%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .project-2025009 .reservation .form .item {
+    width: 45%;
+  }
+  .project-2025009 .footer .container {
+    padding: 5.8125em;
+  }
+  .project-2025009 .footer .footer-logo {
+    margin-right: auto;
+  }
+  .project-2025009 .footer .footer-text {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .project-2025009 .footer .para {
+    flex-basis: 38%;
+    text-align: left;
+  }
+  .project-2025009 .footer .contact {
+    flex-basis: 38%;
+  }
+  .project-2025009 .footer .contact .para {
+    text-align: right;
+  }
+  .project-2025009 .footer .social {
+    justify-content: flex-end;
+  }
 }/*# sourceMappingURL=index.css.map */

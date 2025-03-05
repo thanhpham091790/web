@@ -32,7 +32,7 @@ body {
     }
 
     .header {
-        min-height: 100vh;
+        min-height: 51.5625em;
         background-image: url("./assets/header/header-bg.png");
 
         .container {
@@ -422,13 +422,14 @@ body {
     }
 
     .footer {
-        padding: 1.75em;
+
         background-image: url("./assets/footer/footer-bg.png");
         background-repeat: no-repeat;
         background-size: cover;
         color: $white-color;
 
         .container {
+            padding: 1.75em;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -476,5 +477,160 @@ body {
 
     }
 
-    @media screen and (min-width: 768px) {}
+    @media screen and (min-width: 992px) {
+
+        .header,
+        .try-out-today,
+        .choose-enjoy,
+        .upcoming-events,
+        .reservation,
+        .footer {
+            font-size: 16px;
+        }
+
+
+        .header {
+            .container {
+                padding: 7.375em;
+            }
+
+            .header-logo {
+                flex-basis: 25%;
+            }
+
+            .open-menu {
+                display: none;
+            }
+
+            .menu {
+                all: unset;
+                flex-basis: 65%;
+            }
+
+            .close-menu {
+                display: none;
+            }
+
+            .navlink {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 2.6875em;
+            }
+
+            .link {
+                padding: 0;
+            }
+
+            .hero-content {
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 0;
+            }
+
+            .hero-text {
+                text-align: left;
+                flex-basis: 45%;
+            }
+
+            .hero-img {
+                text-align: right;
+                flex-basis: 45%;
+            }
+        }
+
+        .try-out-today {
+            .container {
+                flex-direction: row;
+                padding: 7.375em;
+                align-items: stretch;
+            }
+
+            .right-side {
+                justify-content: space-between;
+            }
+
+            .most-fun-more-taste {
+                .text {
+                    left: 1.4375em;
+                    max-width: 45%;
+                }
+            }
+        }
+
+        .choose-enjoy {
+            .container {
+                padding: 5.8125em;
+            }
+
+            .slogan {
+                padding: 1em 4.07812em;
+            }
+
+            .cards {
+                flex-direction: row;
+            }
+        }
+
+        .upcoming-events {
+            .container {
+                padding: 5.8125em;
+                flex-direction: row;
+            }
+
+            .heading {
+                text-align: left;
+            }
+        }
+
+        .reservation {
+            background-position: 0% 25%, 100% 80%;
+
+            .container {
+                padding: 5.8125em;
+            }
+
+            .form {
+                width: 75%;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .item {
+                    width: 45%;
+                }
+            }
+        }
+
+        .footer {
+            .container {
+                padding: 5.8125em;
+            }
+
+            .footer-logo {
+                margin-right: auto;
+            }
+
+            .footer-text {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .para {
+                flex-basis: 38%;
+                text-align: left;
+            }
+
+            .contact {
+                flex-basis: 38%;
+
+                .para {
+                    text-align: right;
+                }
+            }
+
+            .social {
+                justify-content: flex-end;
+            }
+        }
+    }
 }
