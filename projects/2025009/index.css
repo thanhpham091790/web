@@ -124,13 +124,16 @@ body {
   gap: 1.75em;
 }
 .project-2025009 .try-out-today .left-side {
-  max-width: 80%;
+  width: 100%;
 }
 .project-2025009 .try-out-today .right-side {
   display: flex;
   flex-direction: column;
   gap: 1.75em;
-  max-width: 80%;
+  max-width: 100%;
+}
+.project-2025009 .try-out-today img {
+  width: 100%;
 }
 .project-2025009 .try-out-today .most-popular-burger {
   position: relative;
