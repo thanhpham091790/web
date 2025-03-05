@@ -168,7 +168,7 @@ body {
             display: flex;
             flex-direction: column;
             gap: 1.75em;
-            max-width: 100%;
+            width: 100%;
         }
 
         img {
@@ -475,4 +475,6 @@ body {
         }
 
     }
+
+    @media screen and (min-width: 768px) {}
 }

@@ -135,7 +135,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.75em;
-  max-width: 100%;
+  width: 100%;
 }
 .project-2025009 .try-out-today img {
   width: 100%;
