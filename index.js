@@ -1,15 +1,15 @@
-import { data } from './projects.js';
+import { data } from './projectData.js';
 
-const root = document.getElementById('root');
+const projectContainer = document.getElementById('projects');
 
 data.map(dataObj => {
-    const container = document.createElement('div');
-    container.id = dataObj.year;
-    container.classList.add("year");
+    const yearContainer = document.createElement('div');
+    yearContainer.id = dataObj.year;
+    yearContainer.classList.add("year");
 
     const year = document.createElement('h2');
     year.textContent = dataObj.year;
-    container.appendChild(year);
+    yearContainer.appendChild(year);
 
     const projects = document.createElement('ul');
     dataObj.projects.map(project => {
@@ -20,7 +20,7 @@ data.map(dataObj => {
         projectLi.appendChild(projectA);
         projects.appendChild(projectLi);
     });
-    container.appendChild(projects);
+    yearContainer.appendChild(projects);
 
-    root.appendChild(container);
+    projectContainer.appendChild(yearContainer);
 });
