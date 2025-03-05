@@ -32,7 +32,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1.75em;
-  gap: 6em;
+  gap: 5em;
 }
 .project-2025009 .header .menu-bar {
   width: 100%;
@@ -99,7 +99,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 6em;
+  gap: 5em;
 }
 .project-2025009 .header .hero-text {
   text-align: center;
