@@ -455,6 +455,7 @@ body {
   }
   .project-2025009 .choose-enjoy .cards {
     flex-direction: row;
+    align-items: stretch;
   }
   .project-2025009 .upcoming-events .container {
     padding: 5.8125em;
