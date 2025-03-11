@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --2025010-color-1: #FFFFFF;
+  --2025010-color-2: #000000;
+  --2025010-color-3: #5200FF;
+  --2025010-color-4: #C7C7C7;
+  --2025010-color-5: #EDEDED;
+}
+
+#simple-landing-page .hero {
+  background-color: var(--2025010-color-3);
+  color: var(--2025010-color-1);
+  min-height: 36rem;
+  position: relative;
+  overflow: hidden;
+  padding: 6.75em 8.14vw;
+  text-align: center;
+}
+#simple-landing-page .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/background.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.22;
+}
+#simple-landing-page .heading {
+  font-family: "2025010 Bebas Neue";
+  font-weight: normal;
+  font-size: 4rem;
+}
+#simple-landing-page .text {
+  font-family: "2025010 Poppins";
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+#simple-landing-page .form {
+  padding: 6.75em 8.14vw;
+}
+#simple-landing-page label {
+  font-family: "2025010 Poppins";
+  font-weight: normal;
+  font-size: 1.125rem;
+  display: block;
+  margin-bottom: 0.5em;
+}
+#simple-landing-page input {
+  width: 100%;
+  padding: 1.5em;
+  background: var(--2025010-color-5);
+  border: 0.063rem solid var(--2025010-color-4);
+  margin-bottom: 3em;
+}
+#simple-landing-page button {
+  width: 100%;
+  background-color: var(--2025010-color-3);
+  color: var(--2025010-color-1);
+  font-family: "2025010 Poppins";
+  font-weight: normal;
+  font-size: 1.125rem;
+  padding: 1em;
+  border: none;
+}
+@media only screen and (min-width: 770px) {
+  #simple-landing-page .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  #simple-landing-page .wrapper {
+    flex: 0 1 45%;
+  }
+  #simple-landing-page button {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1260px) {
+  #simple-landing-page .simple-landing-page {
+    display: flex;
+  }
+  #simple-landing-page .hero {
+    flex: 1 1 0;
+    height: 100vh;
+    text-align: right;
+  }
+  #simple-landing-page .form {
+    align-self: start;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}/*# sourceMappingURL=index.css.map */
