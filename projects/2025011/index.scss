@@ -1,0 +1,206 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+:root {
+    --2025011-color-1: #FFFFFF;
+    --2025011-color-2: #221F26;
+    --2025011-color-3: #2D7DFF;
+    --2025011-color-4: #4D4D4D;
+    --2025011-color-5: #847D93;
+    --2025011-color-6: #2C2931;
+    --2025011-background-1: rgb(0, 163, 255);
+    --2025011-background-2: linear-gradient(90deg, rgba(0, 163, 255, 1) 0%, rgba(189, 0, 255, 1) 100%);
+}
+
+.data-analytics-dashboard {
+    background-color: var(--2025011-background-1);
+    background-image: var(--2025011-background-2);
+    padding: 1.031em;
+    height: 100vh;
+
+    .container {
+        background-color: var(--2025011-color-2);
+        background-image: url("./assets/bg.jpg");
+        background-size: cover;
+        background-position: -10em 0;
+        background-repeat: no-repeat;
+        background-blend-mode: screen;
+        border-radius: 0.813rem;
+        height: 100%;
+    }
+
+    .left {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 56vw;
+        height: 100vh;
+        z-index: 1;
+        background-color: var(--2025011-color-6);
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+    }
+
+    .close-menu {
+        transform: rotate(180deg);
+        padding: 2em calc(10vw + 1.031em) 2em 0;
+    }
+
+    .nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-link {
+        font-family: "2025011 Poppins";
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 111.4%;
+        color: var(--2025011-color-1);
+        text-decoration: none;
+        display: block;
+        padding: 1em 0 1em calc(10vw + 1.031em);
+    }
+
+    .nav-link:hover {
+        background-color: var(--2025011-color-5);
+    }
+
+    .active {
+        font-weight: 700;
+        background-color: var(--2025011-color-3);
+    }
+
+    .content {
+        padding: 5vh 10vw;
+    }
+
+    .header {
+        display: flex;
+        max-height: 20vh;
+    }
+
+    .open-menu:hover,
+    .close-menu:hover {
+        cursor: pointer;
+    }
+
+    .logo {
+        flex: 1;
+        text-align: center;
+        font-family: "2025011 Poppins";
+        font-weight: 800;
+        font-size: 1.5rem;
+        line-height: 111.4%;
+        letter-spacing: -12%;
+        color: var(--2025011-color-3);
+        text-transform: uppercase;
+    }
+
+    .main {
+        margin: 20vh 0;
+    }
+
+    .heading {
+        font-family: "2025011 Poppins";
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 89%;
+        color: var(--2025011-color-1);
+    }
+
+    .text {
+        font-family: "2025011 Poppins";
+        font-size: 2.125rem;
+        font-weight: 200;
+        line-height: 111.4%;
+        color: var(--2025011-color-5);
+    }
+
+    .link {
+        font-family: "2025011 Poppins";
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 111.4%;
+        color: var(--2025011-color-1);
+        text-decoration: none;
+        padding: 1em 1em 1em 3.5em;
+        display: inline-block;
+        border: .063rem solid var(--2025011-color-4);
+        position: relative;
+    }
+
+    .link:hover {
+        color: var(--2025011-color-1);
+        background-color: var(--2025011-color-3);
+    }
+
+    .link::before {
+        content: "";
+        position: absolute;
+        width: 1.5em;
+        height: 1.5em;
+        top: 1em;
+        left: 1em;
+        background-image: url("./assets/arrow.svg");
+    }
+
+    .link:hover {
+        cursor: pointer;
+    }
+
+    @media only screen and (min-width: 1440px) {
+        .container {
+            background-position: center;
+            display: flex;
+        }
+
+        .left {
+            all: unset;
+            flex-basis: 13.313rem;
+            background-color: var(--2025011-color-6);
+        }
+
+        .nav-links {
+            margin-top: 3.625em;
+        }
+
+        .nav-link {
+            padding: 1.25em 2.25em;
+        }
+
+        .close-menu,
+        .open-menu {
+            display: none;
+        }
+
+        .content {
+            padding: 3.625em 5vw;
+        }
+
+        .logo {
+            text-align: left;
+        }
+
+        .main {
+            margin: 2.875em 0;
+            max-width: 24.875rem;
+        }
+
+        .heading {
+            font-size: 4rem;
+        }
+
+        .text {
+            font-size: 3rem;
+        }
+    }
+}

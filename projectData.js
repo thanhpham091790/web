@@ -5,6 +5,12 @@ export const data = [
         year: "2025",
         projects: [
             {
+                id: "2025011",
+                name: "Data Analytics Dashboard",
+                url: "2025011",
+                react: false,
+            },
+            {
                 id: "2025010",
                 name: "Simple Landing Page",
                 url: "2025010",
