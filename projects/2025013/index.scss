@@ -1,0 +1,592 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --2025013-color-1: #000000;
+    --2025013-color-2: #FFFFFF;
+    --2025013-color-3: #B2DD9E;
+    --2025013-color-4: #303853;
+    --2025013-color-5: #6889FF;
+    --2025013-color-6: #7988BE;
+    --2025013-color-7: #9FC88C;
+    --2025013-color-8: #363B4E;
+}
+
+body {
+    margin: 0;
+}
+
+.drones {
+    .container {
+        position: relative;
+    }
+
+    .top-background {
+        .top-background-wrapper {
+            width: 85.51%;
+            height: 100%;
+            margin-left: auto;
+            display: flex;
+            align-items: stretch;
+        }
+
+        .left-bg {
+            flex-basis: 81.92%;
+            background-color: var(--2025013-color-7);
+            background-image: url("./assets/streaks.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-blend-mode: screen;
+        }
+
+        .right-bg {
+            flex-basis: 18.08%;
+            background-color: var(--2025013-color-6);
+        }
+
+        width: 100vw;
+        height: 44em;
+    }
+
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 44em;
+
+        .header-wrapper {
+            width: 95.17%;
+            height: 100%;
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            width: 93.96%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            padding: 0.462em 0.385em;
+            background-color: var(--2025013-color-1);
+            border: none;
+            color: var(--2025013-color-2);
+            font-family: '2025013 Bebas Neue';
+            font-weight: normal;
+            font-size: 1.625rem;
+            line-height: 91.6%;
+            text-transform: uppercase;
+
+            span {
+                color: var(--2025013-color-5);
+            }
+        }
+
+        .menu {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 16.75rem;
+            background-color: var(--2025013-color-8);
+            height: 100vh;
+            z-index: 1;
+            text-align: right;
+            transform: translateX(100%);
+            transition: transform 0.5s ease;
+        }
+
+        .menu-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-link,
+        .menu-close {
+            display: inline-block;
+            text-decoration: none;
+            font-family: "2025013 Bebas Neue";
+            font-weight: normal;
+            font-size: 1.563rem;
+            line-height: 141.6%;
+            color: var(--2025013-color-2);
+            text-transform: uppercase;
+            padding: 0.44em 1.72em;
+            cursor: pointer;
+        }
+
+        .menu-close {
+            padding: 2em 1.72em 1em 1.72em;
+        }
+
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+            align-items: center;
+            text-align: center;
+        }
+
+        .left-content {
+            flex-basis: 50%;
+            width: 63.20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 1.75rem;
+
+            .heading {
+                font-family: "2025013 Bebas Neue";
+                font-weight: normal;
+                font-size: 3.063rem;
+                line-height: 91.6%;
+                color: var(--2025013-color-1);
+                margin: 0;
+            }
+
+            .text {
+                font-family: '2025013 Montserrat';
+                font-weight: normal;
+                font-size: 1.125rem;
+                line-height: 141.6%;
+                color: var(--2025013-color-1);
+                margin: 0;
+            }
+        }
+
+        .right-content {
+            flex-basis: 50%;
+            width: 63.20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img-wrapper {
+            width: 12.375em;
+            height: 9.25em;
+            position: relative;
+        }
+
+        .drone,
+        .blur {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .drone {
+            animation: up 2s ease 0s infinite alternate both;
+        }
+
+        .blur {
+            animation: down 2s ease 0s infinite alternate both;
+        }
+
+        @keyframes up {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-40px);
+            }
+
+        }
+
+        @keyframes down {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(40px);
+                opacity: 0.25;
+            }
+        }
+    }
+
+    .quote {
+        .quote-wrapper {
+            height: 37.188rem;
+            background-color: var(--2025013-color-4);
+            position: relative;
+            width: 85.51%;
+            margin-left: auto;
+            padding: 4.1875em 2.5625em;
+        }
+
+        .quote-wrapper::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("./assets/stadium.jpg");
+            background-position: top left;
+            background-size: cover;
+            opacity: .25;
+
+        }
+
+        .blockquote,
+        .author {
+            font-family: "2025013 Bebas Neue";
+            font-weight: normal;
+            font-size: 1.5rem;
+            line-height: 99.6%;
+            color: var(--2025013-color-2);
+            text-transform: uppercase;
+            margin: 0;
+            margin-bottom: 2em;
+        }
+
+        .author {
+            font-size: 1.125rem;
+            position: relative;
+            padding-left: 2em;
+        }
+
+        .author::before {
+            position: absolute;
+            content: "";
+            width: 1.75rem;
+            height: 0;
+            top: 50%;
+            left: 0;
+            border: 0.063rem solid var(--2025013-color-2);
+            transform: translateY(-50%);
+        }
+    }
+
+    .footage {
+        .footage-wrapper {
+            width: 85.15%;
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+            overflow: hidden;
+        }
+
+        .last-year-footage {
+            .heading {
+                font-family: "2025013 Bebas Neue";
+                font-weight: normal;
+                font-size: 2.25rem;
+                line-height: 91.6%;
+                color: var(--2025013-color-1);
+                text-transform: uppercase;
+                margin: 1.5em 0;
+            }
+
+            .text {
+                font-family: '2025013 Montserrat';
+                font-weight: normal;
+                font-size: 1.125rem;
+                line-height: 141.6%;
+                color: var(--2025013-color-1);
+                margin: 1.5em 0;
+                max-width: 19.75rem;
+            }
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-areas:
+                ". a b"
+                "c d ."
+                ". e .";
+            margin-bottom: 3em;
+        }
+
+        .gallery>.picture:nth-child(1) {
+            grid-area: a;
+        }
+
+        .gallery>.picture:nth-child(2) {
+            grid-area: b;
+        }
+
+        .gallery>.picture:nth-child(3) {
+            grid-area: c;
+        }
+
+        .gallery>.picture:nth-child(4) {
+            grid-area: d;
+        }
+
+        .gallery>.picture:nth-child(5) {
+            grid-area: e;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+
+    }
+
+    .footer {
+        background-color: var(--2025013-color-3);
+
+        .register {
+            background-color: var(--2025013-color-7);
+            width: 89.61%;
+            font-family: "2025013 Bebas Neue";
+            font-weight: normal;
+            font-size: 2.25rem;
+            line-height: 91.6%;
+            color: var(--2025013-color-1);
+            padding: 0.75em 0.75em 0.75em 14.85%;
+            margin-bottom: 1em;
+        }
+
+        .footer-wrapper {
+            width: 85.15%;
+            margin-left: auto;
+            padding-right: 2.688em;
+        }
+
+        .form-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+        }
+
+        .input-wrapper>label {
+            display: block;
+            font-family: "2025013 Bebas Neue";
+            font-weight: normal;
+            font-size: 1.5rem;
+            line-height: 91.6%;
+            color: var(--2025013-color-1);
+            text-transform: uppercase;
+            margin: 0.5em 0;
+        }
+
+        .input-wrapper>input {
+            padding: 1.5em;
+            width: 100%;
+            border: none;
+        }
+
+        .register-btn {
+            background-color: var(--2025013-color-1);
+            color: var(--2025013-color-2);
+            text-transform: uppercase;
+            font-family: "2025013 Bebas Neue";
+            font-weight: normal;
+            font-size: 2.188rem;
+            padding: .5em;
+            border: none;
+            margin-top: 1em;
+        }
+
+        .contact {
+            margin-bottom: 3.84em;
+        }
+
+        .phone,
+        .email {
+            font-family: "2025013 Montserrat";
+            font-weight: normal;
+            font-size: 1.125rem;
+            line-height: 91.6%;
+            padding: 1em 0;
+            border-bottom: 0.063rem dotted rgba(0, 0, 0, 0.2);
+            width: 60%;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .top-background {
+            height: 53.375em;
+
+            .top-background-wrapper {
+                width: 80.49%;
+            }
+
+            .left-bg {
+                flex-basis: 55.05%;
+            }
+
+            .right-bg {
+                flex-basis: 45.95%;
+            }
+        }
+
+        .header {
+            .header-wrapper {
+                width: 87.43%;
+            }
+
+            nav {
+                width: 83.96%;
+            }
+
+            .logo {
+                font-size: 2.25rem;
+            }
+
+            .menu-icon,
+            .menu-close {
+                display: none;
+            }
+
+            .menu {
+                all: unset;
+            }
+
+            .menu-links {
+                display: flex;
+            }
+
+            .menu-link {
+                padding: 0.44em 1em;
+            }
+
+            .content {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .left-content {
+                width: unset;
+                flex-basis: 31%;
+
+                .heading {
+                    font-size: 6.063rem;
+                }
+
+                .text {
+                    font-size: 1.5rem;
+                }
+
+            }
+
+            .img-wrapper {
+                width: 30.25rem;
+                height: 22.625rem;
+            }
+        }
+
+        .quote {
+            .quote-wrapper {
+                height: 46.25rem;
+                width: 80.49%;
+                display: grid;
+                place-content: center;
+            }
+
+            .blockquote {
+                max-width: 47.063rem;
+                font-size: 3.375rem;
+            }
+
+            .author {
+                font-size: 1.563rem;
+            }
+        }
+
+        .footage {
+            .footage-wrapper {
+                width: 87.43%;
+                flex-direction: row;
+                overflow: unset;
+                margin-bottom: 5em;
+            }
+
+            .last-year-footage {
+                flex-basis: 30%;
+
+                .heading {
+                    font-size: 6.063rem;
+                    margin: 1em 0;
+                }
+
+                .text {
+                    font-size: 1.5rem;
+                    max-width: 22.688rem;
+                }
+            }
+
+            .gallery {
+                flex: 1;
+                margin-bottom: 0;
+                margin-top: -10em;
+                z-index: 1;
+            }
+        }
+
+        .footer {
+
+            .register {
+                width: 55%;
+                font-size: 4rem;
+                padding-left: 12.57%;
+            }
+
+            .footer-wrapper {
+                width: unset;
+                padding-left: 12.57%;
+                padding-right: unset;
+                padding-bottom: 5em;
+            }
+
+            .footer-wrapper>label {
+                font-size: 2rem;
+            }
+
+            .footer-wrapper>input {
+                padding: 2em;
+            }
+
+            .form-contact {
+                flex-direction: row;
+            }
+
+            .form {
+                flex: 1;
+            }
+
+            .contact {
+                flex: 1;
+                margin-bottom: 0;
+            }
+
+            .register-btn {
+                font-size: 2.188rem;
+            }
+
+            .phone,
+            .email {
+                font-size: 1.375rem;
+            }
+        }
+    }
+
+}
