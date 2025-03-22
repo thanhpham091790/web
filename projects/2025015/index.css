@@ -1,0 +1,272 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #FFFFFF;
+  --color-2: #EBEBEB;
+  --color-3: #F8F8F8;
+  --color-4: #1792D2;
+  --color-5: #143774;
+  --color-6: #707070;
+  --color-7: #717171;
+}
+
+body {
+  margin: 0;
+}
+
+.simple-life ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.simple-life a {
+  text-decoration: none;
+}
+.simple-life img {
+  max-width: 100%;
+}
+.simple-life .main-container {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.56;
+  color: var(--color-6);
+}
+.simple-life .header {
+  background-color: var(--color-3);
+}
+.simple-life .header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.9375em;
+  gap: 1em;
+}
+.simple-life .header .heading,
+.simple-life .header .sub-heading {
+  margin: 0;
+}
+.simple-life .header .heading {
+  font-family: "Lora";
+  font-size: 2.063rem;
+  line-height: 1.273;
+  letter-spacing: 0;
+  color: var(--color-5);
+}
+.simple-life .header .sub-heading {
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 1.083;
+  letter-spacing: 0.2em;
+  color: var(--color-4);
+  text-transform: uppercase;
+}
+.simple-life .header .navbar {
+  text-align: center;
+}
+.simple-life .header .nav-link {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.125;
+  letter-spacing: 0.2em;
+  color: var(--color-7);
+  text-transform: uppercase;
+  padding: 1.5em 0 0.1em 0;
+}
+.simple-life .header .active {
+  border-bottom: 2px solid var(--color-6);
+}
+.simple-life .main .container {
+  padding: 4em 1em;
+}
+.simple-life .main .main-left {
+  padding-bottom: 4em;
+}
+.simple-life .main .main-left .date-comments {
+  font-size: 0.875rem;
+  line-height: 1.34;
+  font-family: "Segoe UI";
+  letter-spacing: 0;
+  color: var(--color-6);
+}
+.simple-life .main .main-left .title {
+  font-family: "Lora";
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.17;
+  letter-spacing: 0.2;
+  color: var(--color-5);
+}
+.simple-life .main .main-left strong {
+  font-weight: bold;
+}
+.simple-life .main .main-left a {
+  text-decoration: underline;
+  color: var(--color-4);
+}
+.simple-life .main .main-left .post .read-more {
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 0.2em;
+  color: var(--color-4);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 2em;
+}
+.simple-life .main .main-left .post:last-child .read-more {
+  padding-bottom: 0;
+}
+.simple-life .main .main-left .featured-post {
+  margin-bottom: 2em;
+  border-bottom: 1px solid var(--color-6);
+}
+.simple-life .main .main-left .image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.simple-life .main .main-left .featured-post .image,
+.simple-life .main .main-left .about-me .image {
+  height: 308px;
+}
+.simple-life .main .main-left .about-me .image {
+  margin-bottom: 1.5em;
+}
+.simple-life .main .main-left .regular-post .image {
+  height: 242px;
+}
+.simple-life .main .main-left .about-me-link {
+  font-family: "Lora";
+  font-size: 1.313rem;
+  font-weight: normal;
+  line-height: 1.33;
+  color: var(--color-4);
+  text-decoration: none;
+}
+.simple-life .main .main-right .about-me,
+.simple-life .main .main-right .recent-posts {
+  border: 20px solid var(--color-2);
+  padding: 1.5em;
+}
+.simple-life .main .main-right .heading {
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: 0.2em;
+  color: var(--color-5);
+  text-transform: uppercase;
+}
+.simple-life .main .main-right .intro {
+  font-size: 0.875rem;
+  line-height: 1.71;
+  color: var(--color-5);
+}
+.simple-life .main .main-right .aside-post {
+  padding: 1.5em 0;
+  border-bottom: 1px solid var(--color-2);
+}
+.simple-life .main .main-right .aside-post:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.simple-life .main .main-right .title {
+  font-family: "Lora";
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.56;
+  color: var(--color-5);
+  margin: 0;
+}
+.simple-life .main .main-right .image {
+  width: 100%;
+  height: 87px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.simple-life .main .main-right .about-me-image {
+  height: 133px;
+}
+.simple-life .footer {
+  background-color: var(--color-5);
+  padding: 3em;
+}
+.simple-life .footer .footer-heading,
+.simple-life .footer .copyright {
+  text-align: center;
+  color: var(--color-1);
+  opacity: 0.5;
+  margin: 0;
+}
+.simple-life .footer .footer-heading {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.56;
+}
+@media screen and (min-width: 990px) {
+  .simple-life .container {
+    max-width: 990px;
+    margin: 0 auto;
+  }
+  .simple-life .header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5.85em 0;
+  }
+  .simple-life .header .logo {
+    flex: 1 1 50%;
+  }
+  .simple-life .header .navbar {
+    flex: 1 1 50%;
+  }
+  .simple-life .header ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+  }
+  .simple-life .main .container {
+    padding: 4em 0;
+    display: flex;
+    gap: 5%;
+  }
+  .simple-life .main .main-left {
+    flex: 1 1 70%;
+    padding-bottom: 0;
+  }
+  .simple-life .main .main-left .regular-post .post {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 3em;
+  }
+  .simple-life .main .main-left .left {
+    flex: 1 1 30%;
+  }
+  .simple-life .main .main-left .right {
+    flex: 1 1 65%;
+  }
+  .simple-life .main .main-left .title {
+    margin-top: 0;
+  }
+  .simple-life .main .main-left .post:last-child .image {
+    -o-object-position: top left;
+       object-position: top left;
+  }
+  .simple-life .main .main-right {
+    flex: 1 1 25%;
+  }
+  .simple-life .main .main-right .heading {
+    margin-top: 0;
+  }
+  .simple-life .main .main-right .about-me {
+    margin-bottom: 3em;
+  }
+}/*# sourceMappingURL=index.css.map */
