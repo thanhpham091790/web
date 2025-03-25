@@ -1,0 +1,434 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #FFFFFF;
+  --color-2: #FFE600;
+  --color-3: #404040;
+  --color-4: #000000;
+  --color-5: #EBEBEB;
+  --color-6: #707070;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 1em 2em;
+}
+
+.jake-and-elwood {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+}
+.jake-and-elwood .header,
+.jake-and-elwood .hero,
+.jake-and-elwood .main,
+.jake-and-elwood .footer {
+  display: grid;
+  grid-template-columns: minmax(0, 2.125rem) minmax(16.1875rem, 1fr) minmax(0, 2.125rem);
+}
+.jake-and-elwood .header > *,
+.jake-and-elwood .hero > *,
+.jake-and-elwood .main > *,
+.jake-and-elwood .footer > * {
+  grid-column: 2/-2;
+}
+.jake-and-elwood .header {
+  background-color: transparent;
+  grid-template-rows: 73px auto;
+  position: absolute;
+  width: 100%;
+}
+.jake-and-elwood .about-us .header,
+.jake-and-elwood .contact .header {
+  position: relative;
+  background-color: var(--color-4);
+}
+.jake-and-elwood .navbar {
+  display: flex;
+  justify-content: flex-start;
+}
+.jake-and-elwood .logo {
+  background-color: var(--color-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.jake-and-elwood .open-menu {
+  font-size: 2rem;
+  padding: 1.0625rem 0;
+  margin-left: auto;
+  color: var(--color-1);
+}
+.jake-and-elwood .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-4);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+.jake-and-elwood .show {
+  transform: translateX(0);
+}
+.jake-and-elwood .close-menu {
+  flex: 1 1 10%;
+  color: var(--color-5);
+  font-size: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1em;
+}
+.jake-and-elwood .open-menu:hover,
+.jake-and-elwood .open-menu:focus,
+.jake-and-elwood .close-menu:hover,
+.jake-and-elwood .close-menu:focus,
+.jake-and-elwood .nav-link:hover,
+.jake-and-elwood .nav-link:focus {
+  color: var(--color-2);
+  cursor: pointer;
+}
+.jake-and-elwood .nav-list {
+  flex: 1 1 90%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.jake-and-elwood .nav-link {
+  color: var(--color-5);
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+.jake-and-elwood .hero {
+  background-image: url("./assets/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 57% 50%;
+  background-size: cover;
+  min-height: 38.5rem;
+  align-items: center;
+}
+.jake-and-elwood .hero-content {
+  max-width: 69.07%;
+}
+.jake-and-elwood .hero-title {
+  color: var(--color-1);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2em;
+}
+.jake-and-elwood .hero-title span {
+  color: var(--color-2);
+}
+.jake-and-elwood .hero-text {
+  color: var(--color-1);
+  font-size: 1.125rem;
+  line-height: 1.22;
+}
+.jake-and-elwood .hero-text span {
+  font-weight: bold;
+}
+.jake-and-elwood .hero-btn {
+  background-color: var(--color-2);
+  color: var(--color-4);
+  font: inherit;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  font-weight: bold;
+  align-self: flex-start;
+  text-transform: lowercase;
+}
+.jake-and-elwood .main {
+  row-gap: 1em;
+  padding: 2.125em 0;
+}
+.jake-and-elwood section {
+  max-width: 76.8%;
+  justify-self: center;
+  text-align: center;
+}
+.jake-and-elwood .section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--color-4);
+  line-height: 1.33;
+  display: inline-block;
+}
+.jake-and-elwood .section-title::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 0.2rem;
+  background-color: var(--color-2);
+  margin: 0.45em auto;
+}
+.jake-and-elwood .section-text {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-3);
+  line-height: 1.5;
+}
+.jake-and-elwood .section-text span {
+  font-weight: bold;
+}
+.jake-and-elwood .page-title,
+.jake-and-elwood .page-image,
+.jake-and-elwood .page-content {
+  margin: 1em 0;
+}
+.jake-and-elwood .page-title {
+  text-align: center;
+}
+.jake-and-elwood .main-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 0.5;
+  color: var(--color-4);
+  display: inline-block;
+  margin-bottom: 0;
+}
+.jake-and-elwood .main-title::after {
+  content: "";
+  display: block;
+  width: 110%;
+  height: 1.75rem;
+  background-color: var(--color-2);
+  margin-top: -1rem;
+}
+.jake-and-elwood .main-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  color: var(--color-4);
+}
+.jake-and-elwood .page-content .section-title::after {
+  width: 25%;
+  margin: 0.45em 0 0 0;
+}
+.jake-and-elwood .page-content .section-title {
+  margin-bottom: 0;
+}
+.jake-and-elwood .page-image {
+  box-shadow: 5px 5px 0px var(--color-4), 10px 10px 0px var(--color-2);
+}
+.jake-and-elwood .page-content p {
+  line-height: 1.5;
+  color: var(--color-3);
+}
+.jake-and-elwood label {
+  display: block;
+  font: inherit;
+  font-size: 1.125rem;
+  font-weight: normal;
+  line-height: 1.33;
+  color: var(--color-4);
+  margin-bottom: 0.5em;
+}
+.jake-and-elwood input,
+.jake-and-elwood textarea {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid var(--color-6);
+}
+.jake-and-elwood textarea {
+  min-height: 8rem;
+  resize: none;
+}
+.jake-and-elwood .contact .form-btn {
+  padding: 1em 4em;
+  color: var(--color-4);
+  background-color: var(--color-2);
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.3;
+  text-transform: lowercase;
+}
+.jake-and-elwood .contact .page-content a {
+  color: var(--color-4);
+  font: inherit;
+}
+.jake-and-elwood .footer {
+  background-color: var(--color-5);
+  text-align: center;
+  padding: 2.125em 0;
+  line-height: 1.1875;
+  row-gap: 1.5em;
+}
+.jake-and-elwood .footer-main {
+  max-width: 92.53%;
+  justify-self: center;
+  opacity: 0.3;
+}
+.jake-and-elwood .footer-main img {
+  margin: 0 auto;
+}
+.jake-and-elwood .footer-copyright {
+  opacity: 0.3;
+}
+.jake-and-elwood .footer-socials {
+  order: -1;
+}
+.jake-and-elwood .social-link {
+  font-size: 1.6875rem;
+  color: var(--color-4);
+  line-height: 1.04;
+  display: inline-block;
+  padding: 0.5em;
+}
+@media screen and (min-width: 1200px) {
+  .jake-and-elwood .header,
+  .jake-and-elwood .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 6.3125rem) minmax(34.9375rem, 1fr) minmax(0, 6.3125rem);
+    row-gap: 0;
+  }
+  .jake-and-elwood .open-menu,
+  .jake-and-elwood .close-menu {
+    display: none;
+  }
+  .jake-and-elwood .nav {
+    position: initial;
+    background-color: transparent;
+    transform: none;
+    transition: none;
+    align-items: center;
+  }
+  .jake-and-elwood .nav-list {
+    flex-direction: row;
+  }
+  .jake-and-elwood .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  .jake-and-elwood .nav-link {
+    font-size: 0.875rem;
+    line-height: 1.3;
+    margin-left: 2em;
+    text-transform: lowercase;
+    padding: 0.25em 0;
+  }
+  .jake-and-elwood .current {
+    border-bottom: 0.2em solid var(--color-2);
+  }
+  .jake-and-elwood .hero {
+    min-height: 33.1875rem;
+  }
+  .jake-and-elwood .hero-content {
+    max-width: 56.01%;
+  }
+  .jake-and-elwood .main,
+  .jake-and-elwood .footer {
+    display: grid;
+    grid-template-columns: minmax(0, 6.3125rem) repeat(3, minmax(18rem, 1fr)) minmax(0, 6.3125rem);
+    row-gap: 0;
+    padding: 5em 0;
+  }
+  .jake-and-elwood section {
+    max-width: 100%;
+  }
+  .jake-and-elwood .about-us {
+    grid-column: 2;
+  }
+  .jake-and-elwood .our-skills {
+    grid-column: 3;
+  }
+  .jake-and-elwood .get-in-touch {
+    grid-column: 4;
+  }
+  .jake-and-elwood .about-us .main,
+  .jake-and-elwood .contact .main {
+    grid-gap: 4em;
+  }
+  .jake-and-elwood .page-title {
+    grid-column: 2/-2;
+    max-width: 61.92%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .jake-and-elwood .page-title::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    border: 1px solid var(--color-4);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .jake-and-elwood .page-image {
+    grid-column: 2/3;
+    grid-row: 2/span 2;
+  }
+  .jake-and-elwood .page-content {
+    grid-column: 3/span 2;
+    grid-row: 2/span 2;
+  }
+  .jake-and-elwood .section-title:first-child {
+    margin-top: 0;
+  }
+  .jake-and-elwood .contact .page-content {
+    grid-column: 2/3;
+    margin: 0;
+  }
+  .jake-and-elwood .contact .page-image {
+    margin: 0 0 3em 0;
+  }
+  .jake-and-elwood .contact .contact-form {
+    grid-column: 3/span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+  .jake-and-elwood .contact .message-wrapper {
+    grid-column: 1/-1;
+  }
+  .jake-and-elwood .contact .form-btn {
+    grid-column: 1/-1;
+    justify-self: end;
+  }
+  .jake-and-elwood .footer-main {
+    grid-row: 1/2;
+    grid-column: 2/span 2;
+    justify-self: left;
+    text-align: left;
+  }
+  .jake-and-elwood .footer-main img {
+    margin: 0;
+  }
+  .jake-and-elwood .footer-copyright {
+    grid-row: 2/3;
+    grid-column: 2/span 2;
+    text-align: left;
+  }
+  .jake-and-elwood .footer-socials {
+    grid-row: 1/3;
+    grid-column: 4/5;
+    text-align: right;
+  }
+}/*# sourceMappingURL=index.css.map */
