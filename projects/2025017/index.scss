@@ -210,6 +210,8 @@ body {
 
     .section-image {
         margin-top: 2em;
+        display: flex;
+        justify-content: center;
     }
 
 
@@ -387,6 +389,463 @@ body {
         margin: 0;
     }
 
+    // Section images
+
+    .target-alignment-image {
+        width: 100%;
+        max-width: 615px;
+        aspect-ratio: 615/493;
+        // background-image: url("./assets/images/target-alignment.png");
+        overflow: hidden;
+        position: relative;
+
+        .img1,
+        .img2,
+        .img3,
+        .img4 {
+            position: absolute;
+            display: none;
+        }
+
+        .img1 {
+            top: 0%;
+            left: 0%;
+            width: 26.50%;
+            display: block;
+            animation: target-alignment-image-1 1s ease 0s 1 normal both;
+        }
+
+        .img2 {
+            top: 17.50%;
+            left: 20.50%;
+            width: 74.50%;
+            display: block;
+            animation: target-alignment-image-2 1s ease 0s 1 normal both;
+        }
+
+        .img3 {
+            top: 29%;
+            left: 24.5%;
+            width: 69%;
+            display: block;
+            animation: target-alignment-image-3 1s ease 1s 1 normal both;
+        }
+
+        .img4 {
+            top: 78%;
+            left: 87%;
+            width: 11.72%;
+            display: block;
+            animation: target-alignment-image-4 1s ease 2s 1 normal both;
+        }
+    }
+
+    @keyframes target-alignment-image-1 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes target-alignment-image-2 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes target-alignment-image-3 {
+        0% {
+            opacity: 0;
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+        }
+
+        100% {
+            opacity: 1;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+
+    @keyframes target-alignment-image-4 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .on-brand-campaign-setup-image {
+        width: 100%;
+        max-width: 576px;
+        aspect-ratio: 576/591;
+        // background-image: url("./assets/images/on-brand-campaign-setup.png");
+        overflow: hidden;
+        position: relative;
+
+        .img1,
+        .img2,
+        .img3 {
+            position: absolute;
+            display: none;
+        }
+
+        .img1 {
+            top: 0%;
+            left: 29%;
+            width: 71%;
+            display: block;
+            animation: on-brand-campaign-setup-image 0.3s ease 0.7s 1 normal both;
+        }
+
+        .img2 {
+            top: 35.5%;
+            left: 35%;
+            width: 58%;
+            display: block;
+            animation: on-brand-campaign-setup-image 0.3s ease 0.4s 1 normal both;
+        }
+
+        .img3 {
+            top: 10%;
+            left: 0%;
+            width: 51%;
+            display: block;
+            animation: on-brand-campaign-setup-image 0.3s ease 0.1s 1 normal both;
+        }
+    }
+
+    @keyframes on-brand-campaign-setup-image {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .content-syndication-image {
+        width: 100%;
+        max-width: 744px;
+        aspect-ratio: 744/378;
+        // background-image: url("./assets/images/content-syndication.png");
+        overflow: hidden;
+        position: relative;
+
+        .img1,
+        .img2,
+        .img3 {
+            position: absolute;
+            display: none;
+        }
+
+        .img1 {
+            top: 20%;
+            left: 10%;
+            width: 90%;
+            display: block;
+            animation: content-syndication-image-1 1s ease 0s 1 normal both;
+        }
+
+        .img2 {
+            top: 28%;
+            left: 25%;
+            width: 62.5%;
+            display: block;
+            animation: content-syndication-image-2 3s ease 2s 1 normal both;
+        }
+
+        .img3 {
+            top: 0%;
+            left: 0%;
+            width: 22.5%;
+            display: block;
+            animation: content-syndication-image-3 2s ease 0s 1 normal both;
+        }
+    }
+
+    @keyframes content-syndication-image-3 {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+            transform: scale(1);
+            left: 0;
+        }
+
+        100% {
+            opacity: 0;
+            transform: scale(2);
+            left: 25%;
+        }
+    }
+
+    @keyframes content-syndication-image-2 {
+        0% {
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+        }
+
+        100% {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+
+    @keyframes content-syndication-image-1 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+    .data-qa-validation-image {
+        width: 100%;
+        max-width: 630px;
+        aspect-ratio: 630/643;
+        // background-image: url("./assets/images/data-qa-validation.png");
+        overflow: hidden;
+        position: relative;
+
+        .img1,
+        .img2,
+        .img3,
+        .img4 {
+            position: absolute;
+            display: none;
+        }
+
+        .img1 {
+            top: 0%;
+            left: 4%;
+            width: 70%;
+            display: block;
+            animation: data-qa-validation-image-1 1s ease 0s 1 normal both;
+        }
+
+        .img2 {
+            top: 53%;
+            left: 0%;
+            width: 91%;
+            display: block;
+            animation: data-qa-validation-image-2 1s ease 1s 1 normal both;
+        }
+
+        .img3 {
+            top: 58%;
+            left: 3.5%;
+            width: 81%;
+            display: block;
+            animation: data-qa-validation-image-3 1s ease 2s 1 normal both;
+        }
+
+        .img4 {
+            top: 69%;
+            left: 78%;
+            width: 22.5%;
+            display: block;
+            animation: data-qa-validation-image-4 1s ease 3s 1 normal both;
+        }
+    }
+
+    @keyframes data-qa-validation-image-1 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes data-qa-validation-image-2 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes data-qa-validation-image-3 {
+        0% {
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+        }
+
+        100% {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+
+    @keyframes data-qa-validation-image-4 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .lead-delivery-image {
+        width: 100%;
+        max-width: 651px;
+        aspect-ratio: 651/588;
+        // background-image: url("./assets/images/lead-delivery.png");
+        overflow: hidden;
+        position: relative;
+
+        .img1,
+        .img2,
+        .img3,
+        .img4,
+        .img5,
+        .img6 {
+            position: absolute;
+            display: none;
+        }
+
+        .img1 {
+            top: 74%;
+            left: 0%;
+            width: 23%;
+            display: block;
+            animation: lead-delivery-image-1 1s ease 2s 1 normal both;
+        }
+
+        .img2 {
+            top: 19%;
+            left: 17%;
+            width: 63%;
+            display: block;
+            animation: lead-delivery-image-2 1s ease 0s 1 normal both;
+        }
+
+        .img3 {
+            top: 0%;
+            left: 55%;
+            width: 34%;
+            display: block;
+            animation: lead-delivery-image-3 1s ease 1s 1 normal both;
+        }
+
+        .img4 {
+            top: 80%;
+            left: 57%;
+            width: 43%;
+            display: block;
+            animation: lead-delivery-image-4 1s ease 3s 1 normal both;
+        }
+
+        .img5 {
+            top: 83%;
+            left: 59.5%;
+            width: 18.5%;
+            display: block;
+            animation: lead-delivery-image-5 1s ease 3s 1 normal both;
+        }
+
+        .img6 {
+            top: 83%;
+            left: 79%;
+            width: 18.5%;
+            display: block;
+            animation: lead-delivery-image-6 1s ease 3s 1 normal both;
+        }
+    }
+
+    @keyframes lead-delivery-image-2 {
+        0% {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes lead-delivery-image-3 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes lead-delivery-image-1 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes lead-delivery-image-4 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes lead-delivery-image-5 {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        75% {
+            transform: translateX(12.5%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes lead-delivery-image-6 {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        75% {
+            transform: translateX(-12.5%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+
     @media screen and (min-width: 900px) {
 
         .container {
@@ -451,14 +910,13 @@ body {
         }
 
         section .section-image {
-            text-align: right;
+            justify-content: flex-end;
         }
 
         .on-brand-campaign-setup .section-image,
         .data-qa-validation .section-image {
-            text-align: left;
+            justify-content: flex-start;
         }
-
 
         .section-content {
             flex: 1 1 36%;
