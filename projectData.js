@@ -5,6 +5,12 @@ export const data = [
         year: "2025",
         projects: [
             {
+                id: "2025019",
+                name: "Custom HTML Form",
+                url: "2025019",
+                react: false,
+            },
+            {
                 id: "2025018",
                 name: "Product Card (Tailwind CSS)",
                 url: "2025018",

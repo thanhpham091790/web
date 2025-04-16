@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom HTML Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!--
+            Having internal can't be styled in CSS alone:
+            1. <input type="color">
+            2. Date-related controls such as <input type="datetime-local">
+            3. <input type="range">
+            4. <input type="file">
+            5. Elements involved in creating dropdown widgets, including <select>, <option>, <optgroup> and <datalist>. 
+            6. <progress> and <meter>
+        -->
+        <h2>Ugly to style</h2>
+        <div class="ugly-to-style">
+            <form class="dropdown-form" action="" method="post">
+                <fieldset>
+                    <legend>Multiselect dropdown</legend>
+
+                    <div class="dropdown-wrapper">
+
+                        <input type="search" name="dropdown-search" id="dropdown-search" placeholder="Search..."
+                            class="dropdown-search" />
+
+                        <div class="checkbox-wrapper">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fruit" value="Apples" />
+                                <span>Apples</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fruit" value="Apricot" />
+                                <span>Apricot</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fruit" value="Banana" />
+                                <span>Banana</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fruit" value="Blackberry" />
+                                <span>Blackberry</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fruit" value="Cantaloupe" />
+                                <span>Cantaloupe</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fruit" value="Cherry" />
+                                <span>Cherry</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fruit" value="Durian " />
+                                <span>Durian</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fruit" value="Dragon Fruit " />
+                                <span>Dragon Fruit</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fruit" value="Grapes" />
+                                <span>Grapes</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fruit" value="Guava" />
+                                <span>Guava</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fruit" value="Kumquat" />
+                                <span>Kumquat</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fruit" value="Kiwi" />
+                                <span>Kiwi</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <form class="select-form" action="" method="post">
+                <fieldset>
+                    <legend>Custom select</legend>
+                    <div class="select-wrapper">
+
+                        <!-- Original select -->
+                        <select name="car" class="original-select" aria-label="Select a car">
+                            <option value="0">Select a car:</option>
+                            <option value="1">Audi</option>
+                            <option value="2">BMW</option>
+                            <option value="3">Citroen</option>
+                            <option value="4">Ford</option>
+                            <option value="5">Honda</option>
+                        </select>
+
+                        <!-- Custom select -->
+                        <div class="custom-select">
+                            <div class="selected-option" data-name="car" data-selected-value="0">Select a car:</div>
+                            <div class="options">
+                                <div class="option" data-value="0">Select a car:</div>
+                                <div class="option" data-value="1">Audi</div>
+                                <div class="option" data-value="2">BMW</div>
+                                <div class="option" data-value="3">Citroen</div>
+                                <div class="option" data-value="4">Ford</div>
+                                <div class="option" data-value="5">Honda</div>
+                            </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="button" class="submit-btn">Submit</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+        <!--
+            Harder to style elements:
+            1. Checkboxes 
+            2. Radio buttons
+            3. <input type="search">
+        -->
+        <h2>Hard to style</h2>
+        <div class="harder-to-style">
+            <form class="search-form" action="" method="post">
+                <fieldset>
+                    <legend>Search input</legend>
+
+                    <div class="search-wrapper">
+                        <input type="search" name="search" id="search" placeholder="Search..." class="search" />
+                        <button type="submit" class="search-btn" aria-label="search"><i
+                                class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <form class="radio-form" action="" method="post">
+                <fieldset>
+                    <legend>Radio buttons</legend>
+
+                    <div class="radio-wrapper">
+                        <label class="radio-item">
+                            <input type="radio" name="fruit" value="cherry" />
+                            <span>Cherry</span>
+                        </label>
+                        <label class="radio-item">
+                            <input type="radio" name="fruit" value="banana" disabled />
+                            <span>Banana</span>
+                        </label>
+                        <label class="radio-item">
+                            <input type="radio" name="fruit" value="strawberry" />
+                            <span>Strawberry</span>
+                        </label>
+                    </div>
+                </fieldset>
+            </form>
+
+            <form class="checkbox-form" action="" method="post">
+                <fieldset>
+                    <legend>Checkboxes</legend>
+
+                    <div class="checkbox-wrapper">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="fruit" value="cherry" />
+                            <span>Cherry</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="fruit" value="banana" disabled />
+                            <span>Banana</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="fruit" value="strawberry" />
+                            <span>Strawberry</span>
+                        </label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <!--
+        Easy to style elements:
+            1. <form>
+            2. <fieldset> and <legend>
+            3. Single-line text <input>s (e.g., type text, url, email), except for <input type="search">.
+            4. Multi-line <textarea>
+            5. Buttons (both <input> and <button>)
+            6. <label>
+            7. <output>
+        -->
+        <h2>Easy to style</h2>
+        <div class="easy-to-style">
+            <form id="postcard-form" class="postcard-form" action="" method="post">
+
+                <div id="to-wrapper" class="to-wrapper">
+                    <h1>to: Mozilla</h1>
+                </div>
+
+                <div id="from-wrapper" class="from-wrapper">
+                    <label for="from">from:</label>
+                    <input type="text" name="from" id="from" class="from" />
+                </div>
+
+                <div id="reply-wrapper" class="reply-wrapper">
+                    <label for="reply">reply:</label>
+                    <input type="text" name="reply" id="reply" class="reply" />
+                </div>
+
+                <div id="button-wrapper" class="button-wrapper">
+                    <button type="submit" id="submit-btn" class="submit-btn">Send your message</button>
+                </div>
+
+                <div id="message-wrapper" class="message-wrapper">
+                    <label for="message">Your message:</label>
+                    <textarea name="message" id="message" class="message"></textarea>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

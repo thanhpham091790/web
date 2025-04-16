@@ -1,0 +1,450 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 100%;
+    max-width: 740px;
+    margin: 5em auto;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ugly-to-style {
+    .dropdown-wrapper {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        input[type="search"] {
+            width: 100%;
+            border: 1px solid gray;
+            border-radius: 5px 0 0 5px;
+            padding: .5em 2em;
+            font-family: monospace;
+            font-size: 1.25rem;
+        }
+
+        input[type="search"]:focus {
+            outline: none;
+        }
+
+        .show.checkbox-wrapper {
+            visibility: visible;
+            height: 180px;
+            overflow: auto;
+            padding: 1em;
+        }
+
+        .checkbox-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            border: 1px solid gray;
+            height: 0;
+            visibility: hidden;
+
+            .checkbox-item {
+                display: flex;
+                align-items: center;
+                gap: 1em;
+            }
+
+            input[type="checkbox"] {
+                appearance: none;
+
+                width: 1.25rem;
+                height: 1.25rem;
+                cursor: pointer;
+                border: 1px solid gray;
+                background-color: white;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            input[type="checkbox"]::before {
+                content: "✔";
+                visibility: hidden;
+            }
+
+            input[type="checkbox"]:disabled {
+                background-color: lightgray;
+            }
+
+            input[type="checkbox"]:checked::before {
+                visibility: visible;
+            }
+
+            input[type="checkbox"]:checked {
+                border: 1px solid salmon;
+                background-color: salmon;
+                color: white;
+            }
+        }
+
+        .submit-btn {
+            align-self: flex-start;
+            padding: 0.75em 2em;
+            background-color: salmon;
+            color: white;
+            border: none;
+            font: inherit;
+        }
+
+        .submit-btn:hover,
+        .submit-btn:focus {
+            cursor: pointer;
+        }
+    }
+
+    .select-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        padding: 1em;
+
+        .original-select {
+            display: none;
+        }
+
+        .custom-select {
+            width: 200px;
+            background-color: salmon;
+            color: white;
+        }
+
+        .selected-option,
+        .option {
+            padding: 1em 2em;
+            border-bottom: 1px solid white;
+            cursor: pointer;
+        }
+
+        .selected-option:hover,
+        .selected-option:focus,
+        .option:hover,
+        .option:focus {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .selected-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .selected-option::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border: 6px solid;
+            border-color: white transparent transparent transparent;
+        }
+
+        .show .selected-option::after {
+            border-color: transparent transparent white transparent;
+        }
+
+        .options {
+            display: none;
+        }
+
+        .show .options {
+            display: block;
+        }
+
+        .option.selected {
+            background-color: rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .option:not(:first-of-type).selected::after {
+            content: "✔";
+            color: white;
+        }
+
+        .submit-btn {
+            align-self: flex-start;
+            padding: 0.75em 1.5em;
+            background-color: salmon;
+            color: white;
+            border: none;
+            font: inherit;
+        }
+
+        .submit-btn:hover,
+        .submit-btn:focus {
+            cursor: pointer;
+        }
+    }
+}
+
+.harder-to-style {
+
+    // Custome search input
+    .search-wrapper {
+        padding: 1em;
+        display: flex;
+
+        input[type="search"],
+        .search-btn {
+            padding: .5em 2em;
+            border: 1px solid gray;
+
+        }
+
+        input[type="search"] {
+            flex: 1;
+            border-right: none;
+            border-radius: 5px 0 0 5px;
+            font-family: monospace;
+            font-size: 1.25rem;
+        }
+
+        .search-btn {
+            border-left: none;
+            border-radius: 0 5px 5px 0;
+            outline: none;
+            background-color: salmon;
+            color: white;
+
+        }
+
+        input[type="search"]:focus {
+            outline: none;
+        }
+
+        .search-btn:focus,
+        .search-btn:hover {
+            cursor: pointer;
+        }
+
+    }
+
+    // Custome radio buttons
+    .radio-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 1em;
+
+        .radio-item {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+
+        input[type="radio"] {
+            appearance: none;
+
+            width: 1.25rem;
+            height: 1.25rem;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 1px solid gray;
+            background-color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="radio"]::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background-color: salmon;
+            transition: all 0.2s ease-in-out;
+        }
+
+        input[type="radio"]:disabled {
+            background-color: lightgray;
+        }
+
+        input[type="radio"]:checked::before {
+            width: 0.75rem;
+            height: 0.75rem;
+        }
+
+        input[type="radio"]:checked {
+            border: 1px solid salmon;
+        }
+    }
+
+    // Custom checkboxes    
+
+    .checkbox-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 1em;
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+
+        input[type="checkbox"] {
+            appearance: none;
+
+            width: 1.25rem;
+            height: 1.25rem;
+            cursor: pointer;
+            border: 1px solid gray;
+            background-color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="checkbox"]::before {
+            content: "✔";
+            visibility: hidden;
+        }
+
+        input[type="checkbox"]:disabled {
+            background-color: lightgray;
+        }
+
+        input[type="checkbox"]:checked::before {
+            visibility: visible;
+        }
+
+        input[type="checkbox"]:checked {
+            border: 1px solid salmon;
+            background-color: salmon;
+            color: white;
+        }
+    }
+}
+
+.easy-to-style {
+    .postcard-form {
+        font-family: "MomsTypewriter", sans-serif;
+        aspect-ratio: 740/498;
+        background-color: #222222;
+        background-image: url("./assets/images/background.jpg");
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, .5);
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 43% 3rem 3rem auto;
+        column-gap: 1rem;
+        grid-template-areas:
+            "m t"
+            "m f"
+            "m r"
+            "m b";
+        padding: 2em;
+
+
+        input,
+        textarea {
+            font-family: "Journal", sans-serif;
+            font-size: 1.55rem;
+        }
+
+        .to-wrapper {
+            grid-area: t;
+            align-self: end;
+
+            h1 {
+                font-size: 1rem;
+            }
+        }
+
+        .from-wrapper,
+        .reply-wrapper {
+            display: flex;
+            align-items: flex-end;
+            gap: 1em;
+
+            input {
+                flex-grow: 1;
+                border-radius: 8px;
+                border-color: transparent;
+            }
+
+            input:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+
+        .from-wrapper {
+            grid-area: f;
+        }
+
+        .reply-wrapper {
+            grid-area: r;
+        }
+
+        .button-wrapper {
+            grid-area: b;
+            padding: 2em 0;
+
+            .submit-btn {
+                display: inline-block;
+                padding: 5px;
+                font-weight: bold;
+                font-size: 0.8rem;
+                border-radius: 5px;
+                border: 2px solid #333;
+                background-color: transparent;
+                transform: rotate(-1.5deg);
+                padding-right: 3rem;
+                position: relative;
+            }
+
+            .submit-btn:hover,
+            .submit-btn:focus {
+                background-color: #000000;
+                color: #ffffff;
+                outline: none;
+            }
+
+            .submit-btn::after {
+                content: ">>>";
+                position: absolute;
+                right: 0.5rem;
+            }
+
+
+        }
+
+        .message-wrapper {
+            grid-area: m;
+
+            textarea {
+                width: 95%;
+                height: 80%;
+                margin-top: 1em;
+                border-radius: 5px;
+                background-color: transparent;
+                border: transparent;
+            }
+
+            textarea:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+    }
+}
